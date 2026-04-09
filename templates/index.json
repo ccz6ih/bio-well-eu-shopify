@@ -134,10 +134,10 @@
         "heading_rGjGpL": {
           "type": "heading",
           "settings": {
-            "heading": "Measure stress, energy, and functional balance in real-time. The only holistic device validated by 400+ scientific papersand used by well-being and health experts worldwide.",
-            "heading_size": "title-md",
+            "heading": "Discover how<em> Bio-Well</em> gives practitioners non-invasive energy insights, before/after session comparisons, and personalised client reports — all in under 60 seconds per scan.",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "half_text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }

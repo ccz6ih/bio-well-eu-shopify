@@ -15,7 +15,7 @@
         "subheading_FA838P": {
           "type": "subheading",
           "settings": {
-            "subheading": "Add a tagline",
+            "subheading": "Measure What Matters",
             "subheading_size": "subtitle-md",
             "secondary_color": true
           }
@@ -23,18 +23,18 @@
         "heading_yRpUdm": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text overlay",
+            "heading": "Your Body's<em> Energy</em> Field",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "scribble",
             "highlighted_scribble": "circle",
-            "highlighted_reveal": false
+            "highlighted_reveal": true
           }
         },
         "text_ccCAQy": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Measure stress, energy balance and vitality with Bio-Well — the biofield assessment system trusted by 5,000+ practitioners across 65 countries. </p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -61,6 +61,7 @@
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
+        "video_url_mobile": "",
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "left",
         "color_text": "#ffffff",

@@ -34,7 +34,7 @@
         "text_ccCAQy": {
           "type": "text",
           "settings": {
-            "text": "<p>Measure stress, energy balance and vitality with Bio-Well — the biofield assessment system trusted by 5,000+ practitioners across 65 countries. </p>",
+            "text": "<p><br/>The only biofield assessment system validated by 400+ scientific publications and used by wellness and health professionals across 65 countries.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -45,12 +45,24 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "button_kNAVqp": {
+          "type": "button",
+          "settings": {
+            "button_label": "Book a Free Demo",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
         }
       },
       "block_order": [
         "subheading_FA838P",
         "heading_yRpUdm",
-        "text_ccCAQy"
+        "text_ccCAQy",
+        "button_kNAVqp"
       ],
       "name": "t:sections.reveal-video-with-text-overlay.name",
       "settings": {
@@ -77,69 +89,33 @@
         "enable_parallax": false
       }
     },
-    "slideshow": {
-      "type": "slideshow",
-      "blocks": {
-        "slide-3": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/bio-well_video-header_desktop-v2-min.mp4",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": "",
-            "video_url_mobile": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "cover_image_mobile": "shopify://shop_images/Bio-Well_-_Measure_Energy.png",
-            "heading": "Measure What Matters: <em>Your Body's Energy Field</em>",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h1",
-            "button_label": "Shop Bio-well.EU",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        }
-      },
-      "block_order": [
-        "slide-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "autoplay": true,
-        "autoplay_speed": 7,
-        "show_navigation": true,
-        "image_height": "700px",
-        "content_width": "medium",
-        "image_height_mobile": "auto",
-        "accessibility_info": "Slideshow about our brand",
-        "color_text": "#ffffff",
-        "color_background": "#eaf9ff",
-        "gradient_background": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "rgba(0,0,0,0)",
-        "color_overlay": "#171717",
-        "overlay_opacity": 20,
-        "padding_top": 60,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
     "image_with_text_kiUqzK": {
       "type": "image-with-text",
       "blocks": {
-        "heading_rGjGpL": {
+        "heading_MXCNEV": {
           "type": "heading",
           "settings": {
-            "heading": "Discover how<em> Bio-Well</em> gives practitioners non-invasive energy insights, before/after session comparisons, and personalised client reports — all in under 60 seconds per scan.",
-            "heading_size": "title-sm",
+            "heading": "The Science of Human<em> Energy</em>  Made <em>Visible</em>",
+            "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "half_text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
+          }
+        },
+        "text_yRWRWn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every living system emits measurable light. Bio-Well captures these photonic emissions from your fingertips and translates them into a comprehensive map of energy, stress, and balance across your body's organs and systems.</p><p>Modern science now confirms what ancient traditions have long observed — every system in the human body generates electrical activity and emits photons and electrons. Bio-Well makes these subtle signals observable, bridging the gap between physical measurement and energetic insight.</p>",
+            "text_font": "body",
+            "text_size": "subtext-lg",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
         "button_9zzgwD": {
@@ -155,7 +131,8 @@
         }
       },
       "block_order": [
-        "heading_rGjGpL",
+        "heading_MXCNEV",
+        "text_yRWRWn",
         "button_9zzgwD"
       ],
       "name": "t:sections.image-with-text.name",
@@ -439,7 +416,7 @@
         "swipe_on_mobile": true,
         "heading": "Choose the Bio-Well System That Fits Your Practice",
         "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
@@ -535,7 +512,7 @@
           "settings": {
             "text": "<p>Bio-Well is based on Gas Discharge Visualization (GDV),<br/> a technology that captures and analyzes electro-photonic emissions generated by biological systems.</p><p>Using advanced sensors and computer-based analysis, Bio-Well translates subtle electrical and photonic signals into clear, interpretable data.</p><p>This approach is not theoretical. GDV has been studied for decades and is used internationally in research, clinical practice, and performance optimization.</p>",
             "text_font": "body",
-            "text_size": "subtext-md",
+            "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
@@ -555,8 +532,8 @@
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "heading": "Powered by Quantum Physics. Grounded in Measurable Science.",
-        "heading_size": "title-lg tracking-heading",
+        "heading": "Powered by <em>Quantum Physics</em>. Grounded in <em>Measurable Science.</em>",
+        "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "medium",
         "heading_tag": "h2",
@@ -566,7 +543,7 @@
         "button_link": "",
         "button_external": false,
         "button_icon": true,
-        "highlighted_text": "scribble",
+        "highlighted_text": "half_text",
         "highlighted_scribble": "basic-underline",
         "highlighted_reveal": false,
         "color_text": "",
@@ -1084,11 +1061,7 @@
         "column_aQp6XX",
         "column_htjxdi"
       ],
-      "custom_css": [
-        ".multicolumn {gap: 20px;}",
-        ".heading {color: #080859;}",
-        ".multicolumn .grid {padding: 15px; background-color: #f8f8f8;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.multicolumn.name",
       "settings": {
         "gap": "large",
@@ -1096,7 +1069,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "heading": "Trusted Across Disciplines. Used Where Precision Matters.",
-        "heading_size": "title-xl tracking-heading",
+        "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
@@ -1108,7 +1081,7 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#5f6b73",
+        "color_text": "#171717",
         "color_background": "#ffffff",
         "gradient_background": "",
         "color_highlight": "",
@@ -1350,7 +1323,7 @@
           "type": "heading",
           "settings": {
             "heading": "Don’t just own the tool. Master the science.",
-            "heading_size": "title-xl tracking-heading",
+            "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
@@ -1379,11 +1352,11 @@
       ],
       "name": "t:sections.rich-text.name",
       "settings": {
-        "text_alignment": "left",
+        "text_alignment": "center",
         "text_alignment_mobile": "left",
         "heading": "",
         "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_alignment": "text-center md:items-center",
         "heading_width": "small",
         "heading_tag": "h2",
         "subheading": "",
@@ -1723,7 +1696,6 @@
   },
   "order": [
     "reveal_video_with_text_overlay_NLHzG6",
-    "slideshow",
     "image_with_text_kiUqzK",
     "image_with_text_ADmrfV",
     "multicolumn_with_icons_geQQWb",

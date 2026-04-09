@@ -9,6 +9,73 @@
  */
 {
   "sections": {
+    "reveal_video_with_text_overlay_NLHzG6": {
+      "type": "reveal-video-with-text-overlay",
+      "blocks": {
+        "subheading_FA838P": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Add a tagline",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_yRpUdm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text overlay",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_ccCAQy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_FA838P",
+        "heading_yRpUdm",
+        "text_ccCAQy"
+      ],
+      "name": "t:sections.reveal-video-with-text-overlay.name",
+      "settings": {
+        "video": "shopify://files/videos/bio-well_video-header_desktop-v2-min.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/practitioners-ok-ombre.jpg",
+        "description": "",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "enable_parallax": false
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -1649,6 +1716,7 @@
     }
   },
   "order": [
+    "reveal_video_with_text_overlay_NLHzG6",
     "slideshow",
     "image_with_text_kiUqzK",
     "image_with_text_ADmrfV",

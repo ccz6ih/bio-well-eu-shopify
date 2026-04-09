@@ -101,6 +101,7 @@
       "block_order": [
         "slide-3"
       ],
+      "disabled": true,
       "settings": {
         "autoplay": true,
         "autoplay_speed": 7,

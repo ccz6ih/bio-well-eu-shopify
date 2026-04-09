@@ -472,6 +472,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/2025-01-14_15_17_-_Bordes_Paul_Energiefeld_-avant.jpg",
+            "image_mobile": "shopify://shop_images/camera-3.0.jpg",
             "subheading": "Flow Harmony",
             "heading": "Gold Tone",
             "content_position": "end",
@@ -482,6 +483,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/2025-01-15_17_47_-_Bordes_Paul_Energiefeld_-apres.jpg",
+            "image_mobile": "shopify://shop_images/camera-3.0.jpg",
             "subheading": "Flow Harmony",
             "heading": "Crimson Shadow",
             "content_position": "end",

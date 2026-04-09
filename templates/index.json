@@ -193,10 +193,10 @@
         "heading_V4TTC6": {
           "type": "heading",
           "settings": {
-            "heading": "You are more than a physical body. \nYour body is an electrical and energetic system",
+            "heading": "From <em>Fingertips </em>to Full-Body <em>Energy</em> Map",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "half_text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -223,6 +223,7 @@
       ],
       "name": "t:sections.image-with-text.name",
       "settings": {
+        "image": "shopify://shop_images/maker-download_4_7d3b053b-f4ef-4756-87d8-fb00cec02586.webp",
         "image_height": "650px",
         "image_width": "medium",
         "layout": "image_first",

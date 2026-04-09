@@ -160,6 +160,7 @@
       ],
       "name": "t:sections.image-with-text.name",
       "settings": {
+        "image": "shopify://shop_images/bio-well-practicioner-2.jpg",
         "image_height": "650px",
         "image_width": "medium",
         "layout": "text_first",

@@ -1163,64 +1163,6 @@
         "rounded": false
       }
     },
-    "rich_text_tVgG96": {
-      "type": "rich-text",
-      "blocks": {
-        "text_4LTLCk": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Bio-Well is designed as a complete system combining hardware, software, and education — allowing professionals to measure, understand, and apply energetic data with clarity and consistency.</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text_4LTLCk"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".rte * {margin-top: 0;}"
-      ],
-      "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "The Bio-Well System",
-        "heading_size": "title-xl tracking-heading",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "medium",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "<h3>More than a device. A complete measurement ecosystem.</h3>",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "scribble",
-        "highlighted_scribble": "basic-underline",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 0,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
-    },
     "image_only_Xn7nUn": {
       "type": "image-only",
       "disabled": true,
@@ -1283,6 +1225,7 @@
         "column_TxkUAp",
         "column_tAq3wp"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn-with-icons.name",
       "settings": {
         "style": "with-border",
@@ -1710,7 +1653,6 @@
     "highlight_text_JRdtgi",
     "multicolumn_Y7aqxK",
     "rich_text_c8NrTK",
-    "rich_text_tVgG96",
     "image_only_Xn7nUn",
     "multicolumn_with_icons_Bbtxzc",
     "rich_text_4aeLNt",

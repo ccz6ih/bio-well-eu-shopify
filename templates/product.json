@@ -15,7 +15,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "title_size": "product-title-md",
+            "title_size": "product-title-lg",
             "title_size_mobile": "product-title-md",
             "title_tag": "h2",
             "show_price": true,

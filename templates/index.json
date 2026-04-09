@@ -344,7 +344,8 @@
             "show_border": false,
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "image_ratio": "adapt",
+            "image": "shopify://shop_images/54a9ed9e-63be-45f9-b833-1ea73b573afc-2026-04-09.png",
+            "image_ratio": "square",
             "heading": "Starter Pack — Bio-Well System",
             "heading_size": "text-lg-2xl",
             "text": "<p><strong>Essential energy assessment for professional practice</strong><br/><br/>A complete entry point to measure and visualize human energy with Bio-Well.<br/>Ideal for wellness practitioners who want a structured, reliable assessment tool.</p>",
@@ -363,7 +364,8 @@
             "show_border": false,
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "image_ratio": "adapt",
+            "image": "shopify://shop_images/a5f99bd7-aa0b-4515-b266-022708e9fb16-2026-04-09.png",
+            "image_ratio": "square",
             "heading": "Full Therapist Pack — Bio-Well + Bio-Cor",
             "heading_size": "text-lg-2xl",
             "text": "<p><strong>Advanced therapeutic integration and session continuity</strong><br/><br/>Combines Bio-Well measurement with personalized sound support via Bio-Cor.<br/>Designed for therapists seeking deeper post-session integration and professional continuity.</p>",
@@ -382,7 +384,8 @@
             "show_border": false,
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "image_ratio": "adapt",
+            "image": "shopify://shop_images/8cc6455a-9f29-4ab3-8d2c-6a045a06c620-2026-04-09.jpg",
+            "image_ratio": "square",
             "heading": "Geobiology Pack — Bio-Well + Sputnik",
             "heading_size": "text-lg-2xl",
             "text": "<p><strong>Environmental and space energy analysis</strong><br/><br/>Extends Bio-Well with the Sputnik sensor to study the energetic influence of spaces.<br/>Intended for geobiologists, researchers, and professionals working with environments.</p>",
@@ -402,7 +405,6 @@
         "column_ngNC9L"
       ],
       "custom_css": [
-        ".card > .grid {background: white; padding: clamp(30px, 3.5vw, 30px); border-radius: var(--rounded-block); height: 100%;}",
         ".multicolumn-card__info.grid {justify-content: space-between; display: flex; flex-direction: column;}",
         ".leading-normal {margin-bottom: auto;}",
         ".heading {min-height: 10%;}",
@@ -526,9 +528,7 @@
       "block_order": [
         "text_9yLdia"
       ],
-      "custom_css": [
-        ".rte * {margin-top: 0;}"
-      ],
+      "custom_css": [],
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
@@ -667,6 +667,7 @@
         "column_gkh8Re",
         "column_eTJnw9"
       ],
+      "disabled": true,
       "custom_css": [
         ".page .rte {font-size: 14px;}",
         ".multicolumn-card__info {text-align: center; margin-bottom: 30px;}",
@@ -768,8 +769,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
+        "padding_top": 96,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": false,
@@ -826,7 +827,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 0,
-        "padding_bottom": 60,
+        "padding_bottom": 76,
         "divider": false,
         "narrow": true,
         "rounded": false
@@ -1265,10 +1266,10 @@
         "heading_RVf8nR": {
           "type": "heading",
           "settings": {
-            "heading": "Don’t just own the tool. Master the science.",
+            "heading": "Master the <em>Science</em>, Not Just the <em>Tool.</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "stencil",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -1312,7 +1313,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "",
+        "color_background": "#eaf9ff",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",

@@ -135,7 +135,7 @@
         "image_ratio_mobile": "adapt_first",
         "mobile_thumbnail": false,
         "padding_top": 0,
-        "padding_bottom": 84,
+        "padding_bottom": 32,
         "divider": false,
         "full_width": true,
         "rounded": false

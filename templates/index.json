@@ -553,8 +553,8 @@
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "heading": "Powered by Quantum Physics. \nGrounded in Measurable Science.",
-        "heading_size": "title-xl tracking-heading",
+        "heading": "Powered by Quantum Physics. Grounded in Measurable Science.",
+        "heading_size": "title-lg tracking-heading",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "medium",
         "heading_tag": "h2",

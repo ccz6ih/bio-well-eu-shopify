@@ -176,11 +176,11 @@
         "enable_language_selector": true,
         "enable_country_selector": true,
         "transparent_color_text": "#ffffff",
-        "color_text": "#00c7ff",
+        "color_text": "#0649a0",
         "color_background": "#ffffff",
         "color_localization": "",
-        "padding_top": 32,
-        "padding_bottom": 32,
+        "padding_top": 20,
+        "padding_bottom": 20,
         "full_width": true,
         "rounded": true
       }

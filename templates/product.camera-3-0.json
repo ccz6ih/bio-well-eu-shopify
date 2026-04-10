@@ -267,10 +267,10 @@
         "slide-1": {
           "type": "slide",
           "settings": {
-            "heading": "Visualizing Energy for Structured Professional Insight",
+            "heading": "Visualizing <em>Energy</em> for Structured Professiona<em>l Insight</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -287,15 +287,15 @@
         "description": "",
         "enable_video_autoplay": true,
         "enable_video_looping": true,
-        "content_width": "medium",
+        "content_width": "large",
         "video_url_mobile": "",
         "color_text": "#171717",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
-        "color_overlay": "#ffffff",
-        "overlay_opacity": 60,
+        "color_overlay": "#ecfdf5",
+        "overlay_opacity": 47,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,

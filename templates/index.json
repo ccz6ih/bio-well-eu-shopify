@@ -1289,7 +1289,7 @@
           "settings": {
             "image": "shopify://shop_images/girl-using-pc-laptop-on-wooden-floor-mockup-generator.png",
             "image_width": "custom",
-            "image_max_width": 410,
+            "image_max_width": 500,
             "image_max_width_mobile": 350
           }
         },

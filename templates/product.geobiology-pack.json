@@ -564,61 +564,6 @@
         "rounded": false
       }
     },
-    "rich_text_eiX83L": {
-      "type": "rich-text",
-      "blocks": {
-        "text_cCWkaP": {
-          "type": "text",
-          "settings": {
-            "text": "<p><em><strong>Together, these steps provide a structured, objective, and repeatable approach to environmental energy analysis.</strong></em></p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text_cCWkaP"
-      ],
-      "name": "t:sections.rich-text.name",
-      "settings": {
-        "text_alignment": "center",
-        "text_alignment_mobile": "center",
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 100,
-        "divider": false,
-        "narrow": true,
-        "rounded": false
-      }
-    },
     "multicolumn_with_icons_HQEkge": {
       "type": "multicolumn-with-icons",
       "blocks": {
@@ -782,7 +727,7 @@
         "heading": "Practitioner Use Cases",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
+        "heading_width": "medium",
         "heading_tag": "h2",
         "subheading": "",
         "description": "<p>Bio-Well and Sputnik are used to objectively study how environments interact with human energy and activity.<br/></p><p>The system supports structured evaluation of spaces for research, optimization, and preventive approaches.</p>",
@@ -1428,7 +1373,6 @@
     "image_with_text_37qzwz",
     "rich_text_p7AnMT",
     "timeline_Nym8Rq",
-    "rich_text_eiX83L",
     "multicolumn_with_icons_HQEkge",
     "rich_text_RcRPhc",
     "rich_text_Kdc4BC",

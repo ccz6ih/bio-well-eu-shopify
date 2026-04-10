@@ -38,12 +38,6 @@
             "text_size": "text-base"
           }
         },
-        "liquid_cAFdcW": {
-          "type": "liquid",
-          "settings": {
-            "liquid": ""
-          }
-        },
         "countdown": {
           "type": "countdown",
           "disabled": true,
@@ -94,6 +88,19 @@
           "disabled": true,
           "settings": {}
         },
+        "collapsible_tab_MEW3BV": {
+          "type": "collapsible_tab",
+          "settings": {
+            "opened": false,
+            "style": "with-border",
+            "icon": "none",
+            "heading": "Frequently Asked Questions",
+            "content": "<p>{{ product.metafields.custom.faq.value }}</p>",
+            "page": "",
+            "liquid": "",
+            "text_size": "text-sm"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -114,46 +121,6 @@
             "show_price": true
           }
         },
-        "text-1": {
-          "type": "text",
-          "settings": {
-            "icon": "truck",
-            "iwidth": "custom",
-            "icon_width": 20,
-            "text": "Text block",
-            "text_size": "text-sm"
-          }
-        },
-        "text-2": {
-          "type": "text",
-          "settings": {
-            "icon": "headphone",
-            "iwidth": "custom",
-            "icon_width": 20,
-            "text": "Text block",
-            "text_size": "text-sm"
-          }
-        },
-        "text-3": {
-          "type": "text",
-          "settings": {
-            "icon": "award",
-            "iwidth": "custom",
-            "icon_width": 20,
-            "text": "Text block",
-            "text_size": "text-sm"
-          }
-        },
-        "text-4": {
-          "type": "text",
-          "settings": {
-            "icon": "box",
-            "iwidth": "custom",
-            "icon_width": 20,
-            "text": "Text block",
-            "text_size": "text-sm"
-          }
-        },
         "sticky_buy_button": {
           "type": "sticky_buy_button",
           "settings": {}
@@ -163,18 +130,14 @@
         "vendor",
         "title",
         "description",
-        "liquid_cAFdcW",
         "countdown",
         "variant_picker",
         "inventory",
         "buy_buttons",
         "pickup_availability",
+        "collapsible_tab_MEW3BV",
         "share",
         "complementary",
-        "text-1",
-        "text-2",
-        "text-3",
-        "text-4",
         "sticky_buy_button"
       ],
       "settings": {

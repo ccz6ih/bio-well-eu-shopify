@@ -32,16 +32,35 @@
             "show_rating": true
           }
         },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_price": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": true,
+            "show_back_in_stock_name": true,
+            "show_back_in_stock_phone": true
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
             "text_size": "text-base"
           }
         },
-        "liquid_cAFdcW": {
-          "type": "liquid",
+        "collapsible_tab_MiAqzE": {
+          "type": "collapsible_tab",
           "settings": {
-            "liquid": ""
+            "opened": false,
+            "style": "with-border",
+            "icon": "none",
+            "heading": "Includes",
+            "content": "<p>{{ product.metafields.custom.includes.value }}</p>",
+            "page": "",
+            "liquid": "",
+            "text_size": "text-sm"
           }
         },
         "countdown": {
@@ -77,18 +96,6 @@
             "color_scheme": "accent-1"
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_quantity_selector": false,
-            "show_price": true,
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true,
-            "enable_back_in_stock": true,
-            "show_back_in_stock_name": true,
-            "show_back_in_stock_phone": true
-          }
-        },
         "pickup_availability": {
           "type": "pickup_availability",
           "disabled": true,
@@ -114,46 +121,6 @@
             "show_price": true
           }
         },
-        "text-1": {
-          "type": "text",
-          "settings": {
-            "icon": "truck",
-            "iwidth": "custom",
-            "icon_width": 20,
-            "text": "Text block",
-            "text_size": "text-sm"
-          }
-        },
-        "text-2": {
-          "type": "text",
-          "settings": {
-            "icon": "headphone",
-            "iwidth": "custom",
-            "icon_width": 20,
-            "text": "Text block",
-            "text_size": "text-sm"
-          }
-        },
-        "text-3": {
-          "type": "text",
-          "settings": {
-            "icon": "award",
-            "iwidth": "custom",
-            "icon_width": 20,
-            "text": "Text block",
-            "text_size": "text-sm"
-          }
-        },
-        "text-4": {
-          "type": "text",
-          "settings": {
-            "icon": "box",
-            "iwidth": "custom",
-            "icon_width": 20,
-            "text": "Text block",
-            "text_size": "text-sm"
-          }
-        },
         "sticky_buy_button": {
           "type": "sticky_buy_button",
           "settings": {}
@@ -162,19 +129,15 @@
       "block_order": [
         "vendor",
         "title",
+        "buy_buttons",
         "description",
-        "liquid_cAFdcW",
+        "collapsible_tab_MiAqzE",
         "countdown",
         "variant_picker",
         "inventory",
-        "buy_buttons",
         "pickup_availability",
         "share",
         "complementary",
-        "text-1",
-        "text-2",
-        "text-3",
-        "text-4",
         "sticky_buy_button"
       ],
       "settings": {
@@ -528,205 +491,6 @@
         "parallax_direction": "vertical"
       }
     },
-    "product-details": {
-      "type": "product-details",
-      "blocks": {
-        "collapsible_tab-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "none",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "Technical overview",
-            "content": "<ul><li>Real-time GSR measurement</li><li>Continuous data capture</li><li>Visual stress & relaxation graphs</li></ul>",
-            "metafields": "",
-            "text_size": "text-base"
-          }
-        },
-        "collapsible_tab-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "none",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "Compatibility",
-            "content": "<ul><li>Designed for use with the Bio-Well system</li><li>Connects via Bio-Well calibration unit</li></ul>",
-            "metafields": "",
-            "text_size": "text-base"
-          }
-        },
-        "collapsible_tab-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "none",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "Typical applications",
-            "content": "<ul><li>Therapy and treatment monitoring</li><li>Meditation and relaxation feedback</li><li>Sound and frequency therapy evaluation</li><li>Counseling and emotional response analysis</li></ul>",
-            "metafields": "",
-            "text_size": "text-base"
-          }
-        },
-        "collapsible_tab-4": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "none",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "Intended use",
-            "content": "<ul><li>Professional, educational and research use</li><li>Not a medical device</li></ul>",
-            "metafields": "",
-            "text_size": "text-base"
-          }
-        },
-        "specification": {
-          "type": "specification",
-          "disabled": true,
-          "settings": {
-            "heading": "",
-            "text_size": "text-sm"
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_tab-1",
-        "collapsible_tab-2",
-        "collapsible_tab-3",
-        "collapsible_tab-4",
-        "specification"
-      ],
-      "settings": {
-        "style": "with-border",
-        "open_first_row": true,
-        "specifications_heading": "Included in the Box",
-        "heading": "Product details",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 28,
-        "padding_bottom": 28,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "faq": {
-      "type": "faq",
-      "blocks": {
-        "question-1": {
-          "type": "question",
-          "settings": {
-            "title": "What does the Bio-Well Glove measure?",
-            "text": "<p>The Bio-Well Glove measures galvanic skin response (GSR), a well-established indicator of autonomic nervous system activity.<br/>Variations in skin conductivity reflect changes in stress and relaxation levels, providing objective insight into sympathetic and parasympathetic balance.<br/><br/>Data is displayed in real time as dynamic graphs, making physiological responses easy to observe and explain.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-2": {
-          "type": "question",
-          "settings": {
-            "title": "How is the Bio-Well Glove used during a session?",
-            "text": "<p>Unlike snapshot-based assessments, the Bio-Well Glove enables continuous stress monitoring throughout an entire session.<br/><br/>It allows practitioners to observe moment-by-moment responses during treatments, conversations, sound therapies, or meditation practices, and to identify how specific interventions influence stress or relaxation.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-3": {
-          "type": "question",
-          "settings": {
-            "title": "What measurement options are available?",
-            "text": "<p>The Bio-Well Glove offers two complementary measurement options:<br/><br/>A conductive glove, worn on the hand for simple and comfortable use<br/><br/>An adhesive electrode, which can be placed on different parts of the body for greater flexibility depending on the protocol<br/><br/>Both options provide reliable signal acquisition adapted to various professional use cases.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-4": {
-          "type": "question",
-          "settings": {
-            "title": "What monitoring modes are available in the software?",
-            "text": "<p>The Bio-Well software includes two dedicated monitoring modes:<br/><br/>Environment Mode<br/>Used to observe stress responses related to external factors such as treatments, conversations, sounds, or environmental changes.<br/><br/>Meditation Mode<br/>Focused on relaxation depth and nervous system balance during meditation, breathing, or mindfulness practices.<br/><br/>These modes support different professional and research applications while remaining intuitive to use.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-5": {
-          "type": "question",
-          "settings": {
-            "title": "Who is the Bio-Well Glove designed for?",
-            "text": "<p>The Bio-Well Glove is designed for professional, educational, and research use.<br/><br/>It is commonly used by practitioners and researchers for stress monitoring, progress tracking, and demonstration purposes.<br/>The Bio-Well Glove is not a medical device and does not replace clinical or therapeutic diagnosis.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "contact": {
-          "type": "contact",
-          "settings": {
-            "heading": "Didn’t find your answer?",
-            "text": "<p>Don't hestitate to contact us</p>",
-            "show_phone": false,
-            "avatar_height": 60,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "question-1",
-        "question-2",
-        "question-3",
-        "question-4",
-        "question-5",
-        "contact"
-      ],
-      "settings": {
-        "style": "with-background",
-        "heading": "FAQs",
-        "heading_size": "title-lg tracking-heading",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "<p>Please read our <a href=\"#\" title=\"FAQ's\">FAQs</a> page to find out more.</p>",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "#ffffff",
-        "color_background": "#00c7ff",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#ffffff",
-        "overlay_opacity": 4,
-        "padding_top": 84,
-        "padding_bottom": 84,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -800,8 +564,6 @@
     "image-with-text-1",
     "scrolling-text",
     "image-with-text-2",
-    "product-details",
-    "faq",
     "product-recommendations",
     "recently-viewed"
   ]

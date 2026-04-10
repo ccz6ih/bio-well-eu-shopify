@@ -669,7 +669,7 @@
         "contact"
       ],
       "settings": {
-        "style": "with-background",
+        "style": "with-border",
         "heading": "FAQs",
         "heading_size": "title-lg tracking-heading",
         "heading_alignment": "text-left md:items-end md:flex-row",
@@ -684,7 +684,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#ffffff",
-        "color_background": "#00c7ff",
+        "color_background": "#171717",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",

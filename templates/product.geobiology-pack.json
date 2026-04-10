@@ -279,6 +279,7 @@
       ],
       "name": "APPLICATION 2a",
       "settings": {
+        "image": "shopify://shop_images/8cc6455a-9f29-4ab3-8d2c-6a045a06c620-2026-04-09.jpg",
         "image_height": "600px",
         "image_width": "medium",
         "layout": "image_first",

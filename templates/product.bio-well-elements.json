@@ -670,7 +670,7 @@
       ],
       "settings": {
         "style": "with-border",
-        "heading": "FAQs",
+        "heading": "More FAQs",
         "heading_size": "title-lg tracking-heading",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",

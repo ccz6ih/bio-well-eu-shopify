@@ -421,7 +421,8 @@
       ],
       "name": "APPLICATION 2b",
       "settings": {
-        "image_height": "600px",
+        "image": "shopify://shop_images/imac-mockup-standing-on-a-wooden-desk-against-a-diagonal-ray-of-sun-light-a20980_1.png",
+        "image_height": "500px",
         "image_width": "medium",
         "layout": "text_first",
         "text_alignment": "left",

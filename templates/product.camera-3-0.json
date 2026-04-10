@@ -476,6 +476,7 @@
         "content_LxNqLR": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/54a9ed9e-63be-45f9-b833-1ea73b573afc-2026-04-09.png",
             "subheading": "Electro-Photonic Measurement",
             "heading": "Capturing functional responses",
             "heading_tag": "h3",
@@ -493,6 +494,7 @@
         "content_UP7FLk": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/imac-mockup-standing-on-a-wooden-desk-against-a-diagonal-ray-of-sun-light-a20980_dff7585a-5504-4770-8701-57683b468f91.png",
             "subheading": "Image Capture & Data Processing",
             "heading": "Transforming signals into usable data",
             "heading_tag": "h3",
@@ -510,6 +512,7 @@
         "content_TxKaQa": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/girl-using-pc-laptop-on-wooden-floor-mockup-generator_1.png",
             "subheading": "Visual Representation",
             "heading": "Making patterns readable",
             "heading_tag": "h3",
@@ -527,6 +530,7 @@
         "content_7RHKTm": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/imac-mockup-standing-on-a-wooden-desk-against-a-diagonal-ray-of-sun-light-a20980.png",
             "subheading": "Interpretation & Follow-Up",
             "heading": "Supporting professional analysis",
             "heading_tag": "h3",

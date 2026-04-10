@@ -1596,8 +1596,8 @@
       ],
       "settings": {
         "transparent_header": true,
-        "image": "shopify://shop_images/girl-using-pc-laptop-on-wooden-floor-mockup-generator.png",
-        "image_height": "750px",
+        "image": "shopify://shop_images/imac-mockup-standing-on-a-wooden-desk-against-a-diagonal-ray-of-sun-light-a20980_3.png",
+        "image_height": "550px",
         "content_position": "md:items-center md:justify-center",
         "image_height_mobile": "500px",
         "content_position_mobile": "items-center justify-center",
@@ -1614,7 +1614,7 @@
         "full_width": true,
         "rounded": true,
         "enable_parallax": true,
-        "parallax_direction": "vertical"
+        "parallax_direction": "zoom"
       }
     },
     "rich_text_W3LVMk": {

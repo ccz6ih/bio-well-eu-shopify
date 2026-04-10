@@ -1284,6 +1284,15 @@
     "rich_text_4aeLNt": {
       "type": "rich-text",
       "blocks": {
+        "image_w943c9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/girl-using-pc-laptop-on-wooden-floor-mockup-generator.png",
+            "image_width": "custom",
+            "image_max_width": 410,
+            "image_max_width_mobile": 350
+          }
+        },
         "heading_RVf8nR": {
           "type": "heading",
           "settings": {
@@ -1312,6 +1321,7 @@
         }
       },
       "block_order": [
+        "image_w943c9",
         "heading_RVf8nR",
         "text_ayjJat"
       ],

@@ -22,45 +22,6 @@
             "show_rating": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-            "text_size": "text-base lg:text-lg"
-          }
-        },
-        "countdown": {
-          "type": "countdown",
-          "disabled": true,
-          "settings": {
-            "heading": "Hurry up!",
-            "subheading": "Sale end in:",
-            "color_text": "#e11d48",
-            "color_background": "#fff1f2",
-            "gradient_background": ""
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "enable_dynamic_variants": true,
-            "show_variant_labels": true,
-            "picker_type": "button",
-            "enable_color_swatches": true,
-            "color_swatch_type": "variant",
-            "size_chart": ""
-          }
-        },
-        "inventory": {
-          "type": "inventory",
-          "disabled": true,
-          "settings": {
-            "inventory_threshold": 15,
-            "show_inventory_transfer": true,
-            "show_inventory_quantity": "low",
-            "color_scheme": "accent-1"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -73,10 +34,11 @@
             "show_back_in_stock_phone": true
           }
         },
-        "pickup_availability": {
-          "type": "pickup_availability",
-          "disabled": true,
-          "settings": {}
+        "description": {
+          "type": "description",
+          "settings": {
+            "text_size": "text-base lg:text-lg"
+          }
         },
         "share": {
           "type": "share",
@@ -105,12 +67,8 @@
       },
       "block_order": [
         "title",
-        "description",
-        "countdown",
-        "variant_picker",
-        "inventory",
         "buy_buttons",
-        "pickup_availability",
+        "description",
         "share",
         "complementary",
         "sticky_buy_button"

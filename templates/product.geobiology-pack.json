@@ -439,6 +439,7 @@
         "content_LxNqLR": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/48b76f1f-35ae-4688-9ea9-148803c9c936-2026-04-09.png",
             "subheading": "Measure the Environment",
             "heading": "Objective ambient energy measurement",
             "heading_tag": "h3",
@@ -456,6 +457,7 @@
         "content_UP7FLk": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/imac-mockup-standing-on-a-wooden-desk-against-a-diagonal-ray-of-sun-light-a20980_2.png",
             "subheading": "Capture Environmental Dynamics",
             "heading": "Observe how spaces evolve over time",
             "heading_tag": "h3",
@@ -473,6 +475,7 @@
         "content_TxKaQa": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/2026-04-03_16_47_-_Craig_Carda_organs_balance.png",
             "subheading": "Analyze & Visualize",
             "heading": "Transform raw data into readable insights",
             "heading_tag": "h3",
@@ -490,6 +493,7 @@
         "content_7RHKTm": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-04-01_at_3.53.20_PM.webp",
             "subheading": "Interpret",
             "heading": "Develop a structured reading methodology",
             "heading_tag": "h3",
@@ -507,6 +511,7 @@
         "content_RgiFYT": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/2026-04-03_16_47_-_Craig_Carda_area_diagram.png",
             "subheading": "Apply & Compare",
             "heading": "Support structured environmental evaluation",
             "heading_tag": "h3",

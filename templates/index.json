@@ -71,7 +71,7 @@
         "cover_image": "shopify://shop_images/practitioners-ok-ombre.jpg",
         "description": "",
         "content_width": "small",
-        "content_position": "md:items-end md:justify-start",
+        "content_position": "md:items-center md:justify-start",
         "text_alignment": "left",
         "video_mobile": "shopify://files/videos/bio-well_video-header_desktop-v2-min.mp4",
         "video_url_mobile": "",

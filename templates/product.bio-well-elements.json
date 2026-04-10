@@ -50,19 +50,6 @@
             "text_size": "text-base"
           }
         },
-        "collapsible_tab_w9VagJ": {
-          "type": "collapsible_tab",
-          "settings": {
-            "opened": false,
-            "style": "with-border",
-            "icon": "none",
-            "heading": "Frequently Asked Questions",
-            "content": "<p>{{ product.metafields.custom.faq.value }}</p>",
-            "page": "",
-            "liquid": "",
-            "text_size": "text-sm"
-          }
-        },
         "collapsible_tab_7kY6C4": {
           "type": "collapsible_tab",
           "settings": {
@@ -102,10 +89,17 @@
             "text_size": "text-sm"
           }
         },
-        "liquid_cAFdcW": {
-          "type": "liquid",
+        "collapsible_tab_w9VagJ": {
+          "type": "collapsible_tab",
           "settings": {
-            "liquid": ""
+            "opened": false,
+            "style": "with-border",
+            "icon": "none",
+            "heading": "Frequently Asked Questions",
+            "content": "<p>{{ product.metafields.custom.faq.value }}</p>",
+            "page": "",
+            "liquid": "",
+            "text_size": "text-sm"
           }
         },
         "share": {
@@ -138,11 +132,10 @@
         "title",
         "buy_buttons",
         "description",
-        "collapsible_tab_w9VagJ",
         "collapsible_tab_7kY6C4",
         "collapsible_tab_yakcJh",
         "collapsible_tab_8e39DF",
-        "liquid_cAFdcW",
+        "collapsible_tab_w9VagJ",
         "share",
         "complementary",
         "sticky_buy_button"

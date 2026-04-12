@@ -178,7 +178,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "The<em> Science</em> of What You<em> Can't See</em>",
+            "heading": "The<em> Science</em> of What You Can't See",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "scribble",
@@ -353,7 +353,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "Non-Invasive 60-Second Scan",
+            "text": "<em>Non-Invasive 60-Second Scan</em>",
             "text_size": 160,
             "text_font": "heading",
             "highlighted_text": "stencil",

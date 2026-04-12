@@ -391,10 +391,11 @@
           "type": "testimonial",
           "settings": {
             "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
+            "text": "<p>\"<br/>Everyone who started working with it found it interesting. In all these years there has not been a single negative response about the operation of the device.\"</p>",
+            "author": "Prof. Konstantin Korotkov",
             "author_info": "",
             "author_url": "",
+            "image": "shopify://shop_images/00_KOROTKOV_little_926ac259-8a68-4d4f-acec-430ccba41b57.webp",
             "image_ratio": "rounded",
             "image_height": 30,
             "highlighted_text": "none",

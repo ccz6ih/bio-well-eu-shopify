@@ -178,7 +178,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Example <em>heading</em>",
+            "heading": "The<em> Science</em> of What You<em> Can't See</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "scribble",
@@ -189,7 +189,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Bio-Well captures the ultra-weak photon emissions from your fingertips in a 60-second scan, then maps them to organs and systems using principles rooted in traditional Chinese meridian theory and modern biophysics. The result is a real-time snapshot of your energy field — measurable, repeatable, and backed by three decades of peer-reviewed research from institutions across four continents.<br/></p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -204,8 +204,8 @@
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Discover Bio-Well",
+            "button_link": "shopify://products/bio-well-3-0",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,
@@ -248,8 +248,9 @@
         "profile-1": {
           "type": "profile",
           "settings": {
-            "heading": "Example title",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "image": "shopify://shop_images/11062072_10153189185404482_2837869929455513364_n.jpg",
+            "heading": "17 Patents in Biophysics",
+            "text": "<p>From the original GDV optical system to the Bio-Cor EHF therapy device and the Sputnik environmental sensor, each patent represents a specific problem solved — how to capture photon emissions reliably, how to calibrate across devices, how to extend measurement from fingertips to water, materials, and space.</p>",
             "color_text": "#ffffff",
             "color_background": "#4c5538"
           }
@@ -257,8 +258,9 @@
         "profile-2": {
           "type": "profile",
           "settings": {
-            "heading": "Example title",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "image": "shopify://shop_images/Camera_Bio-Well.jpg",
+            "heading": "400+ Peer-Reviewed Studies",
+            "text": "<p>Published across journals in medicine, psychology, sports science, and physics, these studies document real outcomes from real institutions. Research has been conducted at universities and medical centers in Russia, the United States, the United Kingdom, India, Georgia, Kazakhstan, France, and Brazil, among others.</p>",
             "color_text": "#ffffff",
             "color_background": "#886a51"
           }
@@ -266,8 +268,9 @@
         "profile-3": {
           "type": "profile",
           "settings": {
-            "heading": "Example title",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "image": "shopify://shop_images/2018_1bc33642-2d90-4160-8e6c-1f65718dfbe4.webp",
+            "heading": "30+ Doctoral Dissertations",
+            "text": "<p>More than thirty PhD candidates have built their doctoral research on GDV and Bio-Well methodology — defending their work in medicine, psychology, and technical sciences. Each dissertation required independent review, original data, and institutional approval. That is not marketing. That is academic accountability.</p>",
             "color_text": "#ffffff",
             "color_background": "#2e2d45"
           }
@@ -286,12 +289,12 @@
         "image_ratio_mobile": "portrait",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "heading": "Three Decades of Discovery",
+        "heading": "Research You Can Measure",
         "heading_size": "title-md",
         "heading_alignment": "text-left justify-start",
         "heading_tag": "h2",
-        "subheading": "Pioneering the Science of Human Energy Measurement",
-        "description": "<p><br/> Three Decades of Discovery</p>",
+        "subheading": "Built on Science. Designed for Discovery.",
+        "description": "<p>Every Bio-Well device traces back to a single principle — if you can measure it, you can understand it. Professor Korotkov's career has been defined by turning that principle into published, peer-reviewed, reproducible science. Here is what three decades of that work looks like.</p>",
         "button_label": "",
         "button_link": "",
         "button_external": false,

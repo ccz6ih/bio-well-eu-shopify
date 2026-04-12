@@ -178,10 +178,10 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "The<em>  Science</em> of What You Can't See",
+            "heading": "<strong>The</strong><em><strong>  Science</strong></em><strong> of What You Can't See</strong>",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "scribble",
+            "highlighted_text": "text",
             "highlighted_scribble": "basic-underline",
             "highlighted_reveal": false
           }

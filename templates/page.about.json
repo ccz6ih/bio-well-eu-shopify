@@ -611,7 +611,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Add a tagline</p>",
+            "text": "",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -626,7 +626,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Example <em>heading</em>",
+            "heading": "Backed By Science",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "scribble",
@@ -677,13 +677,15 @@
         "logo-1": {
           "type": "logo",
           "settings": {
-            "height": 60,
+            "image": "shopify://shop_images/6a054ae22211022c7d980c7f4c101e52.avif",
+            "height": 100,
             "link": ""
           }
         },
         "logo-2": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-03-26_at_10.26.01_AM.avif",
             "height": 60,
             "link": ""
           }
@@ -691,35 +693,40 @@
         "logo-3": {
           "type": "logo",
           "settings": {
-            "height": 60,
+            "image": "shopify://shop_images/Screenshot_2025-03-26_at_10.14.11_AM.avif",
+            "height": 104,
             "link": ""
           }
         },
         "logo-4": {
           "type": "logo",
           "settings": {
-            "height": 60,
+            "image": "shopify://shop_images/Screenshot_2025-03-26_at_9.47.33_AM.avif",
+            "height": 100,
             "link": ""
           }
         },
         "logo-5": {
           "type": "logo",
           "settings": {
-            "height": 60,
+            "image": "shopify://shop_images/Jackson_State_University_logo.avif",
+            "height": 100,
             "link": ""
           }
         },
         "logo-6": {
           "type": "logo",
           "settings": {
-            "height": 60,
+            "image": "shopify://shop_images/Screenshot_2025-03-26_at_11.27.54_AM.avif",
+            "height": 100,
             "link": ""
           }
         },
         "logo-7": {
           "type": "logo",
           "settings": {
-            "height": 60,
+            "image": "shopify://shop_images/Screenshot_2025-03-26_at_10.35.25_AM.avif",
+            "height": 100,
             "link": ""
           }
         }
@@ -735,7 +742,7 @@
       ],
       "settings": {
         "layout": "marquee",
-        "grid_horizontal": 120,
+        "grid_horizontal": 75,
         "direction": "right",
         "speed": 5,
         "heading": "",

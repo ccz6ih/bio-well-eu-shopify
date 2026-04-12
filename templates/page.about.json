@@ -178,7 +178,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>The</strong><em><strong>  Science</strong></em><strong> of What You Can't See</strong>",
+            "heading": "<strong>The</strong><em><strong>  Science</strong></em><strong> of What You </strong><em><strong>Can't See</strong></em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "text",

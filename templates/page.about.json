@@ -391,7 +391,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "quote",
-            "text": "<p>\"<br/>Everyone who started working with it found it interesting. In all these years there has not been a single negative response about the operation of the device.\"</p>",
+            "text": "<p>\"Everyone who started working with it found it interesting. In all these years there has not been a single negative response about the operation of the device.\"</p>",
             "author": "Prof. Konstantin Korotkov",
             "author_info": "",
             "author_url": "",

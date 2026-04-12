@@ -320,18 +320,51 @@
     "scrolling-text": {
       "type": "scrolling-text",
       "blocks": {
+        "text_UMPzYe": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Research-Backed Methodology</strong>",
+            "text_size": 160,
+            "text_font": "heading",
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_PdJqgJ": {
+          "type": "text",
+          "settings": {
+            "text": "<em>Calibrated Global Standard</em>",
+            "text_size": 160,
+            "text_font": "heading",
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_n8wtPK": {
+          "type": "text",
+          "settings": {
+            "text": "<em>Cloud-Based Real-Time Analysis</em>",
+            "text_size": 160,
+            "text_font": "heading",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<em><strong>Free shipping and returns</strong></em>",
+            "text": "Non-Invasive 60-Second Scan",
             "text_size": 160,
-            "text_font": "body",
+            "text_font": "heading",
             "highlighted_text": "stencil",
             "highlighted_scribble": "circle"
           }
         }
       },
       "block_order": [
+        "text_UMPzYe",
+        "text_PdJqgJ",
+        "text_n8wtPK",
         "text"
       ],
       "settings": {

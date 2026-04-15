@@ -708,6 +708,7 @@
       ],
       "name": "PROFESSIONAL APPLICATIONS",
       "settings": {
+        "image": "shopify://shop_images/Dr-mayur-bio-well-014.webp",
         "image_height": "700px",
         "image_width": "small",
         "layout": "image_first",

@@ -1622,8 +1622,8 @@
       "name": "t:sections.blog-posts-collage.name",
       "settings": {
         "blog": "imagerie-electrophotonique",
-        "post_limit": 3,
-        "show_view_all": false,
+        "post_limit": 2,
+        "show_view_all": true,
         "image_ratio": "landscape",
         "show_tags": true,
         "show_date": true,

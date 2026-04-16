@@ -1621,7 +1621,7 @@
       "type": "blog-posts-collage",
       "name": "t:sections.blog-posts-collage.name",
       "settings": {
-        "blog": "actualites",
+        "blog": "imagerie-electrophotonique",
         "post_limit": 3,
         "show_view_all": false,
         "image_ratio": "landscape",

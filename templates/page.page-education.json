@@ -786,7 +786,7 @@
         "text_R6TMBB": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Certification confirms technical understanding and responsible professional use. It does not replace clinical training or medical qualification.</strong></p>",
+            "text": "<p>Certification confirms technical understanding and responsible professional use. It does not replace clinical training, medical qualification, or regulatory authorisation.</p>",
             "text_font": "body",
             "text_size": "subtext-lg",
             "text_max_size": 32,

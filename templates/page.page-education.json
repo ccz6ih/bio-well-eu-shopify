@@ -168,8 +168,8 @@
       ],
       "name": "WHY BIO-WELL EDUCATION MATTERS",
       "settings": {
-        "image": "shopify://shop_images/girl-using-pc-laptop-on-wooden-floor-mockup-generator.png",
-        "image_height": "700px",
+        "image": "shopify://shop_images/475de3f5-a099-4ff6-a743-b168570bc8a8-2026-04-16.jpg",
+        "image_height": "600px",
         "image_width": "small",
         "layout": "text_first",
         "text_alignment": "left",
@@ -688,10 +688,11 @@
         "content_zKCKkD": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/c2e86caf-6002-40ea-9705-4bee5b93ee60-2026-04-16.jpg",
             "subheading": "Data Interpretation & Analysis",
-            "heading": "<strong>From numbers to meaning</strong>",
+            "heading": "Where numbers become knowledge",
             "heading_tag": "h2",
-            "text": "<p>Interpreting diagrams, parameters, and indicators, understanding variability, and identifying meaningful patterns across sessions.<br/><br/></p>",
+            "text": "<p><br/>Interpreting diagrams, parameters, and indicators with nuance. Understanding variability, recognising meaningful patterns, and distinguishing genuine findings from measurement artefacts across sessions and client populations.<br/></p>",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
@@ -705,10 +706,11 @@
         "content_QXVYy6": {
           "type": "content",
           "settings": {
-            "subheading": " Practical Applications",
-            "heading": "<strong>Applying insights responsibly</strong>",
+            "image": "shopify://shop_images/258eb842-0f2a-47f2-b9e9-116069c175cd-2026-04-16.png",
+            "subheading": "Professional Application",
+            "heading": "Where science meets service",
             "heading_tag": "h2",
-            "text": "<p>Translating measurements into professional insights, reports, and session support, adapted to real-world practice.</p>",
+            "text": "<p>Translating measurements into professional insights, structured reports, and session guidance — adapted to the realities of clinical, wellness, and research practice.</p>",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
@@ -722,10 +724,11 @@
         "content_Hkex9D": {
           "type": "content",
           "settings": {
-            "subheading": "Certification & Professional Use",
-            "heading": "<strong>Validating expertise</strong>",
+            "image": "shopify://shop_images/bb4bc9bf-3bc2-4605-879a-56b75b6e13bc-2026-04-16.png",
+            "subheading": "Certification & Professional Recognition",
+            "heading": "Your expertise, validated",
             "heading_tag": "h2",
-            "text": "<p>Final assessment, certification, and access to the global Bio-Well practitioner network.</p>",
+            "text": "<p>Final assessment, official certification, and entry into the global Bio-Well practitioner directory. Your certification confirms analytical competence and a commitment to responsible professional practice..</p>",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",

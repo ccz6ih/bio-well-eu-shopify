@@ -66,7 +66,7 @@
       ],
       "name": "t:sections.reveal-video-with-text-overlay.name",
       "settings": {
-        "video": "shopify://files/videos/abstract-futuristic-glowing-blue-light-round-spher-2026-02-18-08-20-26-utc.mp4",
+        "video": "shopify://files/videos/biowellfrance.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "cover_image": "shopify://shop_images/practitioners-ok-ombre.jpg",
         "description": "",
@@ -86,7 +86,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "color_overlay": "#171717",
-        "overlay_opacity": 70,
+        "overlay_opacity": 51,
         "enable_parallax": true
       }
     },

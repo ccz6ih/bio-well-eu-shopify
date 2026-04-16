@@ -1617,6 +1617,43 @@
         "parallax_direction": "zoom"
       }
     },
+    "blog_posts_collage_GG8zU9": {
+      "type": "blog-posts-collage",
+      "name": "t:sections.blog-posts-collage.name",
+      "settings": {
+        "blog": "actualites",
+        "post_limit": 3,
+        "show_view_all": false,
+        "image_ratio": "landscape",
+        "show_tags": true,
+        "show_date": true,
+        "show_comments": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "heading": "Blog posts",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "rich_text_W3LVMk": {
       "type": "rich-text",
       "blocks": {
@@ -1692,6 +1729,7 @@
     "featured_collections_mWMibN",
     "rich_text_ymR8WD",
     "testimonials-banner",
+    "blog_posts_collage_GG8zU9",
     "rich_text_W3LVMk"
   ]
 }

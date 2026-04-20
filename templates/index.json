@@ -1485,8 +1485,8 @@
         "padding_top": 72,
         "padding_bottom": 72,
         "divider": false,
-        "full_width": false,
-        "rounded": false
+        "full_width": true,
+        "rounded": true
       }
     },
     "rich_text_ymR8WD": {

@@ -67,8 +67,8 @@
         "button_aFy9jp": {
           "type": "button",
           "settings": {
-            "button_label": "Watch a Free Demo",
-            "button_link": "",
+            "button_label": "Schedule  a Free Demo",
+            "button_link": "https://share-eu1.hsforms.com/1oMu3i2zdS-a3zWveDXAqZQf2gml",
             "button_style": "secondary",
             "button_size": "md",
             "button_external": false,
@@ -1019,7 +1019,7 @@
           "type": "button",
           "settings": {
             "button_label": "Access Official Training Programs",
-            "button_link": "",
+            "button_link": "shopify://collections/all",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,
@@ -1032,6 +1032,7 @@
         "text_VB4tca",
         "button_yE6p4L"
       ],
+      "disabled": true,
       "custom_css": [
         ".button {background: white; color: #080859 !important;}",
         ".button:after {border-color: white !important;}",

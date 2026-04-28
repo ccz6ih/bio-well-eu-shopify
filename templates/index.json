@@ -1349,7 +1349,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 72,
-        "padding_bottom": 0,
+        "padding_bottom": 52,
         "divider": false,
         "narrow": true,
         "rounded": false
@@ -1397,6 +1397,7 @@
         "column_4aAgJz",
         "column_7L9CxQ"
       ],
+      "disabled": true,
       "custom_css": [
         ".page-width {display: flex; flex-direction: column-reverse;}",
         ".title-wrapper {margin-block-end: 0; margin-block-start: clamp(var(--sp-8), 2.526vw, var(--sp-12));}"

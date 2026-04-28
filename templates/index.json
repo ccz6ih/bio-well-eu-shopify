@@ -1162,7 +1162,7 @@
         "subheading": "",
         "description": "",
         "button_label": "",
-        "button_link": "",
+        "button_link": "shopify://pages/how-it-works",
         "button_external": false,
         "button_icon": true,
         "highlighted_text": "none",

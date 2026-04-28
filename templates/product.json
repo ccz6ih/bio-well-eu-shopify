@@ -303,6 +303,7 @@
       ],
       "name": "APPLICATION 2a",
       "settings": {
+        "image": "shopify://shop_images/b55debd1-604a-4c2c-871c-50f6a5176760-2026-04-09.jpg",
         "image_height": "600px",
         "image_width": "medium",
         "layout": "image_first",
@@ -374,6 +375,7 @@
       ],
       "name": "APPLICATION 2b",
       "settings": {
+        "image": "shopify://shop_images/680cb43c-3ec0-4c38-a68c-123d60be2abd-2026-04-09.png",
         "image_height": "600px",
         "image_width": "medium",
         "layout": "text_first",
@@ -533,6 +535,7 @@
         "content_TxKaQa",
         "content_7RHKTm"
       ],
+      "disabled": true,
       "name": "How Bio-Cor Works",
       "settings": {
         "show_navigation": true,
@@ -770,6 +773,7 @@
       "block_order": [
         "text_tD3CKm"
       ],
+      "disabled": true,
       "custom_css": [
         "ul li {margin-block-start: 0; margin-block-end: 1rem;}",
         "@media (min-width: 768px) {ul {column-count: 2; }}"

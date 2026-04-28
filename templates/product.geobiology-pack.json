@@ -716,10 +716,7 @@
       "block_order": [
         "text_tD3CKm"
       ],
-      "custom_css": [
-        "ul li {margin-block-start: 0; margin-block-end: 1rem;}",
-        "@media (min-width: 768px) {ul {column-count: 2; }}"
-      ],
+      "custom_css": [],
       "name": "Practitioner Use Cases",
       "settings": {
         "text_alignment": "left",

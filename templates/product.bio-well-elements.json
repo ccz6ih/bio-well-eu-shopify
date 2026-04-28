@@ -52,6 +52,7 @@
         },
         "collapsible_tab_7kY6C4": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "opened": false,
             "style": "with-border",
@@ -65,6 +66,7 @@
         },
         "collapsible_tab_yakcJh": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "opened": false,
             "style": "with-border",
@@ -78,6 +80,7 @@
         },
         "collapsible_tab_8e39DF": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "opened": false,
             "style": "with-border",

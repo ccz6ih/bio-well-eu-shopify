@@ -83,8 +83,8 @@
           "type": "text",
           "settings": {
             "icon": "devices",
-            "iwidth": "custom",
-            "icon_width": 20,
+            "iwidth": "fit",
+            "icon_width": 120,
             "text": "{{ product.metafields.custom.faq.value }}",
             "text_size": "text-sm"
           }

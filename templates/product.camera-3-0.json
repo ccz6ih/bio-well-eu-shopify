@@ -86,7 +86,7 @@
             "iwidth": "fit",
             "icon_width": 120,
             "text": "{{ product.metafields.custom.faq.value }}",
-            "text_size": "text-sm"
+            "text_size": "text-base"
           }
         },
         "pickup_availability": {

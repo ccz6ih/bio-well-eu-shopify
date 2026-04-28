@@ -727,7 +727,7 @@
         "heading": "Practitioner Use Cases",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "medium",
+        "heading_width": "large",
         "heading_tag": "h2",
         "subheading": "",
         "description": "<p>Bio-Well and Sputnik are used to objectively study how environments interact with human energy and activity.<br/></p><p>The system supports structured evaluation of spaces for research, optimization, and preventive approaches.</p>",
@@ -749,7 +749,7 @@
         "padding_top": 72,
         "padding_bottom": 100,
         "divider": false,
-        "narrow": true,
+        "narrow": false,
         "rounded": false
       }
     },

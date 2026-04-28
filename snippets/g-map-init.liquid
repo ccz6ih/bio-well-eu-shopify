@@ -1,0 +1,72 @@
+<!-- there is we describe map -->
+
+<script type="text/javascript">
+	function initMap(){
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 2,
+			center: new google.maps.LatLng(20.0529506,0.7667133),
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			mapId: "BW_MAP",
+			zoomControl: true,
+			cameraControl: false,
+			streetViewControl: false
+		});
+	  
+		  
+		
+		markers = [];
+		
+		var marker, i, j, exist$i;
+		var clear_locations = [];
+		for (i = 0; i < locations.length; i++) {
+			exist$i = 0;
+			for (j = 0; j < clear_locations.length; j++) {
+				if (locations[i][1] == clear_locations[j][1] 
+					&& locations[i][2] == clear_locations[j][2]){
+					exist$i = 1;
+					break;
+				}
+	  
+			}
+			if (exist$i == 0){
+				clear_locations[clear_locations.length] = locations[i];
+			}
+		}
+		locations = clear_locations;
+		var infowindow = new google.maps.InfoWindow();
+	  
+		for (i = 0; i < locations.length; i++) {
+			const beachFlagImg = document.createElement('img');
+			beachFlagImg.src = locations[i][3];
+	  
+			marker = new google.maps.marker.AdvancedMarkerElement({
+				position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+				map: map,
+				content: beachFlagImg
+			});
+			google.maps.event.addListener(marker, 'click', (function(marker, i) {
+				return function() {
+					infowindow.setContent(locations[i][0]);
+					infowindow.open(map, marker);
+				}
+			})(marker, i));
+			markers[i] = marker;
+		}
+		clusterOptions = {
+			imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+			gridSize: 30,
+			/*zoomOnClick: false,
+			maxZoom: 10,*/
+		};
+		
+		markerCluster = new markerClusterer.MarkerClusterer({ markers, map });
+    }
+</script>	
+
+<script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+<script type="text/javascript" src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOmSC92NUlFY-wUdARHfF0uXztvFej1Lc&amp;callback=initMap&amp;v=weekly&amp;libraries=marker,places"></script>
+<script type="text/javascript">
+	//function initMap(){}
+</script>	
+<!------------------------------------------>

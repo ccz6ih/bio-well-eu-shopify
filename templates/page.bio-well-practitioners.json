@@ -284,7 +284,6 @@
         "logo_Diwk9A": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Beyond-the-Veil_WHITETrans.png",
             "height": 80,
             "link": ""
           }
@@ -292,7 +291,6 @@
         "logo_pMg6dL": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/CODE-Health-Logo-Standard-Border-500px.png",
             "height": 80,
             "link": ""
           }
@@ -300,7 +298,6 @@
         "logo_giGDNR": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/HW.webp",
             "height": 80,
             "link": ""
           }
@@ -308,7 +305,6 @@
         "logo_Fr8YTi": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/TBH_Logo_v1_300x_2x_0fbd6f39-3614-42ef-8ebe-4387b0ce3168.webp",
             "height": 80,
             "link": ""
           }
@@ -316,7 +312,6 @@
         "logo_tQ3wFp": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/gaiahealers-10.jpg",
             "height": 80,
             "link": ""
           }
@@ -329,6 +324,7 @@
         "logo_Fr8YTi",
         "logo_tQ3wFp"
       ],
+      "disabled": true,
       "settings": {
         "layout": "marquee",
         "grid_horizontal": 70,

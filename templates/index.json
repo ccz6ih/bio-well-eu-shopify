@@ -50,7 +50,7 @@
           "type": "button",
           "settings": {
             "button_label": "Book a Free Demo",
-            "button_link": "",
+            "button_link": "https://share-eu1.hsforms.com/1oMu3i2zdS-a3zWveDXAqZQf2gml",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,
@@ -1413,7 +1413,7 @@
         "subheading": "",
         "description": "",
         "button_label": "Training & Certification",
-        "button_link": "",
+        "button_link": "shopify://collections/starter-packs",
         "button_external": false,
         "button_icon": true,
         "highlighted_text": "none",
@@ -1496,7 +1496,7 @@
           "type": "button",
           "settings": {
             "button_label": "Visit the Full Shop",
-            "button_link": "",
+            "button_link": "shopify://collections/all",
             "button_style": "secondary",
             "button_size": "md",
             "button_external": false,
@@ -1658,7 +1658,7 @@
           "type": "button",
           "settings": {
             "button_label": "Get a personalized demo",
-            "button_link": "",
+            "button_link": "https://share-eu1.hsforms.com/1oMu3i2zdS-a3zWveDXAqZQf2gml",
             "button_style": "secondary",
             "button_size": "md",
             "button_external": false,

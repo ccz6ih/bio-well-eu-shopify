@@ -234,6 +234,7 @@
       "block_order": [
         "slide-1"
       ],
+      "disabled": true,
       "name": "APPLICATION 1",
       "settings": {
         "transparent_header": false,
@@ -301,6 +302,7 @@
         "heading_jgnt4k",
         "text_dKEdg6"
       ],
+      "disabled": true,
       "name": "APPLICATION 2a",
       "settings": {
         "image": "shopify://shop_images/b55debd1-604a-4c2c-871c-50f6a5176760-2026-04-09.jpg",
@@ -373,6 +375,7 @@
         "heading_fD3KfU",
         "text_aHcjGe"
       ],
+      "disabled": true,
       "name": "APPLICATION 2b",
       "settings": {
         "image": "shopify://shop_images/680cb43c-3ec0-4c38-a68c-123d60be2abd-2026-04-09.png",
@@ -424,6 +427,7 @@
       "block_order": [
         "text_Tt6EwY"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "center",
@@ -588,6 +592,7 @@
       "block_order": [
         "text_cCWkaP"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "center",
@@ -663,6 +668,7 @@
         "column_WKtcfT",
         "column_bjXhdq"
       ],
+      "disabled": true,
       "name": "Key Benefits",
       "settings": {
         "style": "with-border",
@@ -718,6 +724,7 @@
       "block_order": [
         "text_enApWc"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "center",
@@ -833,6 +840,7 @@
       "block_order": [
         "text_qbVjny"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "center",
@@ -868,6 +876,7 @@
     },
     "multicolumn_Jhjyb6": {
       "type": "multicolumn",
+      "disabled": true,
       "name": "Final Therapeutic Summary",
       "settings": {
         "gap": "large",
@@ -1358,7 +1367,6 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
-      "disabled": true,
       "settings": {
         "product_limit": 6,
         "columns": 4,
@@ -1391,7 +1399,6 @@
     },
     "recently-viewed": {
       "type": "recently-viewed",
-      "disabled": true,
       "settings": {
         "product_limit": 6,
         "columns": 4,

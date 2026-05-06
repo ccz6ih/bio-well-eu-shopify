@@ -23,6 +23,56 @@
     "featured_collection": {
       "view_all": "Смотреть все",
       "view_all_label": "Посмотреть все товары в коллекции {{ collection_name }} "
+    },
+    "quick_order_list": {
+      "each": "{{ money }}/ea",
+      "items_removed": {
+        "one": "{{ quantity }} удалённый элемент",
+        "other": "{{ quantity }} удалённые элементы"
+      },
+      "max_error": "Этот предмет имеет максимальную {{ max }}",
+      "variant": "Вариант",
+      "items_added": {
+        "other": "{{ quantity }} добавленные элементы",
+        "one": "{{ quantity }} добавленный элемент"
+      },
+      "remove_all_items_confirmation": "Удалить все товары {{ quantity }} из вашей корзины?",
+      "min_error": "Этот предмет имеет минимальное количество {{ min }}",
+      "step_error": "Вы можете добавить этот элемент только в количестве {{ step }}",
+      "product_variants": "Варианты продуктов",
+      "total_items": "Всего предметов: {{ count }}",
+      "remove_all": "Удалить все",
+      "product_total": "Итого",
+      "product": "Продукт",
+      "remove_all_single_item_confirmation": "Удалить 1 товар из корзины?",
+      "view_cart": "Посмотреть корзину",
+      "variant_total": "Всего вариантов",
+      "cancel": "Отмена"
+    },
+    "map": {
+      "view_details": "Посмотреть детали",
+      "view_location_label": "Посмотреть {{ location }} на карте",
+      "address_error": "Ошибка при поиске этого адреса",
+      "back": "Назад",
+      "auth_error_html": "Возникла проблема с проверкой подлинности вашей учетной записи Google Maps. Создайте и включите разрешения <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">JavaScript API</a> и <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">Geocoding API</a> для вашего приложения.",
+      "address_query_limit_html": "Вы превысили лимит использования Google API. Рассмотрите возможность перехода на тарифный план <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium Plan</a>.",
+      "address_no_results": "Нет результатов для этого адреса",
+      "get_directions_label": "Получите инструкции по {{ location }}"
+    },
+    "product_bundle": {
+      "remove": "Удалить",
+      "total": "Всего",
+      "add_to_cart": "Добавить в корзину",
+      "discounts_at_checkout": "Скидки будут применены при оформлении заказа."
+    },
+    "slideshow": {
+      "pause_slideshow": "Приостановить слайд-шоу",
+      "carousel": "Карусель",
+      "play_slideshow": "Воспроизвести слайд-шоу"
+    },
+    "comparison-table": {
+      "choose_product": "Выберите продукт",
+      "highlight_differences": "Подчеркните различия"
     }
   },
   "products": {
@@ -144,9 +194,25 @@
       "drag": "Drag",
       "go_to_item": "Перейти к пункту {{ index }}",
       "link_messages": {
-        "external": "Открывает внешний веб-сайт."
+        "external": "Открывает внешний веб-сайт.",
+        "new_window": "Открывается в новом окне."
       },
-      "back_to_top": "Вернуться к началу"
+      "back_to_top": "Вернуться к началу",
+      "error": "Ошибка",
+      "close": "Закрыть",
+      "vendor": "Продавец:",
+      "star_reviews_count": {
+        "other": "{{ count }} отзывы",
+        "zero": "Нет отзывов",
+        "one": "{{ count }} обзор"
+      },
+      "refresh_page": "Выбор варианта приводит к полному обновлению страницы.",
+      "skip_to_content": "Перейти к содержанию",
+      "star_reviews_info": "{{ rating_value }} из {{ rating_max }} звезд",
+      "play_video": "Воспроизвести видео",
+      "unit_price_separator": "за",
+      "total_reviews": "общие отзывы",
+      "load_video": "Загрузить видео: {{ description }}"
     },
     "pagination": {
       "show_more": "Показать еще",

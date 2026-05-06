@@ -85,7 +85,10 @@
       "out_of_stock_continue_selling": "В наличии",
       "will_not_ship_until": "Готовы к отправке {{ date }}",
       "waiting_for_stock": "Инвентарь на подходе",
-      "will_be_in_stock_after": "Вернуться на склад {{ date }}"
+      "will_be_in_stock_after": "Вернуться на склад {{ date }}",
+      "low_stock": "Низкий запас",
+      "in_stock": "В наличии, готово к отправке",
+      "in_stock_with_count": "{{ count }} в наличии"
     },
     "back_in_stock": {
       "label": "Сообщите мне, когда он будет доступен",
@@ -108,6 +111,63 @@
       "pick_up_unavailable": "В настоящее время пикап недоступен",
       "view_store_info": "Просмотр информации о магазине",
       "pick_up_available_at_html": "Забрать можно в {{ location_name }}"
+    },
+    "product": {
+      "xr_button_label": "Просмотр в своем пространстве, загрузка элементов в окно дополненной реальности",
+      "view_product": "Посмотреть товар",
+      "view_product_label": "Посмотреть товар: {{ title }}",
+      "quick_view_label": "Быстрый просмотр {{ title }}",
+      "pre_order": "Предварительный заказ",
+      "add_to_bundle": "Добавить в пучок",
+      "add_to_bundle_label": "Добавить {{ title }} в комплект",
+      "will_not_ship_until": "Готовы к отправке {{ date }}",
+      "quick_view": "Посмотреть",
+      "vendor": "Поставщик",
+      "will_be_in_stock_after": "Вернуться на склад {{ date }}",
+      "read_more_label": "Посмотреть полную информацию о {{ title }}",
+      "choose_product_options": "Выберите варианты для {{ title }}",
+      "include_taxes": "Налог включен.",
+      "quick_add": "Добавить",
+      "quick_add_label": "Быстрое добавление {{ title }} в корзину",
+      "choose_options": "Выберите варианты",
+      "shop_the_look": "Магазин",
+      "waiting_for_stock": "Инвентарь на подходе",
+      "shipping_policy_html": "<a href='{{ link }}'>Доставка</a> рассчитывается при оформлении заказа.",
+      "read_more": "Посмотреть все подробности",
+      "pre_order_label": "Предварительный заказ {{ title }}",
+      "xr_button": "Вид в вашем пространстве"
+    },
+    "quantity": {
+      "label": "Количество",
+      "increase": "Увеличить количество для {{ product }}",
+      "minimum_of": "Минимум {{ quantity }}",
+      "input_label": "Количество для {{ product }}",
+      "min_of": "Мин {{ quantity }}",
+      "multiples_of": "Приращения {{ quantity }}",
+      "maximum_of": "Максимум {{ quantity }}",
+      "in_cart_html": "{{ quantity }} в корзине",
+      "decrease": "Уменьшите количество для {{ product }}",
+      "max_of": "Макс {{ quantity }}",
+      "note": "Просмотр правил количества"
+    },
+    "price": {
+      "unit_price": "Цена за единицу",
+      "from_price_html": "<small>С сайта</small> {{ price }}",
+      "sale_price": "Цена продажи",
+      "regular_price": "Обычная цена"
+    },
+    "media": {
+      "open_media": "Открыть медиа {{ index }} в модальном режиме",
+      "gallery_viewer": "Просмотрщик галереи",
+      "play_model": "Play 3D Viewer",
+      "play_video": "Воспроизвести видео"
+    },
+    "volume_pricing": {
+      "title": "Объемное ценообразование",
+      "minimum": "{{ quantity }}+",
+      "price_range": "{{ minimum }} - {{ maximum }}",
+      "price_at_each": "на {{ price }}/ea",
+      "note": "Доступны цены на большие объемы"
     }
   },
   "gift_cards": {

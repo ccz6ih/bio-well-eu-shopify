@@ -357,7 +357,16 @@
     "date": {
       "d": "d",
       "day": "День",
-      "days": "Дни"
+      "days": "Дни",
+      "minute": "Мин",
+      "second": "Sec",
+      "hour": "Час",
+      "hours": "Часы",
+      "minutes": "Минуты",
+      "h": "h",
+      "m": "m",
+      "s": "s",
+      "seconds": "Секции"
     },
     "newsletter": {
       "label": "Введите свой e-mail",
@@ -378,7 +387,35 @@
         "gift_note": "Подарочная записка",
         "gift_wrap": "Подарочная упаковка",
         "target_product": "Для"
-      }
+      },
+      "gift_wrapping_unavailable": "Этот товар не предназначен для подарочной упаковки. Пожалуйста, поймите.",
+      "note_placeholder": "Подарочное сообщение (бесплатно и по желанию)",
+      "gift_wrapping_label": "Подарочная упаковка:",
+      "message_html": "Для сайта {{ price }}, пожалуйста, упаковывайте товары в таком порядке.",
+      "gift_wrapping_list": "Список подарочных упаковок"
+    },
+    "headings": {
+      "product": "Продукт",
+      "total": "Всего",
+      "quantity": "Количество",
+      "price": "Цена"
+    },
+    "general": {
+      "cart_quantity_error_html": "Вы можете добавить в корзину только {{ quantity }} этого товара.",
+      "title": "Ваша корзина",
+      "taxes_included_and_shipping_policy_html": "Налог включен. <a href=\"{{ link }}\">Доставка</a> рассчитывается при оформлении заказа.",
+      "remove": "Удалить",
+      "taxes_and_shipping_at_checkout": "Налоги включены, доставка рассчитывается при оформлении заказа.",
+      "note": "Примечание к заказу",
+      "subtotal": "Итого",
+      "cart_error": "При обновлении корзины произошла ошибка. Пожалуйста, попробуйте еще раз.",
+      "taxes_and_shipping_policy_at_checkout_html": "Налоги и доставка <a href=\"{{ link }}\"></a> рассчитываются при оформлении заказа.",
+      "taxes_included_but_shipping_at_checkout": "Налог включен, а доставка рассчитывается при оформлении заказа",
+      "we_accept": "Мы принимаем",
+      "update": "Обновить корзину",
+      "checkout": "Проверьте",
+      "empty": "Ваша корзина сейчас пуста.",
+      "continue_shopping": "Продолжить покупки"
     }
   },
   "customer": {
@@ -387,7 +424,8 @@
       "password_confirm": "Подтвердите пароль",
       "subtext": "Создайте пароль для активации учетной записи.",
       "title": "Активировать учетную запись",
-      "password": "Пароль"
+      "password": "Пароль",
+      "cancel": "Отклонить приглашение"
     },
     "account": {
       "title": "Мой счет",
@@ -395,6 +433,63 @@
       "view_addresses": "Посмотреть адреса",
       "log_out": "Выйти из системы",
       "details": "Детали счета"
+    },
+    "login": {
+      "create_account": "Создать учетную запись",
+      "email": "Электронная почта",
+      "password": "Пароль",
+      "submit": "Войти",
+      "alternate_provider_separator": "или",
+      "guest_title": "Продолжить в качестве гостя",
+      "title": "Вход в систему",
+      "forgot_password": "Забыли пароль?",
+      "guest_continue": "Продолжить",
+      "return": "Вернуться в магазин"
+    },
+    "orders": {
+      "title": "История заказов",
+      "total": "Всего",
+      "fulfillment_status": "Статус выполнения",
+      "date": "Дата",
+      "order_number": "Заказать",
+      "payment_status": "Статус платежа",
+      "order_number_link": "Номер заказа {{ number }}",
+      "none": "Вы еще не сделали ни одного заказа."
+    },
+    "order": {
+      "cancelled_reason": "Причина: {{ reason }}",
+      "cancelled_html": "Заказ отменен на {{ date }}",
+      "date_html": "Размещено на {{ date }}",
+      "billing_address": "Адрес для выставления счетов",
+      "payment_status": "Статус платежа",
+      "discounts": "Скидки",
+      "shipping_address": "Адрес доставки",
+      "fulfillment_status": "Статус выполнения",
+      "title": "Заказать {{ name }}",
+      "discount": "Скидка"
+    },
+    "addresses": {
+      "title": "Адреса",
+      "set_default": "Установить в качестве адреса по умолчанию",
+      "phone": "Телефон",
+      "delete": "Удалить",
+      "default": "По умолчанию",
+      "company": "Компания",
+      "address1": "Адрес 1",
+      "city": "Город",
+      "province": "Провинция",
+      "cancel": "Отмена",
+      "edit": "Редактировать",
+      "edit_address": "Редактировать адрес",
+      "first_name": "Имя",
+      "last_name": "Фамилия",
+      "update": "Обновить адрес",
+      "add_new": "Добавить новый адрес",
+      "country": "Страна/регион",
+      "zip": "Почтовый/ЗПИ код",
+      "address2": "Адрес 2",
+      "add": "Добавить адрес",
+      "delete_confirm": "Вы уверены, что хотите удалить этот адрес?"
     }
   },
   "collections": {
@@ -451,5 +546,30 @@
     "country_label": "Страна/регион",
     "update_language": "Обновление языка",
     "update_country": "Обновить страну/регион"
+  },
+  "blogs": {
+    "article": {
+      "read_more": "Читать далее",
+      "comments_context": "на {{ title }}",
+      "view_posts_tagged": "Показать статьи с метками {{ tag }}",
+      "all_tags": "Все",
+      "written_by_html": "на {{ author }}",
+      "read_more_context": "о {{ title }}",
+      "filter": "Фильтр"
+    },
+    "comments": {
+      "with_count": {
+        "other": "{{ count }} комментарии",
+        "one": "{{ count }} комментарий"
+      },
+      "name": "Имя",
+      "email": "Электронная почта",
+      "success": "Ваш комментарий был успешно опубликован! Спасибо!",
+      "success_moderated": "Ваш комментарий был успешно опубликован. Мы опубликуем его через некоторое время, так как наш блог проходит модерацию.",
+      "title": "Оставить комментарий",
+      "moderated": "Обратите внимание, что комментарии должны быть одобрены до их публикации.",
+      "message": "Сообщение",
+      "post": "Комментарий к посту"
+    }
   }
 }

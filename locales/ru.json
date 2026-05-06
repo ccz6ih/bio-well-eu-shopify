@@ -93,5 +93,153 @@
       "name_label": "Имя получателя (необязательно)",
       "message_label": "Сообщение (необязательно)"
     }
+  },
+  "general": {
+    "breadcrumbs": {
+      "home": "Главная",
+      "home_link_title": "Вернуться на первую страницу",
+      "collections": "Коллекции"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "Поделиться на Facebook",
+        "share_on_pinterest": "Pin on Pinterest",
+        "share_on_whatsapp": "Поделиться в WhatsApp",
+        "share_on_telegram": "Поделиться в Telegram",
+        "share_on_twitter": "Поделиться на X",
+        "share_by_email": "Поделиться по электронной почте"
+      },
+      "links": {
+        "snapchat": "Snapchat",
+        "linkedin": "LinkedIn",
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "discord": "Дискорд",
+        "line": "ЛИНИЯ",
+        "youtube": "YouTube",
+        "vimeo": "Vimeo",
+        "twitter": "X (Twitter)",
+        "pinterest": "Pinterest",
+        "tumblr": "Tumblr",
+        "tiktok": "TikTok"
+      },
+      "share_on_whatsapp": "WhatsApp",
+      "share_by_email": "Электронная почта",
+      "share_on_pinterest": "Pinterest",
+      "share_on_facebook": "Facebook",
+      "share_on_twitter": "X (Twitter)",
+      "share_on_telegram": "Telegram",
+      "social_platform": "{{ name }} на {{ platform }}"
+    },
+    "password_page": {
+      "powered_by_shopify_html": "Этот магазин будет работать на {{ shopify }}",
+      "admin_link_html": "Вы владелец магазина? <a href=\"/admin\" class=\"link\">Войдите здесь</a>",
+      "login_form_heading": "Введите пароль для входа в магазин:",
+      "login_form_password": "Пароль",
+      "login_form_submit": "Заходите на",
+      "login_form_error": "Неверный пароль!",
+      "login_password_button": "Введите пароль"
+    },
+    "accessibility": {
+      "drag": "Drag",
+      "go_to_item": "Перейти к пункту {{ index }}",
+      "link_messages": {
+        "external": "Открывает внешний веб-сайт."
+      },
+      "back_to_top": "Вернуться к началу"
+    },
+    "pagination": {
+      "show_more": "Показать еще",
+      "page": "Страница {{ number }}",
+      "previous": "Предыдущий",
+      "label": "Пагинация",
+      "next": "Следующий"
+    },
+    "404": {
+      "title": "Страница не найдена",
+      "continue_shopping": "Продолжить покупки",
+      "back_to_home": "Перейдите на главную страницу",
+      "subtext_html": "Похоже, что страница, которую вы ищете, больше не существует.<br>Попробуйте вернуться к предыдущей странице или к страницам ниже."
+    },
+    "meta": {
+      "page": "Страница {{ page }}",
+      "tags": "Tagged \"{{ tags }}\""
+    },
+    "search": {
+      "user_different_terms": "Проверьте орфографию или используйте другое слово или фразу.",
+      "results_with_count_and_term": {
+        "one": "{{ count }} найдено результатов для \"{{ terms }}\"",
+        "other": "{{ count }} найдены результаты для \"{{ terms }}\""
+      },
+      "title_results": "Результаты поиска",
+      "pages": "Страницы",
+      "results_with_count": {
+        "other": "{{ count }} результаты",
+        "one": "{{ count }} результат"
+      },
+      "title": "Поиск",
+      "suggestions": "Предложения",
+      "articles": "Статьи",
+      "placeholder": "Поиск ...",
+      "clear": "Очистить",
+      "products": "Продукция",
+      "collections": "Коллекции",
+      "no_results": "Для \"{{ terms }}\" не найдено результатов.",
+      "view_more": "Посмотреть все результаты"
+    },
+    "cart": {
+      "cart_count": {
+        "one": "{{ count }} пункт",
+        "other": "{{ count }} товары"
+      },
+      "discount": {
+        "shipping_error": "Скидки на доставку показываются при оформлении заказа после добавления адреса",
+        "placeholder": "Код скидки",
+        "remove": "Убрать скидку {{ code }}",
+        "applied": "Применяется код скидки: {{ code }}",
+        "button": "Применить",
+        "title": "Скидка",
+        "caption": "Скидка",
+        "error": "Код скидки не может быть применен к вашей корзине"
+      },
+      "note": {
+        "button": "Применить",
+        "placeholder": "Примечание к заказу",
+        "title": "Примечание к заказу",
+        "caption": "Специальные инструкции по заказу"
+      },
+      "shipping_calculator": {
+        "button": "Рассчитать",
+        "multiple_results": "Для вашего адреса существует несколько тарифов на доставку:",
+        "one_result": "Для вашего адреса действует один тариф на доставку:",
+        "error": "При получении тарифов на доставку возникла одна или несколько ошибок:",
+        "caption": "Оценка доставки",
+        "tooltip": "Доставка и налоги будут рассчитаны при оформлении заказа",
+        "not_found": "Извините, мы не отправляем товар по вашему адресу.",
+        "title": "Доставка"
+      },
+      "title": "Корзина",
+      "recently_viewed": {
+        "empty": "Недавно просмотренные страницы пусты."
+      },
+      "free_shipping": {
+        "remaining_html": "Потратьте на {{ remaining_amount }} больше, чтобы получить бесплатную доставку!",
+        "congratulations_html": "Вы имеете право на бесплатную доставку."
+      },
+      "view_cart": "Посмотреть корзину"
+    },
+    "date": {
+      "d": "d",
+      "day": "День",
+      "days": "Дни"
+    },
+    "newsletter": {
+      "label": "Введите свой e-mail",
+      "success": "Спасибо за подписку",
+      "submit": "Подписаться"
+    },
+    "drawers": {
+      "navigation": "Навигация по сайту"
+    }
   }
 }

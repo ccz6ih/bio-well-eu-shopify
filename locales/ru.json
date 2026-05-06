@@ -367,5 +367,89 @@
     "drawers": {
       "navigation": "Навигация по сайту"
     }
+  },
+  "cart": {
+    "gift_wrapping": {
+      "boolean": {
+        "true": "Да",
+        "false": "Нет"
+      },
+      "attributes": {
+        "gift_note": "Подарочная записка",
+        "gift_wrap": "Подарочная упаковка",
+        "target_product": "Для"
+      }
+    }
+  },
+  "customer": {
+    "activate_account": {
+      "submit": "Активировать учетную запись",
+      "password_confirm": "Подтвердите пароль",
+      "subtext": "Создайте пароль для активации учетной записи.",
+      "title": "Активировать учетную запись",
+      "password": "Пароль"
+    },
+    "account": {
+      "title": "Мой счет",
+      "return": "Вернуться к счету",
+      "view_addresses": "Посмотреть адреса",
+      "log_out": "Выйти из системы",
+      "details": "Детали счета"
+    }
+  },
+  "collections": {
+    "subcollections": {
+      "all_products": "Все {{ collection }}"
+    },
+    "general": {
+      "product_count_simple": {
+        "one": "{{ count }} продукт",
+        "other": "{{ count }} продукция"
+      },
+      "product_view": "Вид продукта",
+      "empty": "К сожалению, в этой коллекции нет товаров.",
+      "product_count": {
+        "other": "{{ product_count }} из {{ count }} продуктов",
+        "one": "{{ product_count }} из {{ count }} продукта"
+      },
+      "show_on_model": "Показать на модели",
+      "no_results": "Ни один продукт не соответствует этим фильтрам.",
+      "use_fewer_filters": "Используйте меньшее количество фильтров или",
+      "continue_shopping": "Продолжить покупки"
+    },
+    "filtering": {
+      "filter_and_operator_subtitle": "Соответствовать всем",
+      "view_results": "Посмотреть результаты",
+      "filter_show_button": "Показать фильтры",
+      "filter_hide_button": "Скрыть фильтры",
+      "to": "на",
+      "to_price": "К цене",
+      "clear_all": "Очистить все",
+      "filter_and_sort": "Фильтр и сортировка",
+      "from_price": "От цены",
+      "in_stock_only": "Только на складе",
+      "filter_by_label": "Фильтры",
+      "clear": "Удалить фильтр \"{{ name }}\""
+    },
+    "sorting": {
+      "sort_button": "Сортировать по",
+      "sort_by_label": "Сортировать по:"
+    }
+  },
+  "contact": {
+    "form": {
+      "send": "Отправить сообщение",
+      "phone": "Номер телефона",
+      "message": "Сообщение",
+      "name": "Имя",
+      "post_success": "Спасибо, что связались с нами. Мы свяжемся с вами как можно скорее.",
+      "email": "Электронная почта"
+    }
+  },
+  "localization": {
+    "language_label": "Язык",
+    "country_label": "Страна/регион",
+    "update_language": "Обновление языка",
+    "update_country": "Обновить страну/регион"
   }
 }

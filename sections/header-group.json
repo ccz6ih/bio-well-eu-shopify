@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "Welcome on the official UE Bio-Well store | EU-wide delivery",
+            "text": "<strong>Welcome on the official UE Bio-Well store | EU-wide delivery</strong>",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",

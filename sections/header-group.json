@@ -17,8 +17,8 @@
         "announcement-1": {
           "type": "announcement",
           "settings": {
-            "icon": "truck",
-            "text": "Free shipping on orders over €1,000 | EU-wide delivery",
+            "icon": "none",
+            "text": "Welcome on the official UE Bio-Well store | EU-wide delivery",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",

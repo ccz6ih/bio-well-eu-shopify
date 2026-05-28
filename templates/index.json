@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "heading": "Your Body's<em> Energy</em> Field",
-            "heading_size": "title-lg tracking-heading",
+            "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "half_text",
             "highlighted_scribble": "circle",
@@ -66,6 +66,9 @@
       ],
       "name": "t:sections.reveal-video-with-text-overlay.name",
       "settings": {
+        "h1_heading": "Bio-Well — Bioelectrography for Healthcare Professionals",
+        "h1_size": "title-md",
+        "h1_spacing": 10,
         "video": "shopify://files/videos/biowellfrance.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "cover_image": "shopify://shop_images/practitioners-ok-ombre.jpg",

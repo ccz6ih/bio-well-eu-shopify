@@ -157,7 +157,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "logo_h1": true,
+        "logo_h1": false,
         "menu": "main-menu",
         "menu_mobile": "footer",
         "menu_active": "block",

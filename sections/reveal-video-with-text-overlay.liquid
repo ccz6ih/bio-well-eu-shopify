@@ -151,18 +151,145 @@
  {%- endif -%}
  
  {%- when 'button' -%}
- {%- if block.settings.button_label != blank -%}
- {%- render 'button',
- label: block.settings.button_label,
- link: block.settings.button_link,
- size: block.settings.button_size,
- style: block.settings.button_style,
- external: block.settings.button_external,
- show_icon: block.settings.button_icon,
- classes: 'button--fixed',
- shopify_attributes: block.shopify_attributes
- -%}
- {%- endif -%}
+  {%- if block.settings.button_label != blank -%}
+    {%- if block.settings.button_action == 'popup' -%}
+      {%- if block.settings.button_style == 'link' -%}
+        <button type="button" class="link inline-block{% if block.settings.button_icon %} icon-with-text{% endif %} button--fixed" is="hover-link" aria-controls="Popup-{{ block.id }}" aria-expanded="false" {{ block.shopify_attributes }}>
+          <span class="link-text">{{ block.settings.button_label | escape }}</span>
+          {%- liquid
+            if block.settings.button_icon
+              render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform'
+            endif
+          -%}
+        </button>
+      {%- else -%}
+        <button type="button" class="button button--{{ block.settings.button_style | default: 'primary' }} button--{{ block.settings.button_size | default: 'md' }} button--fixed" is="hover-button" aria-controls="Popup-{{ block.id }}" aria-expanded="false" {{ block.shopify_attributes }}>
+          <span class="btn-fill" data-fill></span>
+          <span class="btn-text">
+            {%- liquid
+              echo block.settings.button_label | escape
+              if block.settings.button_icon
+                render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform'
+              endif
+            -%}
+          </span>
+        </button>
+      {%- endif -%}
+
+      {%- comment -%}
+        Determine if it's a YouTube URL and extract the video ID
+      {%- endcomment -%}
+      {%- assign is_youtube = false -%}
+      {%- assign youtube_id = '' -%}
+      {%- assign iframe_url = block.settings.button_link -%}
+
+      {%- if block.settings.button_link contains 'youtube.com' or block.settings.button_link contains 'youtu.be' or block.settings.button_link contains 'youtube-nocookie.com' -%}
+        {%- assign is_youtube = true -%}
+        {%- if block.settings.button_link contains 'youtu.be/' -%}
+          {%- assign youtube_id = block.settings.button_link | split: 'youtu.be/' | last | split: '?' | first | split: '/' | first -%}
+        {%- elsif block.settings.button_link contains 'youtube.com/embed/' -%}
+          {%- assign youtube_id = block.settings.button_link | split: 'youtube.com/embed/' | last | split: '?' | first | split: '/' | first -%}
+        {%- elsif block.settings.button_link contains 'youtube-nocookie.com/embed/' -%}
+          {%- assign youtube_id = block.settings.button_link | split: 'youtube-nocookie.com/embed/' | last | split: '?' | first | split: '/' | first -%}
+        {%- elsif block.settings.button_link contains 'youtube.com/shorts/' -%}
+          {%- assign youtube_id = block.settings.button_link | split: 'youtube.com/shorts/' | last | split: '?' | first | split: '/' | first -%}
+        {%- elsif block.settings.button_link contains 'v=' -%}
+          {%- assign youtube_id = block.settings.button_link | split: 'v=' | last | split: '&' | first -%}
+        {%- endif -%}
+        {%- assign iframe_url = 'https://www.youtube.com/embed/' | append: youtube_id | append: '?playsinline=1&autoplay=1&enablejsapi=1' -%}
+      {%- endif -%}
+
+      {%- capture popup_content -%}
+        <overlay-element class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none" aria-controls="Popup-{{ block.id }}" aria-expanded="false"></overlay-element>
+        <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden">
+          <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative" tabindex="0">
+            <span class="drawer__title heading title-md">{{ block.settings.popup_heading | default: block.settings.button_label | escape }}</span>
+            <button class="button button--secondary button--close drawer__close flex items-center justify-center" type="button" is="hover-button" aria-controls="Popup-{{ block.id }}" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}">
+              <span class="btn-fill" data-fill></span>
+              <span class="btn-text">
+                {%- render 'icon', icon: 'close', size: 'sm' -%}
+              </span>
+            </button>
+          </gesture-element>
+          <div class="drawer__content opacity-0 invisible flex flex-col h-full grow shrink">
+            <div class="drawer__scrollable relative flex flex-col gap-5 md:gap-7 grow shrink" style="padding-bottom: var(--sp-6);">
+              <iframe-popup data-src="{{ iframe_url }}" class="w-full h-full block{% if is_youtube %} is-video{% endif %}">
+                <iframe src="about:blank" class="w-full border-0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+              </iframe-popup>
+            </div>
+          </div>
+        </div>
+      {%- endcapture -%}
+
+      <x-modal id="Popup-{{ block.id }}" class="x-modal drawer z-30 fixed bottom-0 left-0 h-full w-full pointer-events-none"
+        role="dialog"
+        aria-modal="true"
+        aria-label="{{ block.settings.popup_heading | default: block.settings.button_label | escape }}"
+        hidden
+      >
+        {{- popup_content -}}
+      </x-modal>
+
+      <style>
+        iframe-popup.is-video iframe {
+          aspect-ratio: 16 / 9;
+          width: 100%;
+          height: auto;
+        }
+        iframe-popup:not(.is-video) iframe {
+          width: 100%;
+          height: 600px;
+          max-height: 70vh;
+        }
+      </style>
+
+      <script>
+        if (!customElements.get('iframe-popup')) {
+          class IframePopup extends HTMLElement {
+            connectedCallback() {
+              this.modal = this.closest('x-modal, drawer-element');
+              if (this.modal) {
+                this.onToggle = this.handleToggle.bind(this);
+                this.modal.addEventListener('toggle', this.onToggle);
+              }
+              this.iframe = this.querySelector('iframe');
+              this.src = this.getAttribute('data-src');
+            }
+
+            disconnectedCallback() {
+              if (this.modal) {
+                this.modal.removeEventListener('toggle', this.onToggle);
+              }
+            }
+
+            handleToggle() {
+              if (this.modal.hasAttribute('open')) {
+                if (this.iframe && this.iframe.src !== this.src) {
+                  this.iframe.src = this.src;
+                }
+              } else {
+                if (this.iframe && this.iframe.src !== 'about:blank') {
+                  this.iframe.src = 'about:blank';
+                }
+              }
+            }
+          }
+          customElements.define('iframe-popup', IframePopup);
+        }
+      </script>
+    {%- else -%}
+      {%- render 'button',
+        label: block.settings.button_label,
+        link: block.settings.button_link,
+        size: block.settings.button_size,
+        style: block.settings.button_style,
+        external: block.settings.button_external,
+        show_icon: block.settings.button_icon,
+        classes: 'button--fixed',
+        shopify_attributes: block.shopify_attributes
+      -%}
+    {%- endif -%}
+  {%- endif -%}
  
  {%- when 'link' -%}
  {%- if block.settings.label != blank -%}
@@ -886,6 +1013,28 @@
  "type": "url",
  "id": "button_link",
  "label": "t:sections.global.settings.button_link.label"
+ },
+ {
+ "type": "select",
+ "id": "button_action",
+ "options": [
+ {
+ "value": "link",
+ "label": "Ouvrir le lien"
+ },
+ {
+ "value": "popup",
+ "label": "Ouvrir dans un popup"
+ }
+ ],
+ "default": "link",
+ "label": "Action du bouton"
+ },
+ {
+ "type": "text",
+ "id": "popup_heading",
+ "label": "Titre du popup",
+ "visible_if": "{{ block.settings.button_action == 'popup' }}"
  },
  {
  "type": "select",

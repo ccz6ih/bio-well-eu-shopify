@@ -345,7 +345,7 @@
         "subheading_YJ7GpK": {
           "type": "subheading",
           "settings": {
-            "subheading": "Measure What Matters",
+            "subheading": "Science, Information & Spirit — Barcelona",
             "subheading_size": "subtitle-md",
             "secondary_color": true
           }
@@ -353,7 +353,7 @@
         "heading_eE7kV7": {
           "type": "heading",
           "settings": {
-            "heading": "Your Body's<em> Energy</em> Field",
+            "heading": "30 Years of GDV Technology Celebration",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "half_text",
@@ -364,7 +364,7 @@
         "text_6kgqR4": {
           "type": "text",
           "settings": {
-            "text": "<p><br/>The only biofield assessment system validated by 400+ scientific publications and used by wellness and health professionals across 65 countries.</p>",
+            "text": "<p>October 3-5, 2026 • International experts, cutting-edge research, and exclusive access to new technology.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -379,7 +379,7 @@
         "button_NMYdeJ": {
           "type": "button",
           "settings": {
-            "button_label": "Book a Free Demo",
+            "button_label": "Register Now — €390 Online | €525 In-Person",
             "button_link": "https://share-eu1.hsforms.com/1oMu3i2zdS-a3zWveDXAqZQf2gml",
             "button_style": "primary",
             "button_size": "md",
@@ -394,10 +394,9 @@
         "text_6kgqR4",
         "button_NMYdeJ"
       ],
-      "disabled": true,
       "name": "t:sections.reveal-video-with-text-overlay.name",
       "settings": {
-        "h1_heading": "Bio-Well — Bioelectrography for Healthcare Professionals",
+        "h1_heading": "Join the Global Bio-Well Community in Barcelona",
         "h1_size": "title-md",
         "h1_spacing": 10,
         "video": "shopify://files/videos/congrès-SIS_V3.mp4",

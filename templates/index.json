@@ -815,6 +815,12 @@
     "video_with_text_PbBHpa": {
       "type": "video-with-text",
       "blocks": {
+        "liquid_xYBAVp": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- Bouton déclencheur -->\n<button onclick=\"document.getElementById('video-popup').style.display='flex'\" \n  style=\"cursor:pointer; background:#fff; color:#000; border:none; padding:14px 28px; font-size:16px; font-weight:600; border-radius:4px;\">\n  ▶ Voir la vidéo\n</button>\n\n<!-- Popup -->\n<div id=\"video-popup\" style=\"display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; align-items:center; justify-content:center;\">\n  <div style=\"position:relative; width:90%; max-width:900px; aspect-ratio:16/9;\">\n    <iframe id=\"video-iframe\"\n      src=\"https://www.youtube.com/embed/Q2vTWzNQMFQ?autoplay=1&mute=0\"\n      style=\"width:100%; height:100%; border:none;\"\n      allow=\"autoplay; fullscreen\">\n    </iframe>\n    <button onclick=\"document.getElementById('video-popup').style.display='none'; document.getElementById('video-iframe').src=document.getElementById('video-iframe').src;\"\n      style=\"position:absolute; top:-40px; right:0; background:none; border:none; color:#fff; font-size:28px; cursor:pointer;\">✕</button>\n  </div>\n</div>"
+          }
+        },
         "text_RBga9z": {
           "type": "text",
           "settings": {
@@ -843,6 +849,7 @@
         }
       },
       "block_order": [
+        "liquid_xYBAVp",
         "text_RBga9z",
         "button_Wi9KUc"
       ],

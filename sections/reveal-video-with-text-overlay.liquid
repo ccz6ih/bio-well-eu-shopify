@@ -201,19 +201,19 @@
 
       {%- capture popup_content -%}
         <overlay-element class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none" aria-controls="Popup-{{ block.id }}" aria-expanded="false"></overlay-element>
-        <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden">
-          <gesture-element class="drawer__header flex justify-end opacity-0 invisible relative" tabindex="0">
-            <button class="button button--secondary button--close drawer__close flex items-center justify-center" type="button" is="hover-button" aria-controls="Popup-{{ block.id }}" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}">
+        <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden" style="{% if is_youtube %}background: transparent; box-shadow: none;{% endif %}">
+          <gesture-element class="drawer__header opacity-0 invisible absolute top-0 right-0 z-20 flex justify-end w-full pointer-events-none" style="border: 0; padding: 0;" tabindex="0">
+            <button class="button button--secondary button--close drawer__close drawer__close-btn pointer-events-auto flex items-center justify-center" type="button" is="hover-button" aria-controls="Popup-{{ block.id }}" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}" style="margin: 15px;">
               <span class="btn-fill" data-fill></span>
-              <span class="btn-text">
+              <span class="btn-text" style="color: #fff;">
                 {%- render 'icon', icon: 'close', size: 'sm' -%}
               </span>
             </button>
           </gesture-element>
           <div class="drawer__content opacity-0 invisible flex flex-col h-full grow shrink">
-            <div class="drawer__scrollable relative flex flex-col gap-5 md:gap-7 grow shrink" style="padding-bottom: var(--sp-6);">
-              <iframe-popup data-src="{{ iframe_url }}" class="w-full h-full block{% if is_youtube %} is-video{% endif %}">
-                <iframe src="about:blank" class="w-full border-0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+            <div class="drawer__scrollable relative flex flex-col grow shrink" style="padding: 0;">
+              <iframe-popup data-src="{{ iframe_url }}" class="w-full h-full block{% if is_youtube %} is-video{% endif %}" style="padding: 0 !important; margin: 0 !important;">
+                <iframe src="about:blank" class="w-full border-0 block" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
               </iframe-popup>
             </div>
           </div>
@@ -230,15 +230,43 @@
       </x-modal>
 
       <style>
+        iframe-popup {
+          display: block;
+          width: 100%;
+          line-height: 0;
+        }
         iframe-popup.is-video iframe {
           aspect-ratio: 16 / 9;
           width: 100%;
           height: auto;
+          border-radius: var(--rounded-block, 12px);
+          box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
         }
         iframe-popup:not(.is-video) iframe {
           width: 100%;
           height: 600px;
-          max-height: 70vh;
+          max-height: 75vh;
+          border-radius: var(--rounded-block, 8px);
+        }
+        .drawer__close-btn {
+          background: rgba(0, 0, 0, 0.5) !important;
+          border: none !important;
+          backdrop-filter: blur(4px);
+          transition: background 0.3s ease, transform 0.2s ease !important;
+          border-radius: 50% !important;
+          width: 40px !important;
+          height: 40px !important;
+          padding: 0 !important;
+        }
+        .drawer__close-btn:hover {
+          background: rgba(0, 0, 0, 0.8) !important;
+          transform: scale(1.05);
+        }
+        .drawer__close-btn svg {
+          stroke: #ffffff !important;
+          fill: #ffffff !important;
+          width: 16px;
+          height: 16px;
         }
       </style>
 

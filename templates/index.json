@@ -51,6 +51,8 @@
           "settings": {
             "button_label": "Book a Free Demo",
             "button_link": "https://share-eu1.hsforms.com/1oMu3i2zdS-a3zWveDXAqZQf2gml",
+            "button_action": "link",
+            "popup_heading": "",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,
@@ -380,7 +382,9 @@
           "type": "button",
           "settings": {
             "button_label": "Register Now — €390 Online | €525 In-Person",
-            "button_link": "https://share-eu1.hsforms.com/1oMu3i2zdS-a3zWveDXAqZQf2gml",
+            "button_link": "https://youtu.be/Q2vTWzNQMFQ?si=RPjpA2boCbOxxely",
+            "button_action": "popup",
+            "popup_heading": "Test titre",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,
@@ -394,7 +398,6 @@
         "text_6kgqR4",
         "button_NMYdeJ"
       ],
-      "disabled": true,
       "name": "t:sections.reveal-video-with-text-overlay.name",
       "settings": {
         "h1_heading": "Join the Global Bio-Well Community in Barcelona",

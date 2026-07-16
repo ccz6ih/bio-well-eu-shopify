@@ -18,13 +18,13 @@
  sizes: '100vw',
  video: section.settings.video_mobile,
  video_url: section.settings.video_url_mobile,
- muted: true,
- autoplay: true,
+ muted: false,
+ autoplay: false,
  loop: true,
- controls: false,
+ controls: true,
  description: section.settings.description,
  cover_image: section.settings.cover_image_mobile,
- show_play_button: false,
+ show_play_button: true,
  is_mobile: true,
  class: 'banner__media media media--height w-full h-full block relative overflow-hidden'
  -%}
@@ -34,13 +34,13 @@
  sizes: '100vw',
  video: section.settings.video,
  video_url: section.settings.video_url,
- muted: true,
- autoplay: true,
+ muted: false,
+ autoplay: false,
  loop: true,
- controls: false,
+ controls: true,
  description: section.settings.description,
  cover_image: section.settings.cover_image,
- show_play_button: false,
+ show_play_button: true,
  class: 'banner__media media media--height w-full h-full block relative overflow-hidden'
  -%}
 
@@ -88,7 +88,7 @@
  
  {%- when 'text' -%}
  {%- if block.settings.text != blank -%}
- <div class="rte {{ block.settings.text_font }} {{ block.settings.text_size }}{% if block.settings.text_font == 'subtitle' %} uppercase leading-tight tracking-widest{% else %} leading-normal{% endif %}{% if block.settings.secondary_color %} text-opacity{% endif %}"{% if block.settings.text_size == 'subtext-custom' %} style="--subtext-size: {{ block.settings.text_max_size }}px;--subtext-line-height: {{ block.settings.text_line_height }};--subtext-letter-spacing: {{ block.settings.text_letter_spacing | divided_by: 1000.00 }}em;{% if block.settings.text_capitalize %}--subtext-text-transform: uppercase;{% endif %}"{% endif %} {{ block.shopify_attributes }}>
+ <div class="rte {{ block.settings.text_font }} {{ block.settings.text_size }}{% if block.settings.text_font == 'subtitle' %} uppercase leading-tight tracking-widest{% else %} leading-normal{% endif %}{% if block.settings.text_secondary_color %} text-opacity{% endif %}"{% if block.settings.text_size == 'subtext-custom' %} style="--subtext-size: {{ block.settings.text_max_size }}px;--subtext-line-height: {{ block.settings.text_line_height }};--subtext-letter-spacing: {{ block.settings.text_letter_spacing | divided_by: 1000.00 }}em;{% if block.settings.text_capitalize %}--subtext-text-transform: uppercase;{% endif %}"{% endif %} {{ block.shopify_attributes }}>
  {%- render 'highlighted-text', content: block.settings.text, style: block.settings.highlighted_text, scribble: block.settings.highlighted_scribble, gradient: with_gradient -%}
  </div>
  {%- endif -%}

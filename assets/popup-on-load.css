@@ -215,6 +215,9 @@
   bottom: 1rem;
 }
 
+body.has-modal-open #shopify-chat{
+  display: none!important;
+}
 @media (prefers-reduced-motion: reduce) {
   .popup-on-load .drawer__inner {
     transform: none;

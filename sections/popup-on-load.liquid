@@ -6,7 +6,7 @@
   endif
 -%}
 
-{%- if show_section and section.settings.mode == 'disable' -%}
+{%- if show_section and section.settings.mode != 'disable' -%}
   <style>
     #shopify-section-{{ section.id }} {
       {%- render 'section-variables', section: section -%}

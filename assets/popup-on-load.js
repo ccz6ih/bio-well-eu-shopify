@@ -5,7 +5,7 @@ if (!customElements.get('popup-modal')) {
       constructor() {
         super();
 
-        this.cookieName = 'concept:popup-on-load';
+        this.storageKey = 'concept:popup-on-load:seen';
         this.classes = {
           open: 'is-open',
           visible: 'is-visible',
@@ -16,8 +16,6 @@ if (!customElements.get('popup-modal')) {
         if (window.location.pathname === '/challenge') return;
 
         this.testMode = this.getAttribute('data-test-mode') === 'true';
-        this.delay = this.hasAttribute('data-delay') ? parseInt(this.getAttribute('data-delay'), 10) : 0;
-        this.expiry = this.hasAttribute('data-expiry') ? parseInt(this.getAttribute('data-expiry'), 10) : 7;
 
         this.overlay = this.querySelector('overlay-element');
         this.closer = this.querySelector('.drawer__close');
@@ -44,19 +42,17 @@ if (!customElements.get('popup-modal')) {
         }
 
         if (this.shouldShow()) {
-          this.scheduleShow();
+          this.show();
         }
       }
 
       shouldShow() {
-        return this.testMode || !this.getCookie(this.cookieName);
-      }
-
-      scheduleShow() {
-        if (this.delay <= 0) {
-          this.show();
-        } else {
-          setTimeout(() => this.show(), this.delay * 1000);
+        if (this.testMode) return true;
+        try {
+          return window.sessionStorage.getItem(this.storageKey) === null;
+        } catch (e) {
+          // sessionStorage may be unavailable (e.g. private mode in some browsers)
+          return true;
         }
       }
 
@@ -97,9 +93,9 @@ if (!customElements.get('popup-modal')) {
         this.addEventListener('transitionend', onTransitionEnd);
 
         if (this.testMode) {
-          this.removeCookie(this.cookieName);
+          this.clearSessionFlag();
         } else {
-          this.setCookie(this.cookieName, this.expiry);
+          this.markSessionSeen();
         }
       }
 
@@ -156,17 +152,20 @@ if (!customElements.get('popup-modal')) {
         });
       }
 
-      getCookie(name) {
-        const match = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
-        return match ? match[2] : null;
+      markSessionSeen() {
+        try {
+          window.sessionStorage.setItem(this.storageKey, '1');
+        } catch (e) {
+          /* ignore */
+        }
       }
 
-      setCookie(name, days) {
-        document.cookie = name + '=true; max-age=' + (days * 24 * 60 * 60) + '; path=/';
-      }
-
-      removeCookie(name) {
-        document.cookie = name + '=; max-age=0';
+      clearSessionFlag() {
+        try {
+          window.sessionStorage.removeItem(this.storageKey);
+        } catch (e) {
+          /* ignore */
+        }
       }
     }
   );

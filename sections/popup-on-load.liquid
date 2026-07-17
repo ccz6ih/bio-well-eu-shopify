@@ -1,12 +1,4 @@
-{%- liquid
-  assign show_section = true
-
-  if section.settings.only_homepage and request.page_type != 'index'
-    assign show_section = false
-  endif
--%}
-
-{%- if show_section and section.settings.mode != 'disable' -%}
+{%- if section.settings.mode != 'disable' -%}
   <style>
     #shopify-section-{{ section.id }} {
       {%- render 'section-variables', section: section -%}
@@ -22,8 +14,6 @@
   <script src="{{ 'popup-on-load.js' | asset_url }}" defer="defer"></script>
 
   <popup-modal id="PopupOnLoad-{{ section.id }}" class="popup-on-load x-modal drawer z-35 fixed bottom-0 left-0 h-full w-full pointer-events-none"
-    data-delay="{{ section.settings.delay }}"
-    data-expiry="{{ section.settings.expiry }}"
     data-test-mode="{% if section.settings.mode == 'testing' %}true{% else %}false{% endif %}"
     role="dialog"
     aria-labelledby="PopupOnLoad-{{ section.id }}-Heading"
@@ -193,32 +183,6 @@
       "default": "enabled",
       "label": "Mode",
       "info": "Test mode always shows the popup, ignoring the cookie."
-    },
-    {
-      "type": "checkbox",
-      "id": "only_homepage",
-      "label": "Show only on homepage",
-      "default": true
-    },
-    {
-      "type": "range",
-      "id": "delay",
-      "max": 30,
-      "min": 0,
-      "step": 1,
-      "unit": "s",
-      "label": "Delay before showing",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "expiry",
-      "max": 30,
-      "min": 1,
-      "step": 1,
-      "unit": "d",
-      "label": "Don't show again for",
-      "default": 7
     },
     {
       "type": "header",

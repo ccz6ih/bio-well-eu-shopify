@@ -174,7 +174,7 @@
         "accordion_menu_mobile": false,
         "show_social": true,
         "enable_language_selector": true,
-        "enable_country_selector": true,
+        "enable_country_selector": false,
         "transparent_color_text": "#ffffff",
         "color_text": "#0649a0",
         "color_background": "#ffffff",

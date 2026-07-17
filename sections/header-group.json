@@ -159,7 +159,7 @@
       "settings": {
         "logo_h1": false,
         "menu": "main-menu",
-        "menu_mobile": "footer",
+        "menu_mobile": "main-menu",
         "menu_active": "block",
         "hover_menu": true,
         "header_layout": "left-center",

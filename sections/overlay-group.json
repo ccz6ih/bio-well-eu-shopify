@@ -417,7 +417,7 @@
       ],
       "name": "Popup on load",
       "settings": {
-        "mode": "disable",
+        "mode": "enabled",
         "only_homepage": false,
         "delay": 0,
         "expiry": 20,

@@ -16411,3 +16411,10 @@ shopify-account::part(dialog) .account__heading {
 .header shopify-account {
   --shopify-account-signed-in-avatar-size: var(--sp-6);
 }
+
+@media (max-width:  1540px) and (min-width: 1024px ){
+  .header__menu>ul .menu__item{
+    font-size: 14px!important;
+    padding-inline: 15px;
+  }
+}

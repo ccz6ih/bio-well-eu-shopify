@@ -233,4 +233,7 @@ body.has-modal-open #shopify-chat{
         opacity: 1;
         pointer-events: auto;
     }
+    .popup__grid.with-media{
+      min-height: 500px;
+    }
 }

@@ -431,10 +431,10 @@
         "video_controls": true,
         "show_play_button": true,
         "content_width": "medium",
-        "content_position": "md:items-center md:justify-center",
+        "content_position": "md:items-center md:justify-start",
         "content_position_mobile": "items-end justify-center",
-        "text_alignment": "center",
-        "text_alignment_mobile": "center",
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
         "overlay_opacity": 40
       }
     }

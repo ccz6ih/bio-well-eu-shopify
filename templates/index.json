@@ -340,90 +340,6 @@
         "parallax_direction": "vertical"
       }
     },
-    "reveal_video_with_text_overlay_xYK4eL": {
-      "type": "reveal-video-with-text-overlay",
-      "blocks": {
-        "subheading_YJ7GpK": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Science, Information & Spirit — Barcelona",
-            "subheading_size": "subtitle-md",
-            "secondary_color": true
-          }
-        },
-        "heading_eE7kV7": {
-          "type": "heading",
-          "settings": {
-            "heading": "30 Years of GDV Technology Celebration",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "half_text",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": true
-          }
-        },
-        "text_6kgqR4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>October 3-5, 2026 • International experts, cutting-edge research, and exclusive access to new technology.</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_NMYdeJ": {
-          "type": "button",
-          "settings": {
-            "button_label": "Register Now — €390 Online | €525 In-Person",
-            "button_link": "https://youtu.be/Q2vTWzNQMFQ?si=RPjpA2boCbOxxely",
-            "button_action": "popup",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "subheading_YJ7GpK",
-        "heading_eE7kV7",
-        "text_6kgqR4",
-        "button_NMYdeJ"
-      ],
-      "disabled": true,
-      "name": "t:sections.reveal-video-with-text-overlay.name",
-      "settings": {
-        "h1_heading": "Join the Global Bio-Well Community in Barcelona",
-        "h1_size": "title-md",
-        "h1_spacing": 25,
-        "video_url": "https://www.youtube.com/watch?v=Q2vTWzNQMFQ&autoplay=0",
-        "cover_image": "shopify://shop_images/practitioners-ok-ombre.jpg",
-        "description": "",
-        "content_width": "small",
-        "content_position": "md:items-center md:justify-start",
-        "text_alignment": "left",
-        "video_url_mobile": "https://www.youtube.com/watch?v=Q2vTWzNQMFQ&autoplay=0",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 51,
-        "enable_parallax": true
-      }
-    },
     "multicolumn_trPyD8": {
       "type": "multicolumn",
       "blocks": {
@@ -1798,7 +1714,6 @@
     "image_with_text_ADmrfV",
     "multicolumn_with_icons_geQQWb",
     "slideshow_emKJn7",
-    "reveal_video_with_text_overlay_xYK4eL",
     "multicolumn_trPyD8",
     "image-comparison",
     "images_with_text_overlay_Fc78Ud",

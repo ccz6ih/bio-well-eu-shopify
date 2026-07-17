@@ -396,6 +396,7 @@
         "text_GDFEWe",
         "button_eqRpEm"
       ],
+      "disabled": true,
       "name": "t:sections.reveal-video-with-text-overlay.name",
       "settings": {
         "h1_heading": "Join the Global Bio-Well Community in Barcelona",

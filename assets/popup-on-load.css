@@ -78,7 +78,7 @@
 }
 
 .popup__grid.with-media {
-  min-height: 600px;
+  min-height: 650px;
   flex-direction: row;
   align-items: stretch;
   position: relative;

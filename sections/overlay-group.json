@@ -418,9 +418,11 @@
       "name": "Popup on load",
       "settings": {
         "mode": "enabled",
-        "only_homepage": true,
+        "only_homepage": false,
         "delay": 0,
         "expiry": 7,
+        "video_url": "",
+        "video_url_mobile": "",
         "description": "",
         "video_autoplay": true,
         "video_loop": true,

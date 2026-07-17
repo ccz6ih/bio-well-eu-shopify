@@ -223,3 +223,13 @@ body.has-modal-open #shopify-chat{
     transform: none;
   }
 }
+
+@media screen and (max-width: 639px) {
+    .js [data-modal-swipe-only] .popup-on-load .drawer__close {
+        width: 2rem;
+        height: 2rem;
+        /* pointer-events: none; */
+        inset-block-start: 1rem;
+        inset-inline-end: 1rem;
+    }
+}

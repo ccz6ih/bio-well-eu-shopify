@@ -44,7 +44,7 @@
       </gesture-element>
 
       <div class="drawer__content relative">
-        <div class="popup__grid page-width w-full h-full flex md:items-center md:justify-start items-end justify-start {% if section.settings.image or section.settings.video or section.settings.video_url or section.settings.video_mobile or section.settings.video_url_mobile %} with-media{% endif %}">
+        <div class="popup__grid flex md:items-center md:justify-start items-end justify-start {% if section.settings.image or section.settings.video or section.settings.video_url or section.settings.video_mobile or section.settings.video_url_mobile %} with-media{% endif %}">
           <div class="popup__body {{ section.settings.content_position_mobile }} {{ section.settings.content_position }}">
             <div class="popup__box popup__box--{{ section.settings.content_width }} md:text-{{ section.settings.text_alignment }} text-{{ section.settings.text_alignment_mobile }}">
               {%- liquid

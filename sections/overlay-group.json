@@ -417,7 +417,7 @@
       ],
       "name": "Popup on load",
       "settings": {
-        "mode": "testing",
+        "mode": "enabled",
         "video_url": "https://youtu.be/Q2vTWzNQMFQ?si=aHfWHYQEvEc4O5nD",
         "video_url_mobile": "https://youtu.be/Q2vTWzNQMFQ?si=aHfWHYQEvEc4O5nD",
         "cover_image": "shopify://shop_images/hqdefault.jpg",

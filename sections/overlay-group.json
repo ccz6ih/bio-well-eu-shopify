@@ -420,7 +420,7 @@
         "mode": "enabled",
         "only_homepage": false,
         "delay": 0,
-        "expiry": 7,
+        "expiry": 1,
         "video_url": "",
         "video_url_mobile": "",
         "description": "",

@@ -363,7 +363,7 @@
           "type": "heading",
           "settings": {
             "heading": "Join the Global Bio-Well Community in Barcelona",
-            "heading_size": "title-lg tracking-heading",
+            "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_reveal": false
@@ -381,7 +381,7 @@
           "type": "heading",
           "settings": {
             "heading": "30 Years of GDV Technology Celebration",
-            "heading_size": "title-lg tracking-heading",
+            "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_reveal": false
@@ -417,10 +417,10 @@
       ],
       "name": "Popup on load",
       "settings": {
-        "mode": "disable",
+        "mode": "enabled",
         "only_homepage": false,
         "delay": 0,
-        "expiry": 20,
+        "expiry": 1,
         "video_url": "https://youtu.be/Q2vTWzNQMFQ?si=aHfWHYQEvEc4O5nD",
         "video_url_mobile": "https://youtu.be/Q2vTWzNQMFQ?si=aHfWHYQEvEc4O5nD",
         "cover_image": "shopify://shop_images/ca38fcf0-889d-4136-850b-e90aff874482-2026-04-20.jpg",

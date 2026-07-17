@@ -420,7 +420,7 @@
         "mode": "enabled",
         "only_homepage": false,
         "delay": 0,
-        "expiry": 1,
+        "expiry": 20,
         "video_url": "https://youtu.be/Q2vTWzNQMFQ?si=aHfWHYQEvEc4O5nD",
         "video_url_mobile": "https://youtu.be/Q2vTWzNQMFQ?si=aHfWHYQEvEc4O5nD",
         "description": "",

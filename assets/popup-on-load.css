@@ -21,7 +21,7 @@
 .popup-on-load .drawer__close {
   pointer-events: auto;
   color: rgb(var(--color-drawer-text));
-  background-color: transparent;
+  background-color: white;
 }
 
 /*.popup-on-load .drawer__close .btn-text {

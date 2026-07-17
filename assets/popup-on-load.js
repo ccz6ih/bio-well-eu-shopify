@@ -83,6 +83,9 @@ if (!customElements.get('popup-modal')) {
         this.removeAttribute('active');
         document.body.classList.remove('has-modal-open');
 
+        // Stop all videos in the popup (native + YouTube/Vimeo iframes)
+        this.pauseAllMedia();
+
         const onTransitionEnd = (event) => {
           if (event.target !== this) return;
           this.classList.remove(this.classes.open);
@@ -98,6 +101,59 @@ if (!customElements.get('popup-modal')) {
         } else {
           this.setCookie(this.cookieName, this.expiry);
         }
+      }
+
+      pauseAllMedia() {
+        // Native HTML5 <video> elements
+        this.querySelectorAll('video').forEach((video) => {
+          try {
+            video.pause();
+            video.currentTime = 0;
+          } catch (e) {
+            /* ignore */
+          }
+        });
+
+        // <video-media> custom elements — reset so the template re-clicks the play button
+        this.querySelectorAll('video-media').forEach((media) => {
+          try {
+            const innerVideo = media.querySelector('video');
+            if (innerVideo) {
+              innerVideo.pause();
+              innerVideo.currentTime = 0;
+            }
+            // Reset the custom element to its poster state
+            if (typeof media.reset === 'function') {
+              media.reset();
+            } else {
+              media.setAttribute('inert', '');
+              media.removeAttribute('inert');
+            }
+          } catch (e) {
+            /* ignore */
+          }
+        });
+
+        // YouTube / Vimeo iframes — postMessage to stop playback
+        this.querySelectorAll('iframe').forEach((iframe) => {
+          const src = iframe.src || '';
+          try {
+            if (src.includes('youtube.com') || src.includes('youtu.be')) {
+              iframe.contentWindow.postMessage(
+                JSON.stringify({ event: 'command', func: 'stopVideo', args: '' }),
+                '*'
+              );
+              iframe.contentWindow.postMessage(
+                JSON.stringify({ event: 'command', func: 'pauseVideo', args: '' }),
+                '*'
+              );
+            } else if (src.includes('vimeo.com')) {
+              iframe.contentWindow.postMessage({ method: 'pause' }, '*');
+            }
+          } catch (e) {
+            /* ignore cross-origin errors */
+          }
+        });
       }
 
       getCookie(name) {

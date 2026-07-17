@@ -144,9 +144,9 @@
 .popup__media .deferred-media,
 .popup__media video-media,
 .popup__media .banner__media {
-  display: block;
+  /*display: block;
   width: 100%;
-  height: 100%;
+  height: 100%;*/
 }
 
 .popup__media iframe,

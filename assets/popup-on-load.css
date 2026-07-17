@@ -31,7 +31,7 @@
 .popup-on-load .drawer__inner {
   position: static;
   height: auto!important;
-  max-height: 90vh!important;
+  max-height: 85vh!important;
   max-width: 90%!important;
   width: 100%!important;
   margin-inline: var(--gap-padding);

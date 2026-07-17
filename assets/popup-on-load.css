@@ -10,7 +10,7 @@
 .popup-on-load .drawer__header {
   border-block-end: 0;
   padding-block-end: 0;
-  z-index: 1;
+  z-index: 111;
   position: absolute;
   inset-block-start: 0;
   inset-inline-end: 0;
@@ -24,16 +24,16 @@
   background-color: transparent;
 }
 
-.popup-on-load .drawer__close .btn-text {
+/*.popup-on-load .drawer__close .btn-text {
   color: rgb(var(--color-drawer-text));
-}
+}*/
 
 .popup-on-load .drawer__inner {
   position: static;
-  height: auto;
-  max-height: 90vh;
-  max-width: 90%;
-  width: 100%;
+  height: auto!important;
+  max-height: 90vh!important;
+  max-width: 90%!important;
+  width: 100%!important;
   margin-inline: var(--gap-padding);
   border-radius: var(--rounded-block);
   background-color: rgb(var(--color-drawer-background));
@@ -45,6 +45,7 @@
   transform: scale(0.92);
   transition: opacity 0.3s ease, transform 0.3s ease;
   pointer-events: auto;
+  margin: auto;
 }
 
 .popup-on-load[active] > .drawer__inner {
@@ -77,8 +78,10 @@
 }
 
 .popup__grid.with-media {
-  flex-direction: column;
   min-height: 900px;
+  flex-direction: row;
+  align-items: stretch;
+  position: relative;
 }
 
 .popup__body {
@@ -86,23 +89,18 @@
   width: 100%;
   padding: var(--sp-6) var(--sp-5);
   box-sizing: border-box;
-  position: re;
+  position: relative;
   z-index: 11;
 }
 
 @media screen and (min-width: 768px) {
-  .popup__grid.with-media {
-    flex-direction: row;
-    align-items: stretch;
-  }
-
   .popup__body {
-    flex: 0 0 50%;
     padding: var(--sp-9) var(--sp-8);
+    width: 900px;
+    max-width: 100%;
   }
 
   .popup__media {
-    flex: 0 0 50%;
     order: 2;
   }
 }
@@ -135,7 +133,7 @@
 
 /* Media (video/image) */
 .popup__media {
-  width: 100%;
+  width: 100px;
   min-height: 16rem;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.05);
@@ -208,6 +206,13 @@
   --color-button-background: 7 89 181;
   --color-button-gradient: 7 89 181;
   --color-button-border: 7 89 181;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-on-load-section .play-button{
+  margin-top: auto;
+  bottom: 1rem;
 }
 
 @media (prefers-reduced-motion: reduce) {

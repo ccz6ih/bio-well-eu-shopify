@@ -418,6 +418,13 @@
       "name": "Popup on load",
       "settings": {
         "mode": "enabled",
+        "exclude_index": false,
+        "exclude_product": false,
+        "exclude_collection": false,
+        "exclude_cart": false,
+        "exclude_blog": false,
+        "exclude_article": false,
+        "exclude_paths": "/products/sis-congress-ticket-online-access-science-information-spirit-2026, /products/sis-congress-ticket",
         "video_url": "https://youtu.be/Q2vTWzNQMFQ?si=aHfWHYQEvEc4O5nD",
         "video_url_mobile": "https://youtu.be/Q2vTWzNQMFQ?si=aHfWHYQEvEc4O5nD",
         "cover_image": "shopify://shop_images/hqdefault.jpg",

@@ -95,14 +95,12 @@
     #shopify-section-{{ section.id }} {
       {%- render 'section-variables', section: section -%}
     }
+    popup-modal:not([active]) {
+      display: none !important;
+    }
   </style>
 
-  {%- unless request.design_mode -%}
-    <link rel="stylesheet" href="{{ 'popup-on-load.css' | asset_url }}" media="print" onload="this.media='all'">
-    <noscript>{{ 'popup-on-load.css' | asset_url | stylesheet_tag }}</noscript>
-  {%- else -%}
-    {{ 'popup-on-load.css' | asset_url | stylesheet_tag }}
-  {%- endunless -%}
+  {{ 'popup-on-load.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'popup-on-load.js' | asset_url }}" defer="defer"></script>
 
   <popup-modal id="PopupOnLoad-{{ section.id }}" class="popup-on-load x-modal drawer z-35 fixed bottom-0 left-0 h-full w-full pointer-events-none"

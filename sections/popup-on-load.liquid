@@ -1,4 +1,78 @@
-{%- if section.settings.mode != 'disable' -%}
+{%- liquid
+  assign show_popup = true
+  if section.settings.mode == 'disable'
+    assign show_popup = false
+  endif
+
+  if section.settings.exclude_index and template.name == 'index'
+    assign show_popup = false
+  endif
+  if section.settings.exclude_product and template.name == 'product'
+    assign show_popup = false
+  endif
+  if section.settings.exclude_collection and template.name == 'collection'
+    assign show_popup = false
+  endif
+  if section.settings.exclude_cart and template.name == 'cart'
+    assign show_popup = false
+  endif
+  if section.settings.exclude_blog and template.name == 'blog'
+    assign show_popup = false
+  endif
+  if section.settings.exclude_article and template.name == 'article'
+    assign show_popup = false
+  endif
+
+  if section.settings.exclude_paths != blank and show_popup
+    assign current_path = request.path
+    assign current_path_len = current_path | size | minus: 1
+    assign current_last_char = current_path | slice: current_path_len
+    assign compare_path = current_path
+    if current_last_char == '/'
+      assign compare_path = current_path | slice: 0, current_path_len
+    endif
+
+    assign paths_to_exclude = section.settings.exclude_paths | split: ','
+    for path in paths_to_exclude
+      assign trimmed_path = path | strip
+      if trimmed_path == blank
+        continue
+      endif
+
+      # Check if wildcard prefix match
+      assign match_prefix = false
+      assign last_char_index = trimmed_path | size | minus: 1
+      assign wildcard_char = trimmed_path | slice: last_char_index
+      if wildcard_char == '*'
+        assign trimmed_path = trimmed_path | slice: 0, last_char_index
+        assign match_prefix = true
+      endif
+
+      if match_prefix
+        assign path_size = trimmed_path | size
+        assign current_prefix = compare_path | slice: 0, path_size
+        if current_prefix == trimmed_path
+          assign show_popup = false
+          break
+        endif
+      else
+        # Remove trailing slash from trimmed_path if it's not just a slash
+        assign path_len = trimmed_path | size | minus: 1
+        assign last_char = trimmed_path | slice: path_len
+        if last_char == '/' and trimmed_path != '/'
+          assign trimmed_path = trimmed_path | slice: 0, path_len
+        endif
+
+        if compare_path == trimmed_path
+          assign show_popup = false
+          break
+        endif
+      endif
+    endfor
+  endif
+-%}
+
+{%- if show_popup -%}
   <style>
     #shopify-section-{{ section.id }} {
       {%- render 'section-variables', section: section -%}
@@ -183,6 +257,52 @@
       "default": "enabled",
       "label": "Mode",
       "info": "Test mode always shows the popup, ignoring the cookie."
+    },
+    {
+      "type": "header",
+      "content": "Page Exclusions"
+    },
+    {
+      "type": "checkbox",
+      "id": "exclude_index",
+      "label": "Exclude on Home page",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "exclude_product",
+      "label": "Exclude on Product pages",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "exclude_collection",
+      "label": "Exclude on Collection pages",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "exclude_cart",
+      "label": "Exclude on Cart page",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "exclude_blog",
+      "label": "Exclude on Blog pages",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "exclude_article",
+      "label": "Exclude on Article pages",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "exclude_paths",
+      "label": "Exclude specific paths",
+      "info": "Enter relative paths separated by commas (e.g., /pages/contact, /pages/about-us, /collections/*)"
     },
     {
       "type": "header",

@@ -25,11 +25,28 @@
 
   if section.settings.exclude_paths != blank and show_popup
     assign current_path = request.path
+
+    # Strip locale prefix if present to support language-agnostic paths
+    assign path_without_locale = current_path
+    if routes.root_url != '/'
+      assign path_without_locale = current_path | remove_first: routes.root_url
+      if path_without_locale == blank
+        assign path_without_locale = '/'
+      endif
+    endif
+
     assign current_path_len = current_path | size | minus: 1
     assign current_last_char = current_path | slice: current_path_len
     assign compare_path = current_path
     if current_last_char == '/'
       assign compare_path = current_path | slice: 0, current_path_len
+    endif
+
+    assign path_without_locale_len = path_without_locale | size | minus: 1
+    assign path_without_locale_last_char = path_without_locale | slice: path_without_locale_len
+    assign compare_path_without_locale = path_without_locale
+    if path_without_locale_last_char == '/'
+      assign compare_path_without_locale = path_without_locale | slice: 0, path_without_locale_len
     endif
 
     assign paths_to_exclude = section.settings.exclude_paths | split: ','
@@ -51,7 +68,8 @@
       if match_prefix
         assign path_size = trimmed_path | size
         assign current_prefix = compare_path | slice: 0, path_size
-        if current_prefix == trimmed_path
+        assign current_prefix_without_locale = compare_path_without_locale | slice: 0, path_size
+        if current_prefix == trimmed_path or current_prefix_without_locale == trimmed_path
           assign show_popup = false
           break
         endif
@@ -63,7 +81,7 @@
           assign trimmed_path = trimmed_path | slice: 0, path_len
         endif
 
-        if compare_path == trimmed_path
+        if compare_path == trimmed_path or compare_path_without_locale == trimmed_path
           assign show_popup = false
           break
         endif

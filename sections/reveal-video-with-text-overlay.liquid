@@ -1,994 +1,298 @@
 <style>
- #shopify-section-{{ section.id }} {
- {%- render 'section-variables', section: section -%}
- }
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Open Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;color:#000;background:#fff}.sis-intro-wrapper{background:linear-gradient(135deg,rgba(0,199,255,.03) 0%,rgba(8,102,255,.03) 100%);padding:60px 30px;margin:0}.sis-intro-container{max-width:800px;margin:0 auto}.sis-intro-title{font-size:36px;font-weight:700;color:#00c7ff;margin-bottom:25px;line-height:1.3}.sis-intro-text{font-size:16px;color:#555;margin-bottom:20px;line-height:1.8}.sis-intro-text strong{color:#0d66c2;font-weight:700}.sis-intro-highlight{padding:25px;background:#fff;border-left:4px solid #00c7ff;border-radius:8px;margin-top:30px}.sis-intro-highlight-title{font-size:14px;color:#0d66c2;margin:0;font-weight:700}.sis-intro-highlight-desc{color:#666;display:block;margin-top:8px;font-size:14px;line-height:1.6}.sis-beginner-wrapper{background:#fff;padding:70px 30px;margin:0}.sis-beginner-container{max-width:1000px;margin:0 auto}.sis-beginner-main-title{font-size:38px;font-weight:700;color:#00c7ff;margin-bottom:15px;text-align:center;line-height:1.3}.sis-beginner-subtitle{font-size:18px;color:#00c7ff;text-align:center;margin-bottom:45px;font-weight:600}.sis-beginner-intro{font-size:16px;color:#555;line-height:1.8;margin-bottom:45px;text-align:center;max-width:850px;margin-left:auto;margin-right:auto}.sis-beginner-intro strong{color:#0d66c2;font-weight:700}.sis-beginner-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:35px;margin-bottom:50px}.sis-beginner-card{background:linear-gradient(135deg,rgba(0,199,255,.08) 0%,rgba(8,102,255,.05) 100%);padding:35px;border-radius:12px;border:2px solid #00c7ff;transition:all .3s}.sis-beginner-card:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,199,255,.2);background:linear-gradient(135deg,rgba(0,199,255,.12) 0%,rgba(8,102,255,.08) 100%)}.sis-beginner-card-icon{font-size:42px;margin-bottom:18px;display:block}.sis-beginner-card-title{font-size:18px;font-weight:700;color:#00c7ff;margin-bottom:15px}.sis-beginner-card-text{font-size:14px;color:#555;line-height:1.7}.sis-beginner-card-text strong{color:#0d66c2;font-weight:700}.sis-beginner-closing{background:linear-gradient(135deg,rgba(0,199,255,.1) 0%,rgba(8,102,255,.08) 100%);padding:40px;border-radius:12px;border-left:5px solid #00c7ff;text-align:center}.sis-beginner-closing-text{font-size:16px;color:#555;line-height:1.8}.sis-beginner-closing-text strong{color:#0d66c2;font-weight:700}.sis-section{padding:80px 30px}.sis-container{max-width:1200px;margin:0 auto}.sis-section-title{font-size:42px;font-weight:700;margin-bottom:15px;color:#00c7ff;text-align:center;letter-spacing:-.5px}.sis-section-subtitle{font-size:18px;color:#666;text-align:center;margin-bottom:60px;max-width:700px;margin-left:auto;margin-right:auto}.sis-gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-bottom:60px}.sis-gallery-item{position:relative;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,199,255,.15);transition:all .3s;border:2px solid transparent}.sis-gallery-item:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,199,255,.25);border-color:#00c7ff}.sis-gallery-item img{width:100%;height:250px;object-fit:cover;display:block}.sis-programme-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;margin-bottom:40px}.sis-card{background:#fff;padding:40px 30px;border-radius:12px;border-left:5px solid #00c7ff;transition:all .3s;box-shadow:0 5px 15px rgba(0,199,255,.08)}.sis-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(0,199,255,.18);border-left-color:#0866ff}.sis-card-icon{font-size:42px;margin-bottom:20px}.sis-card h3{font-size:20px;margin-bottom:15px;color:#0d66c2}.sis-card p{font-size:14px;line-height:1.8;color:#555}.sis-highlights{background:linear-gradient(135deg,rgba(0,199,255,.05) 0%,rgba(8,102,255,.05) 100%)}.sis-highlights-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px}.sis-highlight-item{text-align:center;padding:30px;background:#fff;border-radius:12px;border-top:4px solid #00c7ff}.sis-highlight-number{font-size:48px;font-weight:700;color:#00c7ff;line-height:1}.sis-highlight-label{font-size:14px;color:#666;margin-top:10px;font-weight:600}.sis-hotel-section{background:linear-gradient(135deg,#fff 0%,rgba(0,199,255,.02) 100%)}.sis-hotel-hero{width:100%;height:450px;border-radius:12px;overflow:hidden;margin-bottom:40px;box-shadow:0 20px 50px rgba(0,199,255,.2);border:3px solid #00c7ff}.sis-hotel-hero img{width:100%;height:100%;object-fit:cover}.sis-hotel-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:60px}.sis-hotel-text h3{font-size:28px;color:#00c7ff;margin-bottom:20px}.sis-hotel-text p{font-size:16px;color:#555;margin-bottom:15px;line-height:1.8}.sis-hotel-image{width:100%;border-radius:12px;overflow:hidden;border:3px solid #00c7ff}.sis-hotel-image img{width:100%;height:auto;display:block}.sis-promo-box{background:linear-gradient(135deg,rgba(0,199,255,.15) 0%,rgba(8,102,255,.1) 100%);padding:30px;border-left:5px solid #00c7ff;border-radius:8px;margin-top:30px;border:2px solid #00c7ff}.sis-promo-box p{margin:0;color:#0d66c2;font-weight:700}.sis-promo-code{font-size:32px;color:#00c7ff;margin:12px 0;font-family:'Courier New',monospace;letter-spacing:3px;font-weight:700}.sis-salle-conf{margin-top:60px;padding:40px;background:linear-gradient(135deg,rgba(0,199,255,.05) 0%,rgba(8,102,255,.05) 100%);border:2px solid #00c7ff;border-radius:12px}.sis-salle-conf h3{font-size:24px;color:#00c7ff;margin-bottom:20px}.sis-salle-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.sis-salle-grid p{font-size:15px;color:#555;margin-bottom:15px;line-height:1.8}.sis-salle-grid img{width:100%;border-radius:12px;border:3px solid #00c7ff}.sis-amenities-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;margin-top:40px}.sis-amenity-box{background:#fff;padding:25px;border-radius:12px;text-align:center;border:2px solid #00c7ff;transition:all .3s}.sis-amenity-box:hover{background:rgba(0,199,255,.05);transform:translateY(-3px)}.sis-amenity-icon{font-size:32px;margin-bottom:10px}.sis-amenity-name{font-weight:700;color:#00c7ff;font-size:13px;line-height:1.4}.sis-hotel-contact{margin-top:50px;text-align:center;padding:40px;background:#fff;border:3px solid #00c7ff;border-radius:12px}.sis-hotel-contact h3{color:#00c7ff;margin-bottom:25px;font-size:20px}.sis-hotel-contact p{font-size:15px;color:#555;margin-bottom:12px}.sis-hotel-contact a{color:#00c7ff;text-decoration:none;font-weight:600;transition:color .3s}.sis-hotel-contact a:hover{color:#0866ff}.sis-speakers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px}.sis-speaker{text-align:center;padding:25px;background:#fff;border-radius:12px;transition:all .3s;border:2px solid #00c7ff}.sis-speaker:hover{background:rgba(0,199,255,.05);transform:translateY(-5px)}.sis-speaker-avatar{width:100px;height:100px;margin:0 auto 15px;border-radius:50%;overflow:hidden;background:linear-gradient(135deg,#00c7ff,#0866ff);display:flex;align-items:center;justify-content:center;font-size:40px;border:3px solid #00c7ff}.sis-speaker-name{font-weight:700;color:#00c7ff;margin-bottom:8px;font-size:15px}.sis-speaker-title{font-size:13px;color:#666;line-height:1.6}.sis-pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin-bottom:40px}.sis-pricing-card{background:#fff;border:3px solid #00c7ff;border-radius:12px;padding:40px 30px;text-align:center;transition:all .3s;position:relative}.sis-pricing-card:hover{box-shadow:0 15px 40px rgba(0,199,255,.25);transform:translateY(-5px)}.sis-pricing-card.featured{border-color:#00c7ff;background:linear-gradient(135deg,rgba(0,199,255,.08) 0%,rgba(8,102,255,.08) 100%);transform:scale(1.05)}.sis-pricing-badge{position:absolute;top:-15px;right:30px;background:#00c7ff;color:#000;padding:8px 16px;border-radius:20px;font-size:12px;font-weight:700}.sis-pricing-title{font-size:24px;font-weight:700;color:#00c7ff;margin-bottom:20px}.sis-pricing-description{font-size:14px;color:#666;margin-bottom:30px;min-height:60px}.sis-pricing-price{font-size:48px;font-weight:700;color:#00c7ff;margin-bottom:10px}.sis-pricing-price-small{font-size:14px;color:#999;margin-bottom:30px}.sis-pricing-features{list-style:none;margin-bottom:30px;text-align:left;font-size:14px}.sis-pricing-features li{padding:10px 0;border-bottom:1px solid #f0f0f0;color:#555}.sis-pricing-features li::before{content:'✓ ';color:#00c7ff;font-weight:700;margin-right:8px}.sis-btn{padding:16px 40px;border:none;border-radius:8px;font-size:16px;font-weight:600;cursor:pointer;transition:all .3s;text-decoration:none;display:inline-block;width:100%}.sis-btn-cyan{background:#00c7ff;color:#000}.sis-btn-cyan:hover{background:#0099cc;transform:translateY(-2px);box-shadow:0 10px 25px rgba(0,199,255,.3)}.sis-btn-dark{background:#0d66c2;color:#fff}.sis-btn-dark:hover{background:#00c7ff;color:#000;transform:translateY(-2px);box-shadow:0 10px 25px rgba(0,199,255,.3)}.sis-faq-wrapper{background:linear-gradient(135deg,rgba(0,199,255,.02) 0%,rgba(8,102,255,.02) 100%);padding:80px 30px}.sis-faq-container{max-width:900px;margin:0 auto}.sis-faq-title{font-size:42px;font-weight:700;color:#00c7ff;margin-bottom:20px;text-align:center}.sis-faq-subtitle{font-size:18px;color:#666;text-align:center;margin-bottom:60px}.sis-faq-accordion{display:flex;flex-direction:column;gap:20px}.sis-faq-item{background:#fff;border:2px solid #00c7ff;border-radius:12px;overflow:hidden;transition:all .3s}.sis-faq-item:hover{box-shadow:0 10px 30px rgba(0,199,255,.15)}.sis-faq-question{background:linear-gradient(135deg,rgba(0,199,255,.08) 0%,rgba(8,102,255,.05) 100%);padding:25px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:700;color:#0d66c2;font-size:16px;transition:all .3s}.sis-faq-question:hover{background:linear-gradient(135deg,rgba(0,199,255,.12) 0%,rgba(8,102,255,.08) 100%)}.sis-faq-icon{font-size:20px;transition:transform .3s}.sis-faq-item.active .sis-faq-icon{transform:rotate(180deg)}.sis-faq-answer{padding:0;max-height:0;overflow:hidden;transition:max-height .3s,padding .3s;color:#555;line-height:1.8}.sis-faq-item.active .sis-faq-answer{padding:30px 25px;max-height:1000px}.sis-faq-answer strong{color:#0d66c2;font-weight:700}.sis-footer-wrapper{background:#000;color:#fff;padding:70px 30px 40px;margin-top:80px}.sis-footer-container{max-width:1200px;margin:0 auto}.sis-footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:50px;margin-bottom:50px}.sis-footer-section h3{color:#00c7ff;font-size:16px;font-weight:700;margin-bottom:20px;letter-spacing:.5px}.sis-footer-section p,.sis-footer-section a{font-size:14px;color:#ccc;line-height:1.8;margin-bottom:10px}.sis-footer-section a{color:#00c7ff;text-decoration:none;transition:color .3s}.sis-footer-section a:hover{color:#fff;text-decoration:underline}.sis-footer-logo{font-size:18px;font-weight:700;color:#00c7ff;margin-bottom:15px}.sis-footer-divider{border-top:1px solid #333;margin-top:50px;padding-top:30px}.sis-footer-bottom{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.sis-footer-copyright{font-size:12px;color:#666}.sis-footer-cta{display:flex;gap:15px;justify-content:flex-end}.sis-footer-btn{padding:12px 25px;border-radius:6px;font-size:13px;font-weight:700;cursor:pointer;text-decoration:none;transition:all .3s;border:none}.sis-footer-btn-cyan{background:#00c7ff;color:#000}.sis-footer-btn-cyan:hover{background:#0099cc;transform:translateY(-2px)}.sis-footer-btn-outline{background:0;color:#00c7ff;border:2px solid #00c7ff}.sis-footer-btn-outline:hover{background:#00c7ff;color:#000}@media (max-width:768px){.sis-section-title{font-size:32px}.sis-beginner-main-title{font-size:28px}.sis-hotel-grid,.sis-salle-grid,.sis-footer-bottom{grid-template-columns:1fr}.sis-pricing-card.featured{transform:scale(1)}.sis-btn{max-width:100%}.sis-footer-cta{justify-content:center;flex-wrap:wrap}}
 </style>
 
-<div class="section inline">
- <div class="relative contents">
- <reveal-banner class="reveal-banner relative inline">
- <span class="reveal-banner__tracker absolute top-0 h-full"></span>
- {%- if section.blocks.size > 0 -%}
- <span class="reveal-banner__tracker2nd absolute top-0 h-full"></span>
- {%- endif -%}
- <div class="reveal-banner__scroller{% if section.settings.enable_parallax %} sticky top-0 overflow-hidden{% endif %}">
- <div class="video-hero banner w-full h-screen{% if section.settings.enable_parallax %} relative{% else %} sticky top-0{% endif %}">
- {%- if section.settings.video_mobile or section.settings.video_url_mobile -%}
- {%- render 'video',
- sizes: '100vw',
- video: section.settings.video_mobile,
- video_url: section.settings.video_url_mobile,
- muted: true,
- autoplay: true,
- loop: true,
- controls: false,
- description: section.settings.description,
- cover_image: section.settings.cover_image_mobile,
- show_play_button: false,
- is_mobile: true,
- class: 'banner__media media media--height w-full h-full block relative overflow-hidden'
- -%}
- {%- endif -%}
-
- {%- render 'video',
- sizes: '100vw',
- video: section.settings.video,
- video_url: section.settings.video_url,
- muted: true,
- autoplay: true,
- loop: true,
- controls: false,
- description: section.settings.description,
- cover_image: section.settings.cover_image,
- show_play_button: false,
- class: 'banner__media media media--height w-full h-full block relative overflow-hidden'
- -%}
-
- {%- if section.blocks.size > 0 -%}
- <span class="banner__overlay absolute top-0 left-0 w-full h-full pointer-events-none"></span>
- <div class="banner__content overflow-hidden absolute z-1 top-0 left-0 w-full h-full">
- <div class="page-width w-full h-full flex {{ section.settings.content_position }} {{ section.settings.content_position_mobile }}">
- <div class="banner__box banner__box--{{ section.settings.content_width }} md:text-{{ section.settings.text_alignment }} text-{{ section.settings.text_alignment_mobile }}">
- {%- liquid
- assign with_gradient = false
- if section.settings.gradient_highlight != blank and section.settings.gradient_highlight != 'rgba(0,0,0,0)'
- assign with_gradient = true
- endif
- 
- assign delay = 0
- -%}
- {%- comment -%} H1 SEO BLOCK - Displayed BEFORE other blocks {%- endcomment -%}
- {%- if section.settings.h1_heading != blank -%}
- <h1 class="banner__h1 heading leading-none {{ section.settings.h1_size }}" style="margin-bottom: {{ section.settings.h1_spacing }}px;">
- {{- section.settings.h1_heading -}}
- </h1>
- {%- endif -%}
- {%- for block in section.blocks -%}
- {%- case block.type -%}
- {%- when '@app' -%}
- {%- render block -%}
- 
- {%- when 'spacing' -%}
- <empty-element class="block spacing-section{% if block.settings.height_mobile == 0 %} hidden lg:block{% endif %}{% if block.settings.height == 0 %} lg:hidden{% endif %}" style="--spacing-height-desktop: {{ block.settings.height }}px;--spacing-height-mobile: {{ block.settings.height_mobile }}px;" {{ block.shopify_attributes }}></empty-element>
- 
- {%- when 'subheading' -%}
- {%- if block.settings.subheading != blank -%}
- <p class="banner__subheading heading uppercase leading-none tracking-widest {{ block.settings.subheading_size }}{% if block.settings.secondary_color %} banner__text--colored{% endif %}" {{ block.shopify_attributes }}>
- {{- block.settings.subheading -}}
- </p>
- {%- endif -%}
- 
- {%- when 'heading' -%}
- {%- if block.settings.heading != blank -%}
- {%- assign delay = delay | plus: 1 -%}
- <{{ block.settings.heading_tag }} class="banner__title heading leading-none {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
- {%- render 'heading-content', content: block.settings.heading, style: block.settings.highlighted_text, scribble: block.settings.highlighted_scribble, reveal: block.settings.highlighted_reveal, gradient: with_gradient, delay: delay -%}
- </{{ block.settings.heading_tag }}>
- {%- endif -%}
- 
- {%- when 'text' -%}
- {%- if block.settings.text != blank -%}
- <div class="rte {{ block.settings.text_font }} {{ block.settings.text_size }}{% if block.settings.text_font == 'subtitle' %} uppercase leading-tight tracking-widest{% else %} leading-normal{% endif %}{% if block.settings.secondary_color %} text-opacity{% endif %}"{% if block.settings.text_size == 'subtext-custom' %} style="--subtext-size: {{ block.settings.text_max_size }}px;--subtext-line-height: {{ block.settings.text_line_height }};--subtext-letter-spacing: {{ block.settings.text_letter_spacing | divided_by: 1000.00 }}em;{% if block.settings.text_capitalize %}--subtext-text-transform: uppercase;{% endif %}"{% endif %} {{ block.shopify_attributes }}>
- {%- render 'highlighted-text', content: block.settings.text, style: block.settings.highlighted_text, scribble: block.settings.highlighted_scribble, gradient: with_gradient -%}
- </div>
- {%- endif -%}
- 
- {%- when 'icon' -%}
- {%- if block.settings.icon != 'none' or block.settings.icon_image != blank -%}
- {%- capture icon_content -%}
- {%- if block.settings.icon_image != blank -%}
- {%- liquid
- if block.settings.iwidth == 'fit'
- assign icon_width = block.settings.icon_image.width
- else
- assign icon_width = block.settings.icon_width
- endif
- assign image_alt = block.settings.icon_image.alt | default: block.settings.accessibility_info | escape
- assign max_width = block.settings.icon_image.width
- -%}
- <figure class="media media--transparent relative inline-block" {{ block.shopify_attributes }}>
- {%- capture sizes -%}{{ icon_width }}px{%- endcapture -%}
- {%- capture widths -%}{{ icon_width | times: 1.5 | at_most: max_width | round }}, {{ icon_width | times: 2 | at_most: max_width }}, {{ icon_width | times: 3 | at_most: max_width }}{%- endcapture -%}
- {{- block.settings.icon_image | image_url: width: max_width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: image_alt, class: 'image-fit' -}}
- </figure>
- {%- elsif block.settings.icon != 'none' -%}
- {%- liquid
- if block.settings.iwidth == 'fit'
- render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block', shopify_attributes: block.shopify_attributes
- else
- render 'icon-guarantee', icon: block.settings.icon, size: 'custom', class: 'inline-block', width: block.settings.icon_width, shopify_attributes: block.shopify_attributes
- endif
- -%}
- {%- endif -%}
- {%- endcapture -%}
-
- <div class="leading-none">
- {%- if block.settings.link != blank -%}
- <a class="inline-block" href="{{ block.settings.link }}"{% if block.settings.external %} target="_blank" rel="noopener noreferrer"{% endif %} aria-label="{{ block.settings.accessibility_info | escape }}">
- {{- icon_content -}}
- </a>
- {%- else -%}
- {{- icon_content -}}
- {%- endif -%}
- </div>
- {%- endif -%}
- 
- {%- when 'image' -%}
- {%- if block.settings.image != blank -%}
- <div class="leading-none" {{ block.shopify_attributes }}>
- <figure class="media media--transparent relative inline-block">
- {%- if block.settings.image_width == 'custom' -%}
- {%- capture style -%}--image-max-width: {{ block.settings.image_max_width }}px; --image-max-width-mobile: {{ block.settings.image_max_width_mobile }}px{%- endcapture -%}
- {%- capture sizes -%}(max-width: 767px) min({{ block.settings.image_max_width_mobile }}px, 100vw), min({{ block.settings.image_max_width }}px, 100vw){%- endcapture -%}
- {%- capture widths -%}{{ block.settings.image_max_width_mobile }},{{ block.settings.image_max_width_mobile | times: 2 }},{{ block.settings.image_max_width }},{{ block.settings.image_max_width | times: 2 }}{%- endcapture -%}
- {%- else -%}
- {%- assign sizes = 'min(100vw, var(--page-width))' -%}
- {%- assign widths = '50,75,100,150,200,300,400,500,750,1000,1250,1500,1750,2000,2250,2500,2750,3000,3200' -%}
- {%- endif -%}
- {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, style: style, is: 'lazy-image', class: 'image-fit' -}}
- </figure>
- </div>
- {%- endif -%}
- 
- {%- when 'button' -%}
- {%- if block.settings.button_label != blank -%}
- {%- render 'button',
- label: block.settings.button_label,
- link: block.settings.button_link,
- size: block.settings.button_size,
- style: block.settings.button_style,
- external: block.settings.button_external,
- show_icon: block.settings.button_icon,
- classes: 'button--fixed',
- shopify_attributes: block.shopify_attributes
- -%}
- {%- endif -%}
- 
- {%- when 'link' -%}
- {%- if block.settings.label != blank -%}
- <a class="link inline-block"{% if block.settings.link != blank %} href="{{ block.settings.link }}"{% if block.settings.external %} target="_blank" rel="noopener noreferrer"{% endif %}{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
- {{- block.settings.label -}}
- </a>
- {%- endif -%}
- 
- {%- when 'liquid' -%}
- {%- if block.settings.liquid != blank -%}
- <div class="rte" {{ block.shopify_attributes }}>
- {{- block.settings.liquid -}}
- </div>
- {%- endif -%}
- {%- endcase -%}
- {%- endfor -%}
- </div>
- </div>
- </div>
- {%- endif -%}
- </div>
- </div>
- </reveal-banner>
- </div>
+<div class="sis-intro-wrapper">
+  <div class="sis-intro-container">
+    <h1 class="sis-intro-title">30 Years of Innovation in Quantum Bioelectrography</h1>
+    <p class="sis-intro-text">Since 1996, <strong>Bio-Well & GDV technology</strong> has revolutionized the measurement of the human energy field.</p>
+    <p class="sis-intro-text">Used by <strong>10,000+ practitioners in 75+ countries</strong> and supported by <strong>500+ peer-reviewed studies</strong>.</p>
+    <div class="sis-intro-highlight">
+      <p class="sis-intro-highlight-title">🌍 A Unique International Event</p>
+      <span class="sis-intro-highlight-desc">Three days of keynote presentations, interactive workshops, and collective experiences in Barcelona.</span>
+    </div>
+  </div>
 </div>
+
+<div class="sis-beginner-wrapper">
+  <div class="sis-beginner-container">
+    <h2 class="sis-beginner-main-title">Discover Bio-Well Technology</h2>
+    <p class="sis-beginner-subtitle">Making the Invisible Visible Through Science</p>
+    <p class="sis-beginner-intro">Bio-Well is a <strong>revolutionary non-invasive quantum device</strong> that captures biophoton emissions from your fingertips to create a <strong>complete map of your energy field and nervous system</strong> in under 2 minutes.</p>
+    <div class="sis-beginner-grid">
+      <div class="sis-beginner-card">
+        <span class="sis-beginner-card-icon">🛡️</span>
+        <h3 class="sis-beginner-card-title">Prevention First</h3>
+        <p class="sis-beginner-card-text">Bio-Well allows you to <strong>anticipate subtle energy imbalances</strong> long before symptoms appear.</p>
+      </div>
+      <div class="sis-beginner-card">
+        <span class="sis-beginner-card-icon">📊</span>
+        <h3 class="sis-beginner-card-title">Proof Through Imagery</h3>
+        <p class="sis-beginner-card-text"><strong>Scientifically validate the impact</strong> of meditation, yoga, treatments, and wellness practices.</p>
+      </div>
+      <div class="sis-beginner-card">
+        <span class="sis-beginner-card-icon">🌍</span>
+        <h3 class="sis-beginner-card-title">Beyond the Human</h3>
+        <p class="sis-beginner-card-text">Measure the energy quality of <strong>spaces, water, food, and objects</strong> around you.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="sis-section">
+  <div class="sis-container">
+    <h2 class="sis-section-title">📅 Program — 3 Days of Discovery</h2>
+    <p class="sis-section-subtitle">Saturday October 3 – Monday October 5, 2026</p>
+    <div class="sis-programme-grid">
+      <div class="sis-card">
+        <div class="sis-card-icon">📍</div>
+        <h3>Keynote Presentations (Sat-Sun)</h3>
+        <p><strong>World experts</strong> sharing cutting-edge research on energy measurement, consciousness, and integrative health.</p>
+      </div>
+      <div class="sis-card">
+        <div class="sis-card-icon">🛠️</div>
+        <h3>Interactive Workshops (Mon)</h3>
+        <p><strong>Hands-on learning</strong> including live Bio-Well demonstrations and collective experiences.</p>
+      </div>
+      <div class="sis-card">
+        <div class="sis-card-icon">💻</div>
+        <h3>Online Access Available</h3>
+        <p>Join from home: <strong>live streaming + 30-day recording access</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sis-section sis-highlights">
+  <div class="sis-container">
+    <div class="sis-highlights-grid">
+      <div class="sis-highlight-item">
+        <div class="sis-highlight-number">30</div>
+        <div class="sis-highlight-label">Years of Innovation</div>
+      </div>
+      <div class="sis-highlight-item">
+        <div class="sis-highlight-number">1,000+</div>
+        <div class="sis-highlight-label">Practitioners</div>
+      </div>
+      <div class="sis-highlight-item">
+        <div class="sis-highlight-number">15+</div>
+        <div class="sis-highlight-label">Expert Speakers</div>
+      </div>
+      <div class="sis-highlight-item">
+        <div class="sis-highlight-number">500+</div>
+        <div class="sis-highlight-label">Scientific Studies</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sis-section sis-hotel-section">
+  <div class="sis-container">
+    <h2 class="sis-section-title">🏨 Diagonal Zero Hotel — Barcelona</h2>
+    <p class="sis-section-subtitle">Luxury Venue | 15 min from Airport | Premium Facilities</p>
+    <div class="sis-hotel-grid">
+      <div class="sis-hotel-text">
+        <h3>🌟 An Upscale Haven</h3>
+        <p>Located in Barcelona's tech district with <strong>contemporary architecture, panoramic terraces, and premium services</strong>.</p>
+        <p><strong>✈️ Easy Access:</strong> 15 min from airport • 20 min from downtown</p>
+        <div class="sis-promo-box">
+          <p>💰 EXCLUSIVE DISCOUNT</p>
+          <div class="sis-promo-code">D4-BIOWELL</div>
+          <p style="margin-top:8px;font-size:14px;color:#555;">-10% on all rooms</p>
+        </div>
+      </div>
+      <div class="sis-hotel-image">
+        <img src="https://bio-well.fr/wp-content/uploads/2026/06/Salle-de-conference.jpg" alt="Conference Hall">
+      </div>
+    </div>
+
+    <div class="sis-amenities-grid">
+      <div class="sis-amenity-box">
+        <div class="sis-amenity-icon">🎪</div>
+        <div class="sis-amenity-name">Congress Hall (500+ people)</div>
+      </div>
+      <div class="sis-amenity-box">
+        <div class="sis-amenity-icon">🧖</div>
+        <div class="sis-amenity-name">Spa & Wellness</div>
+      </div>
+      <div class="sis-amenity-box">
+        <div class="sis-amenity-icon">🏊</div>
+        <div class="sis-amenity-name">Heated Pool</div>
+      </div>
+      <div class="sis-amenity-box">
+        <div class="sis-amenity-icon">🍽️</div>
+        <div class="sis-amenity-name">Fine Dining</div>
+      </div>
+      <div class="sis-amenity-box">
+        <div class="sis-amenity-icon">📶</div>
+        <div class="sis-amenity-name">High-Speed WiFi</div>
+      </div>
+      <div class="sis-amenity-box">
+        <div class="sis-amenity-icon">♿</div>
+        <div class="sis-amenity-name">Full ADA Access</div>
+      </div>
+    </div>
+
+    <div class="sis-hotel-contact" style="margin-top:60px;">
+      <h3>📞 Diagonal Zero Hotel</h3>
+      <p><strong>📧</strong> <a href="mailto:reservations.zero@sbhotels.es">reservations.zero@sbhotels.es</a></p>
+      <p><strong>☎️</strong> <a href="tel:+34935078000">+34 935 07 80 00</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sis-section">
+  <div class="sis-container">
+    <h2 class="sis-section-title">💰 Registration & Pricing</h2>
+    <p class="sis-section-subtitle">Choose Your Participation Format</p>
+    <div class="sis-pricing-grid">
+      <div class="sis-pricing-card">
+        <h3 class="sis-pricing-title">💻 Online Access</h3>
+        <p class="sis-pricing-description">Live keynotes + 30-day recording access</p>
+        <div class="sis-pricing-price">390€</div>
+        <ul class="sis-pricing-features">
+          <li>Live keynotes (Sat/Sun)</li>
+          <li>Workshop videos (Mon)</li>
+          <li>30-day access to recordings</li>
+          <li>Certificate</li>
+        </ul>
+        <a href="https://bio-well.tech/products/sis-congress-ticket-online-access-science-information-spirit-2026" class="sis-btn sis-btn-cyan">Register Online</a>
+      </div>
+      <div class="sis-pricing-card featured">
+        <div class="sis-pricing-badge">BEST VALUE</div>
+        <h3 class="sis-pricing-title">🌍 In-Person</h3>
+        <p class="sis-pricing-description">Complete experience + networking + device testing</p>
+        <div class="sis-pricing-price">525€</div>
+        <ul class="sis-pricing-features">
+          <li>In-person keynotes</li>
+          <li>Interactive workshops</li>
+          <li>Networking events</li>
+          <li>Live device demo</li>
+          <li>Lifetime recordings</li>
+        </ul>
+        <a href="https://bio-well.tech/products/sis-congress-ticket" class="sis-btn sis-btn-dark">Reserve In-Person</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sis-faq-wrapper">
+  <div class="sis-faq-container">
+    <h2 class="sis-faq-title">FAQ</h2>
+    <p class="sis-faq-subtitle">Common Questions Answered</p>
+    <div class="sis-faq-accordion">
+      <div class="sis-faq-item">
+        <div class="sis-faq-question">
+          <span>What is Bio-Well?</span>
+          <span class="sis-faq-icon">▼</span>
+        </div>
+        <div class="sis-faq-answer">A revolutionary quantum device measuring biophoton emissions from fingertips to create a complete energy field map in under 2 minutes. Founded by Prof. Korotkov in 1996, supported by 500+ studies, used by 10,000+ practitioners worldwide.</div>
+      </div>
+      <div class="sis-faq-item">
+        <div class="sis-faq-question">
+          <span>Who Can Attend?</span>
+          <span class="sis-faq-icon">▼</span>
+        </div>
+        <div class="sis-faq-answer">Everyone! Wellness professionals, researchers, students, and curious newcomers. No scientific background required. All sessions are accessible to beginners.</div>
+      </div>
+      <div class="sis-faq-item">
+        <div class="sis-faq-question">
+          <span>What's Included?</span>
+          <span class="sis-faq-icon">▼</span>
+        </div>
+        <div class="sis-faq-answer">Keynote presentations, workshops, educational materials, certificate, and access to recordings (online: 30 days; in-person: lifetime).</div>
+      </div>
+      <div class="sis-faq-item">
+        <div class="sis-faq-question">
+          <span>How Do I Register?</span>
+          <span class="sis-faq-icon">▼</span>
+        </div>
+        <div class="sis-faq-answer">Direct links on this page: Online (390€) or In-Person (525€). Secure payment with instant email confirmation.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="sis-footer-wrapper">
+  <div class="sis-footer-container">
+    <div class="sis-footer-grid">
+      <div class="sis-footer-section">
+        <div class="sis-footer-logo">🌍 SIS Congress 2026</div>
+        <p>30 years of innovation in quantum bioelectrography and integrative sciences.</p>
+        <p style="margin-top:20px;font-size:13px;color:#999;"><strong>📅</strong> Oct 3–5, 2026 | <strong>📍</strong> Barcelona, Spain</p>
+      </div>
+      <div class="sis-footer-section">
+        <h3>Quick Links</h3>
+        <a href="#programme">Program</a>
+        <a href="#hotel">Hotel</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="sis-footer-section">
+        <h3>Partner Hotel</h3>
+        <p><strong>Diagonal Zero</strong><br><span style="color:#00c7ff;">D4-BIOWELL</span> = -10%</p>
+      </div>
+      <div class="sis-footer-section">
+        <h3>Organizer</h3>
+        <a href="https://bio-well.tech">Bio-Well.tech</a>
+        <p style="margin-top:15px;"><a href="mailto:contact@bio-well.tech">contact@bio-well.tech</a></p>
+      </div>
+    </div>
+    <div class="sis-footer-divider">
+      <div class="sis-footer-bottom">
+        <div class="sis-footer-copyright">
+          <p>&copy; 2026 Energy Instruments Software • Science, Information & Spirit Congress</p>
+        </div>
+        <div class="sis-footer-cta">
+          <a href="https://bio-well.tech/products/sis-congress-ticket-online-access-science-information-spirit-2026" class="sis-footer-btn sis-footer-btn-cyan">💻 ONLINE — 390€</a>
+          <a href="https://bio-well.tech/products/sis-congress-ticket" class="sis-footer-btn sis-footer-btn-outline">🎫 IN-PERSON — 525€</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.sis-faq-question').forEach(q => {
+  q.addEventListener('click', function() {
+    const item = this.parentElement;
+    item.classList.toggle('active');
+    document.querySelectorAll('.sis-faq-item').forEach(i => {
+      if (i !== item) i.classList.remove('active');
+    });
+  });
+});
+</script>
 
 {% schema %}
 {
- "name": "t:sections.reveal-video-with-text-overlay.name",
- "class": "contents",
- "settings": [
- {
- "type": "header",
- "content": "🔍 H1 SEO HEADING"
- },
- {
- "type": "text",
- "id": "h1_heading",
- "label": "H1 Text (SEO)",
- "default": "Bio-Well — la Bioélectrographie au service des Praticiens",
- "info": "This H1 displays BEFORE all other content. Keep it keyword-rich for SEO."
- },
- {
- "type": "select",
- "id": "h1_size",
- "options": [
- {
- "value": "title-sm",
- "label": "Small"
- },
- {
- "value": "title-md",
- "label": "Medium"
- },
- {
- "value": "title-lg tracking-heading",
- "label": "Large"
- },
- {
- "value": "title-xl tracking-heading",
- "label": "Extra Large"
- }
- ],
- "default": "title-lg tracking-heading",
- "label": "H1 Size"
- },
- {
- "type": "range",
- "id": "h1_spacing",
- "min": 0,
- "max": 100,
- "step": 5,
- "unit": "px",
- "label": "Spacing Below H1",
- "default": 20
- },
- {
- "type": "header",
- "content": "t:sections.video.settings.header__video.content"
- },
- {
- "type": "video",
- "id": "video",
- "label": "t:sections.video.settings.video.label"
- },
- {
- "type": "header",
- "content": "t:sections.video.settings.header__video_url.content",
- "info": "t:sections.video.settings.header__video_url.info"
- },
- {
- "type": "video_url",
- "id": "video_url",
- "accept": ["youtube", "vimeo"],
- "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
- "label": "t:sections.video.settings.video_url.label",
- "info": "t:sections.video.settings.video_url.info"
- },
- {
- "visible_if": "{{ section.settings.video_url != blank }}",
- "type": "image_picker",
- "id": "cover_image",
- "label": "t:sections.video.settings.cover_image.label"
- },
- {
- "type": "text",
- "id": "description",
- "label": "t:sections.video.settings.description.label",
- "info": "t:sections.video.settings.description.info"
- },
- {
- "type": "select",
- "id": "content_width",
- "options": [
- {
- "value": "small",
- "label": "t:sections.global.settings.content_width.options__1.label"
- },
- {
- "value": "medium",
- "label": "t:sections.global.settings.content_width.options__2.label"
- },
- {
- "value": "large",
- "label": "t:sections.global.settings.content_width.options__3.label"
- }
- ],
- "default": "small",
- "label": "t:sections.global.settings.content_width.label"
- },
- {
- "type": "select",
- "id": "content_position",
- "options": [
- {
- "value": "md:items-start md:justify-start",
- "label": "t:sections.global.settings.content_position.options__1.label"
- },
- {
- "value": "md:items-start md:justify-center",
- "label": "t:sections.global.settings.content_position.options__2.label"
- },
- {
- "value": "md:items-start md:justify-end",
- "label": "t:sections.global.settings.content_position.options__3.label"
- },
- {
- "value": "md:items-center md:justify-start",
- "label": "t:sections.global.settings.content_position.options__4.label"
- },
- {
- "value": "md:items-center md:justify-center",
- "label": "t:sections.global.settings.content_position.options__5.label"
- },
- {
- "value": "md:items-center md:justify-end",
- "label": "t:sections.global.settings.content_position.options__6.label"
- },
- {
- "value": "md:items-end md:justify-start",
- "label": "t:sections.global.settings.content_position.options__7.label"
- },
- {
- "value": "md:items-end md:justify-center",
- "label": "t:sections.global.settings.content_position.options__8.label"
- },
- {
- "value": "md:items-end md:justify-end",
- "label": "t:sections.global.settings.content_position.options__9.label"
- }
- ],
- "default": "md:items-end md:justify-start",
- "label": "t:sections.global.settings.content_position.label"
- },
- {
- "type": "text_alignment",
- "id": "text_alignment",
- "default": "left",
- "label": "t:sections.global.settings.text_alignment.label"
- },
- {
- "type": "header",
- "content": "t:sections.global.settings.header__mobile.content"
- },
- {
- "type": "video",
- "id": "video_mobile",
- "label": "t:sections.video.settings.video_mobile.label"
- },
- {
- "type": "video_url",
- "id": "video_url_mobile",
- "accept": ["youtube", "vimeo"],
- "label": "t:sections.video.settings.video_url_mobile.label",
- "info": "t:sections.video.settings.video_url.info"
- },
- {
- "visible_if": "{{ section.settings.video_url_mobile != blank }}",
- "type": "image_picker",
- "id": "cover_image_mobile",
- "label": "t:sections.video.settings.cover_image_mobile.label"
- },
- {
- "type": "select",
- "id": "content_position_mobile",
- "options": [
- {
- "value": "items-start justify-start",
- "label": "t:sections.global.settings.content_position.options__1.label"
- },
- {
- "value": "items-start justify-center",
- "label": "t:sections.global.settings.content_position.options__2.label"
- },
- {
- "value": "items-start justify-end",
- "label": "t:sections.global.settings.content_position.options__3.label"
- },
- {
- "value": "items-center justify-start",
- "label": "t:sections.global.settings.content_position.options__4.label"
- },
- {
- "value": "items-center justify-center",
- "label": "t:sections.global.settings.content_position.options__5.label"
- },
- {
- "value": "items-center justify-end",
- "label": "t:sections.global.settings.content_position.options__6.label"
- },
- {
- "value": "items-end justify-start",
- "label": "t:sections.global.settings.content_position.options__7.label"
- },
- {
- "value": "items-end justify-center",
- "label": "t:sections.global.settings.content_position.options__8.label"
- },
- {
- "value": "items-end justify-end",
- "label": "t:sections.global.settings.content_position.options__9.label"
- }
- ],
- "default": "items-end justify-start",
- "label": "t:sections.global.settings.content_position_mobile.label"
- },
- {
- "type": "text_alignment",
- "id": "text_alignment_mobile",
- "default": "left",
- "label": "t:sections.global.settings.text_alignment_mobile.label"
- },
- {
- "type": "header",
- "content": "t:sections.global.settings.header__colors.content",
- "info": "t:sections.global.settings.header__colors.info"
- },
- {
- "type": "color",
- "id": "color_text",
- "label": "t:sections.global.settings.color_text.label",
- "default": "#ffffff"
- },
- {
- "type": "color",
- "id": "color_background",
- "label": "t:sections.global.settings.color_background.label"
- },
- {
- "type": "color_background",
- "id": "gradient_background",
- "label": "t:sections.global.settings.gradient_background.label"
- },
- {
- "type": "color",
- "id": "color_highlight",
- "label": "t:sections.global.settings.color_highlight.label"
- },
- {
- "type": "color_background",
- "id": "gradient_highlight",
- "label": "t:sections.global.settings.gradient_highlight.label"
- },
- {
- "type": "color",
- "id": "color_button_text",
- "label": "t:sections.global.settings.color_button_text.label"
- },
- {
- "type": "color",
- "id": "color_button_background",
- "label": "t:sections.global.settings.color_button_background.label"
- },
- {
- "type": "color_background",
- "id": "color_button_gradient",
- "label": "t:sections.global.settings.color_button_gradient.label"
- },
- {
- "type": "color",
- "id": "color_overlay",
- "label": "t:sections.global.settings.color_overlay.label",
- "default": "#171717"
- },
- {
- "type": "range",
- "id": "overlay_opacity",
- "min": 0,
- "max": 100,
- "step": 1,
- "unit": "%",
- "label": "t:sections.global.settings.overlay_opacity.label",
- "default": 70
- },
- {
- "type": "header",
- "content": "t:sections.global.settings.header__section.content"
- },
- {
- "type": "checkbox",
- "id": "enable_parallax",
- "label": "t:sections.global.settings.enable_parallax.label",
- "default": false
- }
- ],
- "blocks": [
- {
- "type": "@app"
- },
- {
- "type": "heading",
- "name": "t:sections.global.blocks.heading.name",
- "settings": [
- {
- "type": "inline_richtext",
- "id": "heading",
- "default": "Image with text overlay",
- "label": "t:sections.global.settings.heading.label"
- },
- {
- "type": "select",
- "id": "heading_size",
- "options": [
- {
- "value": "title-sm",
- "label": "t:sections.global.settings.heading_size.options__1.label"
- },
- {
- "value": "title-md",
- "label": "t:sections.global.settings.heading_size.options__2.label"
- },
- {
- "value": "title-lg tracking-heading",
- "label": "t:sections.global.settings.heading_size.options__3.label"
- },
- {
- "value": "title-xl tracking-heading",
- "label": "t:sections.global.settings.heading_size.options__4.label"
- }
- ],
- "default": "title-lg tracking-heading",
- "label": "t:sections.global.settings.heading_size.label"
- },
- {
- "type": "select",
- "id": "heading_tag",
- "options": [
- {
- "value": "h1",
- "label": "t:sections.global.settings.heading_tag.options__1.label"
- },
- {
- "value": "h2",
- "label": "t:sections.global.settings.heading_tag.options__2.label"
- },
- {
- "value": "h3",
- "label": "t:sections.global.settings.heading_tag.options__3.label"
- },
- {
- "value": "h4",
- "label": "t:sections.global.settings.heading_tag.options__4.label"
- },
- {
- "value": "h5",
- "label": "t:sections.global.settings.heading_tag.options__5.label"
- },
- {
- "value": "h6",
- "label": "t:sections.global.settings.heading_tag.options__6.label"
- },
- {
- "value": "div",
- "label": "t:sections.global.settings.heading_tag.options__7.label"
- },
- {
- "value": "span",
- "label": "t:sections.global.settings.heading_tag.options__8.label"
- },
- {
- "value": "p",
- "label": "t:sections.global.settings.heading_tag.options__9.label"
- }
- ],
- "default": "h2",
- "label": "t:sections.global.settings.heading_tag.label",
- "info": "t:sections.global.settings.heading_tag.info"
- },
- {
- "type": "header",
- "content": "t:sections.global.settings.header__highlight.content",
- "info": "t:sections.global.settings.header__highlight.info"
- },
- {
- "type": "select",
- "id": "highlighted_text",
- "options": [
- {
- "value": "none",
- "label": "t:sections.global.settings.highlighted_text.options__1.label"
- },
- {
- "value": "text",
- "label": "t:sections.global.settings.highlighted_text.options__2.label"
- },
- {
- "value": "full_text",
- "label": "t:sections.global.settings.highlighted_text.options__3.label"
- },
- {
- "value": "half_text",
- "label": "t:sections.global.settings.highlighted_text.options__4.label"
- },
- {
- "value": "underline",
- "label": "t:sections.global.settings.highlighted_text.options__5.label"
- },
- {
- "value": "marker",
- "label": "t:sections.global.settings.highlighted_text.options__6.label"
- },
- {
- "value": "stencil",
- "label": "t:sections.global.settings.highlighted_text.options__7.label"
- },
- {
- "value": "scribble",
- "label": "t:sections.global.settings.highlighted_text.options__8.label"
- }
- ],
- "default": "none",
- "label": "t:sections.global.settings.highlighted_text.label"
- },
- {
- "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
- "type": "select",
- "id": "highlighted_scribble",
- "options": [
- {
- "value": "circle",
- "label": "t:sections.global.settings.highlighted_scribble.options__1.label"
- },
- {
- "value": "basic-underline",
- "label": "t:sections.global.settings.highlighted_scribble.options__2.label"
- },
- {
- "value": "sketch-underline",
- "label": "t:sections.global.settings.highlighted_scribble.options__3.label"
- },
- {
- "value": "squiggle-underline",
- "label": "t:sections.global.settings.highlighted_scribble.options__4.label"
- },
- {
- "value": "squiggle-underline-2",
- "label": "t:sections.global.settings.highlighted_scribble.options__5.label"
- }
- ],
- "default": "circle",
- "label": "t:sections.global.settings.highlighted_scribble.label",
- "info": "t:sections.global.settings.highlighted_scribble.info"
- },
- {
- "visible_if": "{{ block.settings.highlighted_text != 'none' }}",
- "type": "checkbox",
- "id": "highlighted_reveal",
- "label": "t:sections.global.settings.highlighted_reveal.label",
- "default": false
- }
- ]
- },
- {
- "type": "subheading",
- "name": "t:sections.global.blocks.subheading.name",
- "settings": [
- {
- "type": "text",
- "id": "subheading",
- "default": "Add a tagline",
- "label": "t:sections.global.settings.subheading.label"
- },
- {
- "type": "select",
- "id": "subheading_size",
- "options": [
- {
- "value": "subtitle-sm",
- "label": "t:sections.global.settings.subheading_size.options__1.label"
- },
- {
- "value": "subtitle-md",
- "label": "t:sections.global.settings.subheading_size.options__2.label"
- },
- {
- "value": "subtitle-lg",
- "label": "t:sections.global.settings.subheading_size.options__3.label"
- }
- ],
- "default": "subtitle-md",
- "label": "t:sections.global.settings.subheading_size.label"
- },
- {
- "type": "checkbox",
- "id": "secondary_color",
- "default": true,
- "label": "t:sections.global.settings.secondary_color.label"
- }
- ]
- },
- {
- "type": "text",
- "name": "t:sections.global.blocks.text.name",
- "settings": [
- {
- "type": "richtext",
- "id": "text",
- "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
- "label": "t:sections.global.settings.text.label"
- },
- {
- "type": "select",
- "id": "text_font",
- "options": [
- {
- "value": "body",
- "label": "t:sections.global.settings.text_font.options__1.label"
- },
- {
- "value": "heading",
- "label": "t:sections.global.settings.text_font.options__2.label"
- },
- {
- "value": "subtitle",
- "label": "t:sections.global.settings.text_font.options__3.label"
- }
- ],
- "default": "body",
- "label": "t:sections.global.settings.text_font.label"
- },
- {
- "type": "select",
- "id": "text_size",
- "options": [
- {
- "value": "subtext-sm",
- "label": "t:sections.global.settings.text_size.options__1.label"
- },
- {
- "value": "subtext-md",
- "label": "t:sections.global.settings.text_size.options__2.label"
- },
- {
- "value": "subtext-lg",
- "label": "t:sections.global.settings.text_size.options__3.label"
- },
- {
- "value": "subtext-xl",
- "label": "t:sections.global.settings.text_size.options__4.label"
- },
- {
- "value": "subtext-custom",
- "label": "t:sections.global.settings.text_size.options__5.label"
- }
- ],
- "default": "subtext-md",
- "label": "t:sections.global.settings.text_size.label"
- },
- {
- "visible_if": "{{ block.settings.text_size == 'subtext-custom' }}",
- "type": "range",
- "id": "text_max_size",
- "default": 32,
- "min": 12,
- "max": 128,
- "step": 2,
- "unit": "px",
- "label": "t:sections.global.settings.text_max_size.label"
- },
- {
- "visible_if": "{{ block.settings.text_size == 'subtext-custom' }}",
- "type": "range",
- "id": "text_line_height",
- "label": "t:sections.global.settings.text_line_height.label",
- "default": 1.6,
- "min": 0.8,
- "max": 2,
- "step": 0.1
- },
- {
- "visible_if": "{{ block.settings.text_size == 'subtext-custom' }}",
- "type": "range",
- "id": "text_letter_spacing",
- "label": "t:sections.global.settings.text_letter_spacing.label",
- "default": 0,
- "min": -75,
- "max": 250,
- "step": 5
- },
- {
- "visible_if": "{{ block.settings.text_size == 'subtext-custom' }}",
- "type": "checkbox",
- "id": "text_capitalize",
- "label": "t:sections.global.settings.text_capitalize.label"
- },
- {
- "type": "checkbox",
- "id": "secondary_color",
- "default": false,
- "label": "t:sections.global.settings.secondary_color.label"
- },
- {
- "type": "header",
- "content": "t:sections.global.settings.header__highlight.content",
- "info": "t:sections.global.settings.header__highlight.info"
- },
- {
- "type": "select",
- "id": "highlighted_text",
- "options": [
- {
- "value": "none",
- "label": "t:sections.global.settings.highlighted_text.options__1.label"
- },
- {
- "value": "text",
- "label": "t:sections.global.settings.highlighted_text.options__2.label"
- },
- {
- "value": "full_text",
- "label": "t:sections.global.settings.highlighted_text.options__3.label"
- },
- {
- "value": "half_text",
- "label": "t:sections.global.settings.highlighted_text.options__4.label"
- },
- {
- "value": "underline",
- "label": "t:sections.global.settings.highlighted_text.options__5.label"
- },
- {
- "value": "marker",
- "label": "t:sections.global.settings.highlighted_text.options__6.label"
- },
- {
- "value": "stencil",
- "label": "t:sections.global.settings.highlighted_text.options__7.label"
- },
- {
- "value": "scribble",
- "label": "t:sections.global.settings.highlighted_text.options__8.label"
- }
- ],
- "default": "none",
- "label": "t:sections.global.settings.highlighted_text.label"
- },
- {
- "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
- "type": "select",
- "id": "highlighted_scribble",
- "options": [
- {
- "value": "circle",
- "label": "t:sections.global.settings.highlighted_scribble.options__1.label"
- },
- {
- "value": "basic-underline",
- "label": "t:sections.global.settings.highlighted_scribble.options__2.label"
- },
- {
- "value": "sketch-underline",
- "label": "t:sections.global.settings.highlighted_scribble.options__3.label"
- },
- {
- "value": "squiggle-underline",
- "label": "t:sections.global.settings.highlighted_scribble.options__4.label"
- },
- {
- "value": "squiggle-underline-2",
- "label": "t:sections.global.settings.highlighted_scribble.options__5.label"
- }
- ],
- "default": "circle",
- "label": "t:sections.global.settings.highlighted_scribble.label",
- "info": "t:sections.global.settings.highlighted_scribble.info"
- }
- ]
- },
- {
- "type": "button",
- "name": "t:sections.global.blocks.button.name",
- "settings": [
- {
- "type": "text",
- "id": "button_label",
- "default": "Button label",
- "label": "t:sections.global.settings.button_label.label",
- "info": "t:sections.global.settings.button_label.info"
- },
- {
- "type": "url",
- "id": "button_link",
- "label": "t:sections.global.settings.button_link.label"
- },
- {
- "type": "select",
- "id": "button_style",
- "options": [
- {
- "value": "primary",
- "label": "t:sections.global.settings.button_style.options__1.label"
- },
- {
- "value": "secondary",
- "label": "t:sections.global.settings.button_style.options__2.label"
- },
- {
- "value": "link",
- "label": "t:sections.global.settings.button_style.options__3.label"
- }
- ],
- "default": "primary",
- "label": "t:sections.global.settings.button_style.label"
- },
- {
- "visible_if": "{{ block.settings.button_style != 'link' }}",
- "type": "select",
- "id": "button_size",
- "options": [
- {
- "value": "sm",
- "label": "t:sections.global.settings.button_size.options__1.label"
- },
- {
- "value": "md",
- "label": "t:sections.global.settings.button_size.options__2.label"
- },
- {
- "value": "lg",
- "label": "t:sections.global.settings.button_size.options__3.label"
- }
- ],
- "default": "md",
- "label": "t:sections.global.settings.button_size.label"
- },
- {
- "type": "checkbox",
- "id": "button_external",
- "label": "t:sections.global.settings.button_external.label",
- "default": false
- },
- {
- "type": "checkbox",
- "id": "button_icon",
- "label": "t:sections.global.settings.button_icon.label",
- "default": true
- }
- ]
- },
- {
- "type": "link",
- "name": "t:sections.global.blocks.link.name",
- "settings": [
- {
- "type": "text",
- "id": "label",
- "label": "t:sections.global.settings.text.label",
- "default": "Text"
- },
- {
- "type": "url",
- "id": "link",
- "label": "t:sections.global.settings.link.label"
- },
- {
- "type": "checkbox",
- "id": "external",
- "label": "t:sections.global.settings.button_external.label",
- "default": false
- }
- ]
- }
- ],
- "presets": [
- {
- "name": "t:sections.reveal-video-with-text-overlay.name",
- "category": "t:categories.banners",
- "blocks": [
- {
- "type": "subheading"
- },
- {
- "type": "heading"
- },
- {
- "type": "text"
- }
- ]
- }
- ],
- "disabled_on": {
- "groups": [
- "footer",
- "header",
- "custom.overlay"
- ]
- }
+  "name": "SIS Barcelona 2026",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Event Settings"
+    },
+    {
+      "type": "text",
+      "id": "online_price",
+      "label": "Online Price (€)",
+      "default": "390"
+    },
+    {
+      "type": "text",
+      "id": "inperson_price",
+      "label": "In-Person Price (€)",
+      "default": "525"
+    },
+    {
+      "type": "url",
+      "id": "online_link",
+      "label": "Online Registration URL"
+    },
+    {
+      "type": "url",
+      "id": "inperson_link",
+      "label": "In-Person Registration URL"
+    }
+  ]
 }
 {% endschema %}

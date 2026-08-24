@@ -1584,7 +1584,7 @@
         "logo_7pcWNt": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/univ_bern.png",
+            "image": "shopify://shop_images/logo-tuoa.png",
             "height": 80,
             "link": ""
           }
@@ -1592,7 +1592,7 @@
         "logo_CtXhYV": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/CODE-Health-Logo-Standard-Border-500px.avif",
+            "image": "shopify://shop_images/spu-logo.png",
             "height": 80,
             "link": ""
           }
@@ -1600,7 +1600,7 @@
         "logo_7mc9Gc": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/LOGO-Noxtak-1-Azul.avif",
+            "image": "shopify://shop_images/Jackson_State_University_logo.png",
             "height": 80,
             "link": ""
           }
@@ -1608,7 +1608,7 @@
         "logo_eCbYmK": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/CTX-Logo_resized.avif",
+            "image": "shopify://shop_images/logo-gw.avif",
             "height": 80,
             "link": ""
           }
@@ -1616,7 +1616,7 @@
         "logo_FhTtnh": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/HW.avif",
+            "image": "shopify://shop_images/logo-estee.png",
             "height": 80,
             "link": ""
           }
@@ -1624,7 +1624,7 @@
         "logo_w6bbNF": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/TBH_Logo.avif",
+            "image": "shopify://shop_images/logo-ueda.png",
             "height": 80,
             "link": ""
           }
@@ -1638,7 +1638,6 @@
         "logo_FhTtnh",
         "logo_w6bbNF"
       ],
-      "disabled": true,
       "name": "t:sections.logo-list.name",
       "settings": {
         "layout": "marquee",

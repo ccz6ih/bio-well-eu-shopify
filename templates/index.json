@@ -51,7 +51,6 @@
           "settings": {
             "button_label": "Book a Free Demo",
             "button_link": "https://share-eu1.hsforms.com/1oMu3i2zdS-a3zWveDXAqZQf2gml",
-            "button_action": "link",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,
@@ -205,7 +204,7 @@
       ],
       "name": "t:sections.image-with-text.name",
       "settings": {
-        "image": "shopify://shop_images/maker-download_4_7d3b053b-f4ef-4756-87d8-fb00cec02586.webp",
+        "image": "shopify://shop_images/section-from-fingertips-1.jpg",
         "image_height": "650px",
         "image_width": "medium",
         "layout": "image_first",
@@ -382,7 +381,6 @@
           "settings": {
             "button_label": "Register Now — €390 Online | €525-Person",
             "button_link": "https://youtu.be/Q2vTWzNQMFQ?si=aHfWHYQEvEc4O5nD",
-            "button_action": "popup",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,

@@ -204,7 +204,7 @@
       ],
       "name": "t:sections.image-with-text.name",
       "settings": {
-        "image": "shopify://shop_images/section-from-fingertips-2.jpg",
+        "image": "shopify://shop_images/from-fingertips-ok.png",
         "image_height": "650px",
         "image_width": "medium",
         "layout": "image_first",

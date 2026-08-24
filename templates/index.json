@@ -550,8 +550,8 @@
         "image-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/referenceimage2.jpg",
-            "image_mobile": "shopify://shop_images/camera-3.0.jpg",
+            "image": "shopify://shop_images/image-biochamp-avant.jpg",
+            "image_mobile": "shopify://shop_images/image-biochamp-apres.jpg",
             "subheading": "Flow Harmony",
             "heading": "Crimson Shadow",
             "content_position": "end",

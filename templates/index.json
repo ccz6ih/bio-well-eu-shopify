@@ -539,21 +539,21 @@
         "image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/referenceimage1.jpg",
-            "image_mobile": "shopify://shop_images/camera-3.0.jpg",
-            "subheading": "Flow Harmony",
-            "heading": "Gold Tone",
-            "content_position": "end",
+            "image": "shopify://shop_images/001-bio-well-avant.jpg",
+            "image_mobile": "shopify://shop_images/001-bio-well-avant.jpg",
+            "subheading": "",
+            "heading": "",
+            "content_position": "center",
             "color_text": "#ffffff"
           }
         },
         "image-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/01-bio-well-avant.jpg",
-            "image_mobile": "shopify://shop_images/02-bio-well-apres.jpg",
-            "subheading": "Flow Harmony",
-            "heading": "Crimson Shadow",
+            "image": "shopify://shop_images/002-bio-well-apres.jpg",
+            "image_mobile": "shopify://shop_images/002-bio-well-apres.jpg",
+            "subheading": "",
+            "heading": "",
             "content_position": "end",
             "color_text": "#ffffff"
           }

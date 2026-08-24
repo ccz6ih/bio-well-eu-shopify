@@ -339,91 +339,6 @@
         "parallax_direction": "vertical"
       }
     },
-    "reveal_video_with_text_overlay_3rKJ9b": {
-      "type": "reveal-video-with-text-overlay",
-      "blocks": {
-        "subheading_C3kTir": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Science, information & spirit — Barcelona",
-            "subheading_size": "subtitle-md",
-            "secondary_color": true
-          }
-        },
-        "heading_LQnr3Y": {
-          "type": "heading",
-          "settings": {
-            "heading": "30 Years of GDV Technology Celebration",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "half_text",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": true
-          }
-        },
-        "text_GDFEWe": {
-          "type": "text",
-          "settings": {
-            "text": "<p>October 3-5, 2026 . Internationnal expert, culting-edge research, and exclusive access to new technology</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_eqRpEm": {
-          "type": "button",
-          "settings": {
-            "button_label": "Register Now — €390 Online | €525-Person",
-            "button_link": "https://youtu.be/Q2vTWzNQMFQ?si=aHfWHYQEvEc4O5nD",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "subheading_C3kTir",
-        "heading_LQnr3Y",
-        "text_GDFEWe",
-        "button_eqRpEm"
-      ],
-      "disabled": true,
-      "name": "t:sections.reveal-video-with-text-overlay.name",
-      "settings": {
-        "h1_heading": "Join the Global Bio-Well Community in Barcelona",
-        "h1_size": "title-md",
-        "h1_spacing": 10,
-        "video": "shopify://files/videos/Video-congres_EN-ok.mp4",
-        "video_url": "https://youtu.be/Q2vTWzNQMFQ?si=aHfWHYQEvEc4O5nD",
-        "cover_image": "shopify://shop_images/practitioners-ok-ombre.jpg",
-        "description": "",
-        "content_width": "small",
-        "content_position": "md:items-center md:justify-start",
-        "text_alignment": "left",
-        "video_mobile": "shopify://files/videos/hand-field-and-flowers-in-closeup-sunset-and-wal-2025-12-17-09-25-55-utc.mov",
-        "video_url_mobile": "",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 51,
-        "enable_parallax": true
-      }
-    },
     "multicolumn_trPyD8": {
       "type": "multicolumn",
       "blocks": {
@@ -1045,62 +960,6 @@
         "divider": false,
         "full_width": false,
         "rounded": true
-      }
-    },
-    "highlight_text_JRdtgi": {
-      "type": "highlight-text",
-      "blocks": {
-        "text_WU9Upg": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p><strong>Bio-Well is used daily in real environments where observation, precision, and clarity matter.</strong></p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text_WU9Upg"
-      ],
-      "disabled": true,
-      "name": "t:sections.highlight-text.name",
-      "settings": {
-        "text_alignment": "center",
-        "text_alignment_mobile": "center",
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 0,
-        "padding_bottom": 60,
-        "divider": false,
-        "narrow": true,
-        "rounded": false
       }
     },
     "multicolumn_Y7aqxK": {
@@ -1806,6 +1665,100 @@
         "narrow": true,
         "rounded": false
       }
+    },
+    "logo_list_zJaQJa": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_7pcWNt": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/univ_bern.png",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_CtXhYV": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/CODE-Health-Logo-Standard-Border-500px.avif",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_7mc9Gc": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/LOGO-Noxtak-1-Azul.avif",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_eCbYmK": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/CTX-Logo_resized.avif",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_FhTtnh": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/HW.avif",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_w6bbNF": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/TBH_Logo.avif",
+            "height": 80,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_7pcWNt",
+        "logo_CtXhYV",
+        "logo_7mc9Gc",
+        "logo_eCbYmK",
+        "logo_FhTtnh",
+        "logo_w6bbNF"
+      ],
+      "name": "t:sections.logo-list.name",
+      "settings": {
+        "layout": "marquee",
+        "grid_horizontal": 75,
+        "direction": "right",
+        "speed": 5,
+        "heading": "Published Research",
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -1814,7 +1767,6 @@
     "image_with_text_ADmrfV",
     "multicolumn_with_icons_geQQWb",
     "slideshow_emKJn7",
-    "reveal_video_with_text_overlay_3rKJ9b",
     "multicolumn_trPyD8",
     "image-comparison",
     "images_with_text_overlay_Fc78Ud",
@@ -1822,7 +1774,6 @@
     "video_with_text_PbBHpa",
     "rich_text_pnT8Ti",
     "multicolumn_f6gKKi",
-    "highlight_text_JRdtgi",
     "multicolumn_Y7aqxK",
     "rich_text_c8NrTK",
     "image_only_Xn7nUn",
@@ -1832,6 +1783,7 @@
     "featured_collections_mWMibN",
     "rich_text_ymR8WD",
     "testimonials-banner",
+    "logo_list_zJaQJa",
     "blog_posts_collage_GG8zU9",
     "rich_text_W3LVMk"
   ]

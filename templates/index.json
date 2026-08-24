@@ -1336,6 +1336,7 @@
         "column_TxkUAp",
         "column_tAq3wp"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn-with-icons.name",
       "settings": {
         "style": "with-border",
@@ -1406,12 +1407,24 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "button_KTDVKB": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover our training programme",
+            "button_link": "shopify://pages/education",
+            "button_style": "secondary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
         }
       },
       "block_order": [
         "image_w943c9",
         "heading_RVf8nR",
-        "text_ayjJat"
+        "text_ayjJat",
+        "button_KTDVKB"
       ],
       "name": "t:sections.rich-text.name",
       "settings": {

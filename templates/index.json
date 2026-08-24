@@ -1578,6 +1578,100 @@
         "parallax_direction": "zoom"
       }
     },
+    "logo_list_zJaQJa": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_7pcWNt": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/univ_bern.png",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_CtXhYV": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/CODE-Health-Logo-Standard-Border-500px.avif",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_7mc9Gc": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/LOGO-Noxtak-1-Azul.avif",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_eCbYmK": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/CTX-Logo_resized.avif",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_FhTtnh": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/HW.avif",
+            "height": 80,
+            "link": ""
+          }
+        },
+        "logo_w6bbNF": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/TBH_Logo.avif",
+            "height": 80,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_7pcWNt",
+        "logo_CtXhYV",
+        "logo_7mc9Gc",
+        "logo_eCbYmK",
+        "logo_FhTtnh",
+        "logo_w6bbNF"
+      ],
+      "name": "t:sections.logo-list.name",
+      "settings": {
+        "layout": "marquee",
+        "grid_horizontal": 75,
+        "direction": "right",
+        "speed": 5,
+        "heading": "Published Research",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "blog_posts_collage_GG8zU9": {
       "type": "blog-posts-collage",
       "name": "t:sections.blog-posts-collage.name",
@@ -1663,100 +1757,6 @@
         "padding_bottom": 48,
         "divider": false,
         "narrow": true,
-        "rounded": false
-      }
-    },
-    "logo_list_zJaQJa": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_7pcWNt": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/univ_bern.png",
-            "height": 80,
-            "link": ""
-          }
-        },
-        "logo_CtXhYV": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/CODE-Health-Logo-Standard-Border-500px.avif",
-            "height": 80,
-            "link": ""
-          }
-        },
-        "logo_7mc9Gc": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/LOGO-Noxtak-1-Azul.avif",
-            "height": 80,
-            "link": ""
-          }
-        },
-        "logo_eCbYmK": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/CTX-Logo_resized.avif",
-            "height": 80,
-            "link": ""
-          }
-        },
-        "logo_FhTtnh": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/HW.avif",
-            "height": 80,
-            "link": ""
-          }
-        },
-        "logo_w6bbNF": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/TBH_Logo.avif",
-            "height": 80,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_7pcWNt",
-        "logo_CtXhYV",
-        "logo_7mc9Gc",
-        "logo_eCbYmK",
-        "logo_FhTtnh",
-        "logo_w6bbNF"
-      ],
-      "name": "t:sections.logo-list.name",
-      "settings": {
-        "layout": "marquee",
-        "grid_horizontal": 75,
-        "direction": "right",
-        "speed": 5,
-        "heading": "Published Research",
-        "heading_size": "title-lg tracking-heading",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
         "rounded": false
       }
     }

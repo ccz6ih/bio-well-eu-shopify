@@ -1638,6 +1638,7 @@
         "logo_FhTtnh",
         "logo_w6bbNF"
       ],
+      "disabled": true,
       "name": "t:sections.logo-list.name",
       "settings": {
         "layout": "marquee",

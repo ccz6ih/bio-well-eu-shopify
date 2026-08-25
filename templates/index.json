@@ -1760,6 +1760,60 @@
         "narrow": true,
         "rounded": false
       }
+    },
+    "testimonials_videos_carousel_pgzEUd": {
+      "type": "testimonials-videos-carousel",
+      "blocks": {
+        "testimonial_video_FwMACa": {
+          "type": "testimonial-video",
+          "settings": {}
+        },
+        "testimonial_video_YR7i3M": {
+          "type": "testimonial-video",
+          "settings": {}
+        },
+        "testimonial_video_UULFAw": {
+          "type": "testimonial-video",
+          "settings": {}
+        },
+        "testimonial_video_jeB4Y4": {
+          "type": "testimonial-video",
+          "settings": {}
+        },
+        "testimonial_video_MqBti4": {
+          "type": "testimonial-video",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "testimonial_video_FwMACa",
+        "testimonial_video_YR7i3M",
+        "testimonial_video_UULFAw",
+        "testimonial_video_jeB4Y4",
+        "testimonial_video_MqBti4"
+      ],
+      "disabled": true,
+      "name": "t:sections.testimonials-videos-carousel.name",
+      "settings": {
+        "heading": "What our customers say",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "selection_mode": "all",
+        "manual_limit": 6,
+        "slides_per_view_mobile": "1",
+        "slides_per_view_tablet": "2",
+        "slides_per_view_desktop": "3",
+        "gap": 24,
+        "show_arrows": true,
+        "show_dots": true,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -1786,6 +1840,7 @@
     "testimonials-banner",
     "logo_list_zJaQJa",
     "blog_posts_collage_GG8zU9",
-    "rich_text_W3LVMk"
+    "rich_text_W3LVMk",
+    "testimonials_videos_carousel_pgzEUd"
   ]
 }

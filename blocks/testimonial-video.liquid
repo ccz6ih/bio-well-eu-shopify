@@ -1,7 +1,17 @@
-{%- comment -%}
-  Shared block schema for video testimonials. Renders nothing on its own — the
-  parent section renders the card via {% render 'testimonial-card', block: block %}.
-{%- endcomment -%}
+<div class="testimonial-video">
+  <h3>{{ block.settings.title }}</h3>
+
+  <div class="testimonial-video__description">
+    {{ block.settings.description }}
+  </div>
+
+  {% if block.settings.cover_image != blank %}
+    {{ block.settings.cover_image
+      | image_url: width: 800
+      | image_tag
+    }}
+  {% endif %}
+</div>
 
 {% schema %}
 {
@@ -26,7 +36,10 @@
     {
       "type": "video_url",
       "id": "video_url",
-      "accept": ["youtube", "vimeo"],
+      "accept": [
+        "youtube",
+        "vimeo"
+      ],
       "label": "t:sections.testimonials-videos.blocks.testimonial_video.video_url.label",
       "info": "t:sections.testimonials-videos.blocks.testimonial_video.video_url.info"
     },

@@ -4462,24 +4462,22 @@
       "blocks": {
         "testimonial_video": {
           "name": "Témoignage vidéo",
-          "settings": {
-            "title": {
-              "label": "Titre"
-            },
-            "description": {
-              "label": "Description"
-            },
-            "header__video": {
-              "content": "Vidéo"
-            },
-            "video_url": {
-              "label": "URL de la vidéo",
-              "info": "Prend en charge les URL YouTube et Vimeo."
-            },
-            "cover_image": {
-              "label": "Image de couverture",
-              "info": "Utilisée comme poster avant la lecture de la vidéo."
-            }
+          "title": {
+            "label": "Titre"
+          },
+          "description": {
+            "label": "Description"
+          },
+          "header__video": {
+            "content": "Vidéo"
+          },
+          "video_url": {
+            "label": "URL de la vidéo",
+            "info": "Prend en charge les URL YouTube et Vimeo."
+          },
+          "cover_image": {
+            "label": "Image de couverture",
+            "info": "Utilisée comme poster avant la lecture de la vidéo."
           }
         }
       }

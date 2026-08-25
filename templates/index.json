@@ -1766,23 +1766,48 @@
       "blocks": {
         "testimonial_video_FwMACa": {
           "type": "testimonial-video",
-          "settings": {}
+          "settings": {
+            "title": "Customer story",
+            "description": "<p>Add a short quote or summary from the customer.</p>",
+            "video_url": ""
+          },
+          "blocks": {}
         },
         "testimonial_video_YR7i3M": {
           "type": "testimonial-video",
-          "settings": {}
+          "settings": {
+            "title": "Customer story",
+            "description": "<p>Add a short quote or summary from the customer.</p>",
+            "video_url": ""
+          },
+          "blocks": {}
         },
         "testimonial_video_UULFAw": {
           "type": "testimonial-video",
-          "settings": {}
+          "settings": {
+            "title": "Customer story",
+            "description": "<p>Add a short quote or summary from the customer.</p>",
+            "video_url": ""
+          },
+          "blocks": {}
         },
         "testimonial_video_jeB4Y4": {
           "type": "testimonial-video",
-          "settings": {}
+          "settings": {
+            "title": "Customer story",
+            "description": "<p>Add a short quote or summary from the customer.</p>",
+            "video_url": ""
+          },
+          "blocks": {}
         },
         "testimonial_video_MqBti4": {
           "type": "testimonial-video",
-          "settings": {}
+          "settings": {
+            "title": "Customer story",
+            "description": "<p>Add a short quote or summary from the customer.</p>",
+            "video_url": ""
+          },
+          "blocks": {}
         }
       },
       "block_order": [

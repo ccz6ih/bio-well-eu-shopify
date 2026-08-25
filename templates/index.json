@@ -808,6 +808,7 @@
       "blocks": {
         "text_MPFTM9": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Bio-Well is your co-pilot for understanding the invisible factors influencing human performance and well-being.</p>",
             "text_font": "body",

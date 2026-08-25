@@ -1,16 +1,15 @@
-<div class="testimonial-video">
-  <h3>{{ block.settings.title }}</h3>
+{%- comment -%}
+  Theme Block for video testimonials.
 
-  <div class="testimonial-video__description">
-    {{ block.settings.description }}
-  </div>
+  The block is rendered by the parent section through:
+  {% content_for 'blocks' %}
 
-  {% if block.settings.cover_image != blank %}
-    {{ block.settings.cover_image
-      | image_url: width: 800
-      | image_tag
-    }}
-  {% endif %}
+  The actual card markup is delegated to:
+  snippets/testimonial-card.liquid
+{%- endcomment -%}
+
+<div class="testimonials-videos__cell">
+  {% render 'testimonial-card', block: block %}
 </div>
 
 {% schema %}

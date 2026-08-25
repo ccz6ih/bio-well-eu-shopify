@@ -1,41 +1,44 @@
-{%- comment -%}
-  Shared block schema for video testimonials. Renders nothing on its own — the
-  parent section renders the card via {% render 'testimonial-card', block: block %}.
-{%- endcomment -%}
+<div class="testimonial-video">
+  <h3>{{ block.settings.title }}</h3>
+
+  <div>
+    {{ block.settings.description }}
+  </div>
+
+  {% if block.settings.cover_image %}
+    {{ block.settings.cover_image
+      | image_url: width: 800
+      | image_tag
+    }}
+  {% endif %}
+</div>
 
 {% schema %}
 {
-  "name": "t:sections.testimonials-videos.blocks.testimonial_video.name",
-  "tag": null,
+  "name": "Vidéo témoignage",
   "settings": [
     {
       "type": "text",
       "id": "title",
-      "label": "t:sections.testimonials-videos.blocks.testimonial_video.title",
+      "label": "Titre",
       "default": "Customer story"
     },
     {
       "type": "richtext",
       "id": "description",
-      "label": "t:sections.testimonials-videos.blocks.testimonial_video.description",
+      "label": "Description",
       "default": "<p>Add a short quote or summary from the customer.</p>"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.testimonials-videos.blocks.testimonial_video.header__video.content"
     },
     {
       "type": "video_url",
       "id": "video_url",
       "accept": ["youtube", "vimeo"],
-      "label": "t:sections.testimonials-videos.blocks.testimonial_video.video_url.label",
-      "info": "t:sections.testimonials-videos.blocks.testimonial_video.video_url.info"
+      "label": "URL de la vidéo"
     },
     {
       "type": "image_picker",
       "id": "cover_image",
-      "label": "t:sections.testimonials-videos.blocks.testimonial_video.cover_image",
-      "info": "t:sections.testimonials-videos.blocks.testimonial_video.cover_image_info"
+      "label": "Image de couverture"
     }
   ]
 }

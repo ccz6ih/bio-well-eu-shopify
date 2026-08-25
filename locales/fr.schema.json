@@ -4462,12 +4462,8 @@
       "blocks": {
         "testimonial_video": {
           "name": "Témoignage vidéo",
-          "title": {
-            "label": "Titre"
-          },
-          "description": {
-            "label": "Description"
-          },
+          "title": "Titre",
+          "description": "Description",
           "header__video": {
             "content": "Vidéo"
           },
@@ -4475,10 +4471,8 @@
             "label": "URL de la vidéo",
             "info": "Prend en charge les URL YouTube et Vimeo."
           },
-          "cover_image": {
-            "label": "Image de couverture",
-            "info": "Utilisée comme poster avant la lecture de la vidéo."
-          }
+          "cover_image": "Image de couverture",
+          "cover_image_info": "Utilisée comme poster avant la lecture de la vidéo."
         }
       }
     },

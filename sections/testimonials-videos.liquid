@@ -1,8 +1,6 @@
 {%- comment -%}
-  Video testimonials page section. Lists blocks of type testimonial-video
-  in a responsive grid. Videos play on click; only one plays at a time when
-  the section is wrapped in <testimonials-videos-carousel> (the page list
-  itself doesn't enforce it, but cards are still <testimonial-card> elements).
+  Video testimonials page section.
+  Uses Theme Blocks of type testimonial-video.
 {%- endcomment -%}
 
 <style>
@@ -20,20 +18,14 @@
   <div class="page-width relative">
     {%- render 'section-heading', section: section -%}
 
-    {%- if section.blocks.size > 0 -%}
-      <testimonials-videos-carousel class="testimonials-videos__list block">
-        <div
-          class="testimonials-videos__grid grid items-stretch"
-          style="--columns: var(--columns-mobile);"
-        >
-          {%- for block in section.blocks -%}
-            <div class="testimonials-videos__cell">
-              {%- render 'testimonial-card', block: block -%}
-            </div>
-          {%- endfor -%}
-        </div>
-      </testimonials-videos-carousel>
-    {%- endif -%}
+    <testimonials-videos-carousel class="testimonials-videos__list block">
+      <div
+        class="testimonials-videos__grid grid items-stretch"
+        style="--columns: var(--columns-mobile);"
+      >
+        {% content_for 'blocks' %}
+      </div>
+    </testimonials-videos-carousel>
   </div>
 </div>
 
@@ -43,33 +35,40 @@
       --columns: var(--columns-desktop);
     }
   }
+
   #shopify-section-{{ section.id }} .testimonials-videos__grid {
     grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
     gap: var(--grid-gap);
   }
+
   #shopify-section-{{ section.id }} .testimonial-card {
     height: 100%;
     display: flex;
     flex-direction: column;
   }
+
   #shopify-section-{{ section.id }} .testimonial-card__media {
     border-radius: 12px;
     overflow: hidden;
     aspect-ratio: 16 / 9;
   }
+
   #shopify-section-{{ section.id }} .testimonial-card__video,
   #shopify-section-{{ section.id }} .testimonial-card__placeholder {
     width: 100%;
     height: 100%;
     display: block;
   }
+
   #shopify-section-{{ section.id }} .testimonial-card__body {
     padding-block-start: 16px;
   }
+
   #shopify-section-{{ section.id }} .testimonial-card__title {
     margin: 0 0 8px;
     font-weight: 600;
   }
+
   #shopify-section-{{ section.id }} .testimonial-card__description :where(p) {
     margin: 0;
   }
@@ -95,10 +94,22 @@
       "type": "select",
       "id": "heading_size",
       "options": [
-        { "value": "title-sm", "label": "t:sections.global.settings.heading_size.options__1.label" },
-        { "value": "title-md", "label": "t:sections.global.settings.heading_size.options__2.label" },
-        { "value": "title-lg tracking-heading", "label": "t:sections.global.settings.heading_size.options__3.label" },
-        { "value": "title-xl tracking-heading", "label": "t:sections.global.settings.heading_size.options__4.label" }
+        {
+          "value": "title-sm",
+          "label": "t:sections.global.settings.heading_size.options__1.label"
+        },
+        {
+          "value": "title-md",
+          "label": "t:sections.global.settings.heading_size.options__2.label"
+        },
+        {
+          "value": "title-lg tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__3.label"
+        },
+        {
+          "value": "title-xl tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__4.label"
+        }
       ],
       "default": "title-md",
       "label": "t:sections.global.settings.heading_size.label"
@@ -108,9 +119,18 @@
       "id": "heading_alignment",
       "label": "t:sections.global.settings.heading_alignment.label",
       "options": [
-        { "value": "text-left md:items-end md:flex-row", "label": "t:sections.global.settings.heading_alignment.options__1.label" },
-        { "value": "text-center md:items-center", "label": "t:sections.global.settings.heading_alignment.options__2.label" },
-        { "value": "text-right md:items-end md:flex-row-reverse", "label": "t:sections.global.settings.heading_alignment.options__3.label" }
+        {
+          "value": "text-left md:items-end md:flex-row",
+          "label": "t:sections.global.settings.heading_alignment.options__1.label"
+        },
+        {
+          "value": "text-center md:items-center",
+          "label": "t:sections.global.settings.heading_alignment.options__2.label"
+        },
+        {
+          "value": "text-right md:items-end md:flex-row-reverse",
+          "label": "t:sections.global.settings.heading_alignment.options__3.label"
+        }
       ],
       "default": "text-center md:items-center"
     },
@@ -118,13 +138,34 @@
       "type": "select",
       "id": "heading_tag",
       "options": [
-        { "value": "h1", "label": "t:sections.global.settings.heading_tag.options__1.label" },
-        { "value": "h2", "label": "t:sections.global.settings.heading_tag.options__2.label" },
-        { "value": "h3", "label": "t:sections.global.settings.heading_tag.options__3.label" },
-        { "value": "h4", "label": "t:sections.global.settings.heading_tag.options__4.label" },
-        { "value": "div", "label": "t:sections.global.settings.heading_tag.options__7.label" },
-        { "value": "span", "label": "t:sections.global.settings.heading_tag.options__8.label" },
-        { "value": "p", "label": "t:sections.global.settings.heading_tag.options__9.label" }
+        {
+          "value": "h1",
+          "label": "t:sections.global.settings.heading_tag.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.global.settings.heading_tag.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.global.settings.heading_tag.options__3.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.global.settings.heading_tag.options__4.label"
+        },
+        {
+          "value": "div",
+          "label": "t:sections.global.settings.heading_tag.options__7.label"
+        },
+        {
+          "value": "span",
+          "label": "t:sections.global.settings.heading_tag.options__8.label"
+        },
+        {
+          "value": "p",
+          "label": "t:sections.global.settings.heading_tag.options__9.label"
+        }
       ],
       "default": "h2",
       "label": "t:sections.global.settings.heading_tag.label"
@@ -147,9 +188,18 @@
       "type": "select",
       "id": "columns_desktop",
       "options": [
-        { "value": "2", "label": "t:sections.testimonials-videos.settings.columns_desktop.options__2.label" },
-        { "value": "3", "label": "t:sections.testimonials-videos.settings.columns_desktop.options__3.label" },
-        { "value": "4", "label": "t:sections.testimonials-videos.settings.columns_desktop.options__4.label" }
+        {
+          "value": "2",
+          "label": "t:sections.testimonials-videos.settings.columns_desktop.options__2.label"
+        },
+        {
+          "value": "3",
+          "label": "t:sections.testimonials-videos.settings.columns_desktop.options__3.label"
+        },
+        {
+          "value": "4",
+          "label": "t:sections.testimonials-videos.settings.columns_desktop.options__4.label"
+        }
       ],
       "default": "3",
       "label": "t:sections.testimonials-videos.settings.columns_desktop.label"
@@ -158,8 +208,14 @@
       "type": "select",
       "id": "columns_mobile",
       "options": [
-        { "value": "1", "label": "t:sections.testimonials-videos.settings.columns_mobile.options__1.label" },
-        { "value": "2", "label": "t:sections.testimonials-videos.settings.columns_mobile.options__2.label" }
+        {
+          "value": "1",
+          "label": "t:sections.testimonials-videos.settings.columns_mobile.options__1.label"
+        },
+        {
+          "value": "2",
+          "label": "t:sections.testimonials-videos.settings.columns_mobile.options__2.label"
+        }
       ],
       "default": "1",
       "label": "t:sections.testimonials-videos.settings.columns_mobile.label"
@@ -212,7 +268,9 @@
     }
   ],
   "blocks": [
-    { "type": "@theme" }
+    {
+      "type": "@theme"
+    }
   ],
   "max_blocks": 60,
   "presets": [
@@ -220,9 +278,15 @@
       "name": "t:sections.testimonials-videos.name",
       "category": "t:categories.brand_trust",
       "blocks": [
-        { "type": "testimonial-video" },
-        { "type": "testimonial-video" },
-        { "type": "testimonial-video" }
+        {
+          "type": "testimonial-video"
+        },
+        {
+          "type": "testimonial-video"
+        },
+        {
+          "type": "testimonial-video"
+        }
       ]
     }
   ]

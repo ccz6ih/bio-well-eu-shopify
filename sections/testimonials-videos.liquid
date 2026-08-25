@@ -1,0 +1,230 @@
+{%- comment -%}
+  Video testimonials page section. Lists blocks of type testimonial-video
+  in a responsive grid. Videos play on click; only one plays at a time when
+  the section is wrapped in <testimonials-videos-carousel> (the page list
+  itself doesn't enforce it, but cards are still <testimonial-card> elements).
+{%- endcomment -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    --columns-desktop: {{ section.settings.columns_desktop }};
+    --columns-mobile: {{ section.settings.columns_mobile }};
+    --grid-gap: {{ section.settings.gap }}px;
+    {%- render 'section-variables', section: section -%}
+  }
+</style>
+
+<div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %} testimonials-videos">
+  <div class="page-width relative">
+    {%- render 'section-heading', section: section -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <testimonials-videos-carousel class="testimonials-videos__list block">
+        <div
+          class="testimonials-videos__grid grid items-stretch"
+          style="--columns: var(--columns-mobile);"
+        >
+          {%- for block in section.blocks -%}
+            <div class="testimonials-videos__cell">
+              {%- render 'testimonial-card', block: block -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      </testimonials-videos-carousel>
+    {%- endif -%}
+  </div>
+</div>
+
+<style>
+  @media (min-width: 768px) {
+    #shopify-section-{{ section.id }} .testimonials-videos__grid {
+      --columns: var(--columns-desktop);
+    }
+  }
+  #shopify-section-{{ section.id }} .testimonials-videos__grid {
+    grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+    gap: var(--grid-gap);
+  }
+  #shopify-section-{{ section.id }} .testimonial-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #shopify-section-{{ section.id }} .testimonial-card__media {
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+  }
+  #shopify-section-{{ section.id }} .testimonial-card__video,
+  #shopify-section-{{ section.id }} .testimonial-card__placeholder {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  #shopify-section-{{ section.id }} .testimonial-card__body {
+    padding-block-start: 16px;
+  }
+  #shopify-section-{{ section.id }} .testimonial-card__title {
+    margin: 0 0 8px;
+    font-weight: 600;
+  }
+  #shopify-section-{{ section.id }} .testimonial-card__description :where(p) {
+    margin: 0;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "t:sections.testimonials-videos.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__heading.content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.global.settings.heading.label",
+      "default": "Video testimonials"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "title-sm", "label": "t:sections.global.settings.heading_size.options__1.label" },
+        { "value": "title-md", "label": "t:sections.global.settings.heading_size.options__2.label" },
+        { "value": "title-lg tracking-heading", "label": "t:sections.global.settings.heading_size.options__3.label" },
+        { "value": "title-xl tracking-heading", "label": "t:sections.global.settings.heading_size.options__4.label" }
+      ],
+      "default": "title-md",
+      "label": "t:sections.global.settings.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "t:sections.global.settings.heading_alignment.label",
+      "options": [
+        { "value": "text-left md:items-end md:flex-row", "label": "t:sections.global.settings.heading_alignment.options__1.label" },
+        { "value": "text-center md:items-center", "label": "t:sections.global.settings.heading_alignment.options__2.label" },
+        { "value": "text-right md:items-end md:flex-row-reverse", "label": "t:sections.global.settings.heading_alignment.options__3.label" }
+      ],
+      "default": "text-center md:items-center"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        { "value": "h1", "label": "t:sections.global.settings.heading_tag.options__1.label" },
+        { "value": "h2", "label": "t:sections.global.settings.heading_tag.options__2.label" },
+        { "value": "h3", "label": "t:sections.global.settings.heading_tag.options__3.label" },
+        { "value": "h4", "label": "t:sections.global.settings.heading_tag.options__4.label" },
+        { "value": "div", "label": "t:sections.global.settings.heading_tag.options__7.label" },
+        { "value": "span", "label": "t:sections.global.settings.heading_tag.options__8.label" },
+        { "value": "p", "label": "t:sections.global.settings.heading_tag.options__9.label" }
+      ],
+      "default": "h2",
+      "label": "t:sections.global.settings.heading_tag.label"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "t:sections.global.settings.subheading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.global.settings.description.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.testimonials-videos.settings.header__layout.content"
+    },
+    {
+      "type": "select",
+      "id": "columns_desktop",
+      "options": [
+        { "value": "2", "label": "t:sections.testimonials-videos.settings.columns_desktop.options__2.label" },
+        { "value": "3", "label": "t:sections.testimonials-videos.settings.columns_desktop.options__3.label" },
+        { "value": "4", "label": "t:sections.testimonials-videos.settings.columns_desktop.options__4.label" }
+      ],
+      "default": "3",
+      "label": "t:sections.testimonials-videos.settings.columns_desktop.label"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "options": [
+        { "value": "1", "label": "t:sections.testimonials-videos.settings.columns_mobile.options__1.label" },
+        { "value": "2", "label": "t:sections.testimonials-videos.settings.columns_mobile.options__2.label" }
+      ],
+      "default": "1",
+      "label": "t:sections.testimonials-videos.settings.columns_mobile.label"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "min": 0,
+      "max": 64,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.gap.label",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__section.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_top.label",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_bottom.label",
+      "default": 72
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:sections.global.settings.divider.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "rounded",
+      "default": false,
+      "label": "t:sections.global.settings.rounded.label"
+    }
+  ],
+  "blocks": [
+    { "type": "testimonial-video", "name": "t:sections.testimonials-videos.blocks.testimonial_video.name" }
+  ],
+  "max_blocks": 60,
+  "presets": [
+    {
+      "name": "t:sections.testimonials-videos.preset.name",
+      "category": "t:categories.brand_trust",
+      "blocks": [
+        { "type": "testimonial-video" },
+        { "type": "testimonial-video" },
+        { "type": "testimonial-video" }
+      ]
+    }
+  ]
+}
+{% endschema %}

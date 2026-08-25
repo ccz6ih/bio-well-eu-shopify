@@ -1783,11 +1783,44 @@
             "cover_image": "shopify://shop_images/hotel-diagonal-salle-conf-ok.jpg"
           },
           "blocks": {}
+        },
+        "testimonial_video_3k43Rw": {
+          "type": "testimonial-video",
+          "settings": {
+            "title": "How Dr Joe Dispenza uses Bio-Well in his work",
+            "description": "<p>Bio-Well provides uniquely helpful insights into the state of a person.</p>",
+            "video_url": "https://youtu.be/TlW6mMRCDt0?si=xAw4aTYEuztWjQln",
+            "cover_image": "shopify://shop_images/hotel-diagonal-salle-conf-ok.jpg"
+          },
+          "blocks": {}
+        },
+        "testimonial_video_XnjxdB": {
+          "type": "testimonial-video",
+          "settings": {
+            "title": "How Dr Joe Dispenza uses Bio-Well in his work",
+            "description": "<p>Bio-Well provides uniquely helpful insights into the state of a person.</p>",
+            "video_url": "https://youtu.be/TlW6mMRCDt0?si=xAw4aTYEuztWjQln",
+            "cover_image": "shopify://shop_images/hotel-diagonal-salle-conf-ok.jpg"
+          },
+          "blocks": {}
+        },
+        "testimonial_video_Q4pLWB": {
+          "type": "testimonial-video",
+          "settings": {
+            "title": "How Dr Joe Dispenza uses Bio-Well in his work",
+            "description": "<p>Bio-Well provides uniquely helpful insights into the state of a person.</p>",
+            "video_url": "https://youtu.be/TlW6mMRCDt0?si=xAw4aTYEuztWjQln",
+            "cover_image": "shopify://shop_images/hotel-diagonal-salle-conf-ok.jpg"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "testimonial_video_FwMACa",
-        "testimonial_video_MzqCq7"
+        "testimonial_video_MzqCq7",
+        "testimonial_video_3k43Rw",
+        "testimonial_video_XnjxdB",
+        "testimonial_video_Q4pLWB"
       ],
       "name": "t:sections.testimonials-videos-carousel.name",
       "settings": {

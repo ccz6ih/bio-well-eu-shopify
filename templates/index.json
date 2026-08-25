@@ -1767,57 +1767,28 @@
         "testimonial_video_FwMACa": {
           "type": "testimonial-video",
           "settings": {
-            "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>",
-            "video_url": ""
+            "title": "How Dr Joe Dispenza uses Bio-Well in his work",
+            "description": "<p>Bio-Well provides uniquely helpful insights into the state of a person.</p>",
+            "video_url": "https://youtu.be/TlW6mMRCDt0?si=xAw4aTYEuztWjQln",
+            "cover_image": "shopify://shop_images/hotel-diagonal-salle-conf-ok.jpg"
           },
           "blocks": {}
         },
-        "testimonial_video_YR7i3M": {
+        "testimonial_video_MzqCq7": {
           "type": "testimonial-video",
           "settings": {
-            "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>",
-            "video_url": ""
-          },
-          "blocks": {}
-        },
-        "testimonial_video_UULFAw": {
-          "type": "testimonial-video",
-          "settings": {
-            "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>",
-            "video_url": ""
-          },
-          "blocks": {}
-        },
-        "testimonial_video_jeB4Y4": {
-          "type": "testimonial-video",
-          "settings": {
-            "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>",
-            "video_url": ""
-          },
-          "blocks": {}
-        },
-        "testimonial_video_MqBti4": {
-          "type": "testimonial-video",
-          "settings": {
-            "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>",
-            "video_url": ""
+            "title": "How Dr Joe Dispenza uses Bio-Well in his work",
+            "description": "<p>Bio-Well provides uniquely helpful insights into the state of a person.</p>",
+            "video_url": "https://youtu.be/TlW6mMRCDt0?si=xAw4aTYEuztWjQln",
+            "cover_image": "shopify://shop_images/hotel-diagonal-salle-conf-ok.jpg"
           },
           "blocks": {}
         }
       },
       "block_order": [
         "testimonial_video_FwMACa",
-        "testimonial_video_YR7i3M",
-        "testimonial_video_UULFAw",
-        "testimonial_video_jeB4Y4",
-        "testimonial_video_MqBti4"
+        "testimonial_video_MzqCq7"
       ],
-      "disabled": true,
       "name": "t:sections.testimonials-videos-carousel.name",
       "settings": {
         "heading": "What our customers say",
@@ -1832,8 +1803,8 @@
         "slides_per_view_tablet": "2",
         "slides_per_view_desktop": "3",
         "gap": 24,
-        "show_arrows": true,
-        "show_dots": true,
+        "show_arrows": false,
+        "show_dots": false,
         "padding_top": 72,
         "padding_bottom": 72,
         "divider": false,

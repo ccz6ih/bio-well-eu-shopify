@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "categories": {
     "banners": "Bannières",
@@ -4431,6 +4440,89 @@
     },
     "testimonials-banner": {
       "name": "Bannière de témoignages"
+    },
+    "testimonials-videos": {
+      "name": "Témoignages vidéo",
+      "settings": {
+        "header__layout": {
+          "content": "Mise en page"
+        },
+        "columns_desktop": {
+          "label": "Colonnes sur ordinateur",
+          "options__2": { "label": "2 colonnes" },
+          "options__3": { "label": "3 colonnes" },
+          "options__4": { "label": "4 colonnes" }
+        },
+        "columns_mobile": {
+          "label": "Colonnes sur mobile",
+          "options__1": { "label": "1 colonne" },
+          "options__2": { "label": "2 colonnes" }
+        }
+      },
+      "blocks": {
+        "testimonial_video": {
+          "name": "Témoignage vidéo",
+          "settings": {
+            "title": {
+              "label": "Titre"
+            },
+            "description": {
+              "label": "Description"
+            },
+            "header__video": {
+              "content": "Vidéo"
+            },
+            "video_url": {
+              "label": "URL de la vidéo",
+              "info": "Prend en charge les URL YouTube et Vimeo."
+            },
+            "cover_image": {
+              "label": "Image de couverture",
+              "info": "Utilisée comme poster avant la lecture de la vidéo."
+            }
+          }
+        }
+      }
+    },
+    "testimonials-videos-carousel": {
+      "name": "Carrousel de témoignages vidéo",
+      "settings": {
+        "header__selection": {
+          "content": "Sélection"
+        },
+        "header__layout": {
+          "content": "Mise en page"
+        },
+        "selection_mode": {
+          "label": "Mode de sélection",
+          "info": "Choisissez quelles vidéos afficher parmi les blocs ajoutés ci-dessous.",
+          "options__1": { "label": "Toutes les vidéos" },
+          "options__2": { "label": "N premières vidéos" }
+        },
+        "manual_limit": {
+          "label": "Nombre de vidéos"
+        },
+        "slides_per_view_mobile": {
+          "label": "Vues par slide sur mobile"
+        },
+        "slides_per_view_tablet": {
+          "label": "Vues par slide sur tablette"
+        },
+        "slides_per_view_desktop": {
+          "label": "Vues par slide sur ordinateur"
+        },
+        "show_arrows": {
+          "label": "Afficher les flèches"
+        },
+        "show_dots": {
+          "label": "Afficher les points"
+        }
+      },
+      "blocks": {
+        "testimonial_video": {
+          "name": "Témoignage vidéo"
+        }
+      }
     },
     "timeline": {
       "name": "Chronologie",

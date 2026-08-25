@@ -1,0 +1,59 @@
+{%- comment -%}
+  Renders a single video testimonial card.
+
+  Reused by:
+    - sections/testimonials-videos.liquid        (page list, grid layout)
+    - sections/testimonials-videos-carousel.liquid (home carousel)
+
+  The card wraps a deferred-loading YouTube/Vimeo video (via snippets/video.liquid)
+  with a title and description. Click-to-play is enforced, and a single video
+  plays at a time when the card lives inside a <testimonials-videos-carousel>
+  (see the matching custom elements in assets/theme.js).
+
+  @param {object} block          - Shopify block (must have settings.title, .description,
+                                   .video_url, .cover_image)
+  @param {string} [card_class]   - Optional extra classes for the <testimonial-card>
+
+  @example
+  {% render 'testimonial-card', block: block %}
+{%- endcomment -%}
+
+{%- liquid
+  assign card_class = card_class | default: ''
+  assign video_url = block.settings.video_url
+  assign cover_image = block.settings.cover_image
+-%}
+
+<testimonial-card class="testimonial-card block {{ card_class }}" {{ block.shopify_attributes }}>
+  <div class="testimonial-card__media relative overflow-hidden">
+    {%- if video_url != blank -%}
+      {%- render 'video',
+        video_url: video_url,
+        cover_image: cover_image,
+        description: block.settings.title,
+        show_play_button: true,
+        class: 'testimonial-card__video'
+      -%}
+    {%- else -%}
+      <div class="testimonial-card__placeholder media media--landscape">
+        {%- if cover_image != blank -%}
+          {{- cover_image | image_url: width: 800 | image_tag: loading: 'lazy', class: 'w-full h-full object-cover', alt: block.settings.title | escape -}}
+        {%- else -%}
+          {{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder placeholder--transparent w-full h-full' -}}
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+
+  <div class="testimonial-card__body">
+    {%- if block.settings.title != blank -%}
+      <h3 class="testimonial-card__title {{ block.settings.title_size | default: 'text-lg-2xl' }}">{{ block.settings.title | escape }}</h3>
+    {%- endif -%}
+
+    {%- if block.settings.description != blank -%}
+      <div class="testimonial-card__description rte text-base">
+        {{ block.settings.description }}
+      </div>
+    {%- endif -%}
+  </div>
+</testimonial-card>

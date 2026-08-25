@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "accessibility": {
@@ -237,6 +246,93 @@
     "comparison-table": {
       "highlight_differences": "Highlight differences",
       "choose_product": "Choose a product"
+    },
+    "testimonials-videos": {
+      "name": "Video testimonials",
+      "preset": {
+        "name": "Video testimonials"
+      },
+      "blocks": {
+        "testimonial_video": {
+          "name": "Video testimonial",
+          "title": "Title",
+          "description": "Description",
+          "header__video": {
+            "content": "Video"
+          },
+          "video_url": {
+            "label": "Video URL",
+            "info": "Supports YouTube and Vimeo URLs."
+          },
+          "cover_image": "Cover image",
+          "cover_image_info": "Used as the poster shown before the video plays."
+        }
+      },
+      "settings": {
+        "header__layout": {
+          "content": "Layout"
+        },
+        "columns_desktop": {
+          "label": "Columns on desktop",
+          "options__2": { "label": "2 columns" },
+          "options__3": { "label": "3 columns" },
+          "options__4": { "label": "4 columns" }
+        },
+        "columns_mobile": {
+          "label": "Columns on mobile",
+          "options__1": { "label": "1 column" },
+          "options__2": { "label": "2 columns" }
+        }
+      }
+    },
+    "testimonials-videos-carousel": {
+      "name": "Video testimonials carousel",
+      "preset": {
+        "name": "Video testimonials carousel"
+      },
+      "blocks": {
+        "testimonial_video": {
+          "name": "Video testimonial"
+        }
+      },
+      "settings": {
+        "header__selection": {
+          "content": "Selection"
+        },
+        "header__layout": {
+          "content": "Layout"
+        },
+        "selection_mode": {
+          "label": "Selection mode",
+          "info": "Choose which videos to display from the blocks added below.",
+          "options__1": { "label": "All videos" },
+          "options__2": { "label": "First N videos" }
+        },
+        "manual_limit": {
+          "label": "Number of videos"
+        },
+        "slides_per_view": {
+          "options__1": { "label": "1" },
+          "options__2": { "label": "2" },
+          "options__3": { "label": "3" },
+          "options__4": { "label": "4" }
+        },
+        "slides_per_view_mobile": {
+          "label": "Slides per view on mobile"
+        },
+        "slides_per_view_tablet": {
+          "label": "Slides per view on tablet"
+        },
+        "slides_per_view_desktop": {
+          "label": "Slides per view on desktop"
+        },
+        "show_arrows": {
+          "label": "Show arrows"
+        },
+        "show_dots": {
+          "label": "Show dots"
+        }
+      }
     }
   },
   "blogs": {

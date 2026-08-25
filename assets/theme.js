@@ -8363,3 +8363,70 @@ class ScrollSpy extends HTMLElement {
   }
 };
 customElements.define('scroll-spy', ScrollSpy, { extends: 'nav' });
+
+// =====================================================================
+// Video testimonials — ensures only one video plays at a time inside a
+// <testimonials-videos-carousel>. Wraps a single <video-media> element
+// (the deferred-loading YouTube/Vimeo player from snippets/video.liquid).
+// =====================================================================
+
+class TestimonialCard extends HTMLElement {
+  constructor() {
+    super();
+    this.videoMedia = this.querySelector('video-media');
+    this.boundHandlePlay = this.handlePlay.bind(this);
+    this.boundHandlePause = this.handlePause.bind(this);
+  }
+
+  connectedCallback() {
+    if (!this.videoMedia) return;
+    this.videoMedia.addEventListener('video:play', this.boundHandlePlay);
+    this.videoMedia.addEventListener('video:pause', this.boundHandlePause);
+  }
+
+  disconnectedCallback() {
+    if (!this.videoMedia) return;
+    this.videoMedia.removeEventListener('video:play', this.boundHandlePlay);
+    this.videoMedia.removeEventListener('video:pause', this.boundHandlePause);
+  }
+
+  handlePlay() {
+    this.classList.add('is-active');
+    this.dispatchEvent(new CustomEvent('testimonial-card:play', {
+      bubbles: true,
+      composed: true,
+    }));
+  }
+
+  handlePause() {
+    this.classList.remove('is-active');
+    this.dispatchEvent(new CustomEvent('testimonial-card:pause', {
+      bubbles: true,
+      composed: true,
+    }));
+  }
+}
+customElements.define('testimonial-card', TestimonialCard);
+
+class TestimonialsVideosCarousel extends HTMLElement {
+  connectedCallback() {
+    this.boundHandlePlay = this.handlePlay.bind(this);
+    this.addEventListener('testimonial-card:play', this.boundHandlePlay);
+  }
+
+  disconnectedCallback() {
+    this.removeEventListener('testimonial-card:play', this.boundHandlePlay);
+  }
+
+  handlePlay(event) {
+    const sourceCard = event.target;
+    this.querySelectorAll('testimonial-card').forEach((card) => {
+      if (card === sourceCard) return;
+      const video = card.querySelector('video-media');
+      if (video && video.playing) {
+        video.pause();
+      }
+    });
+  }
+}
+customElements.define('testimonials-videos-carousel', TestimonialsVideosCarousel);

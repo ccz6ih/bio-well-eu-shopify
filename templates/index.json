@@ -454,8 +454,8 @@
         "image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/001-bio-well-avant.jpg",
-            "image_mobile": "shopify://shop_images/001-bio-well-avant.jpg",
+            "image": "shopify://shop_images/002-bio-well-apres.jpg",
+            "image_mobile": "shopify://shop_images/002-bio-well-apres.jpg",
             "subheading": "",
             "heading": "",
             "content_position": "center",
@@ -465,8 +465,8 @@
         "image-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/002-bio-well-apres.jpg",
-            "image_mobile": "shopify://shop_images/002-bio-well-apres.jpg",
+            "image": "shopify://shop_images/001-bio-well-avant.jpg",
+            "image_mobile": "shopify://shop_images/001-bio-well-avant.jpg",
             "subheading": "",
             "heading": "",
             "content_position": "end",

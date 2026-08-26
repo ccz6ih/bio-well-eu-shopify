@@ -144,10 +144,94 @@
         "divider": false,
         "rounded": false
       }
+    },
+    "rich_text_yc9dD8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AQtW3g": {
+          "type": "heading",
+          "settings": {
+            "heading": "\"With the current transformation of the U.S. health system toward whole person, integrative health and recognition of the human biofield as a scientific entity, it is important to introduce and utilize Bio-Well to the practitioner community.Bio-Well quantitatively assesses energy in the various organ systems, overall vitality, and provides an indication of system stress. It is an important addition to one’s practice which will augment the ability of the practitioner to assess the patient’s condition, administer appropriate corrective measures and follow the results of treatment.\"",
+            "heading_size": "title-sm",
+            "heading_tag": "p",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_wMHPqV": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>— Dr. Len Wisneski, MD, FACP</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_pYHeDk": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Clinical Professor of Medicine at George Washington University Medical Center,Faculty Member in the Department of Biochemistry and Molecular Biology at Georgetown University </em></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AQtW3g",
+        "text_wMHPqV",
+        "text_pYHeDk"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
     }
   },
   "order": [
     "main",
+    "rich_text_yc9dD8",
     "testimonials_videos",
     "testimonials_videos_carousel_QtWa4p"
   ]

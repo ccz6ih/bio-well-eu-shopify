@@ -1794,6 +1794,30 @@
           },
           "blocks": {}
         },
+        "video_ibX3Gi": {
+          "type": "video",
+          "name": "t:blocks.video.name",
+          "settings": {
+            "source": "url",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "aspect_ratio": "adapt",
+            "enable_video_autoplay": true,
+            "enable_video_looping": true,
+            "source_mobile": "uploaded",
+            "description_mobile": "",
+            "aspect_ratio_mobile": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0
+          },
+          "blocks": {}
+        },
         "testimonial_video_XnjxdB": {
           "type": "testimonial-video",
           "settings": {
@@ -1809,6 +1833,7 @@
         "testimonial_video_FwMACa",
         "testimonial_video_MzqCq7",
         "testimonial_video_3k43Rw",
+        "video_ibX3Gi",
         "testimonial_video_XnjxdB"
       ],
       "name": "t:sections.testimonials-videos-carousel.name",

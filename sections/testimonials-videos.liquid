@@ -21,7 +21,6 @@
     <testimonials-videos-carousel class="testimonials-videos__list block">
       <div
         class="testimonials-videos__grid grid items-stretch"
-        style="--columns: var(--columns-mobile);"
       >
         {% content_for 'blocks' %}
       </div>
@@ -30,15 +29,10 @@
 </div>
 
 <style>
-  @media (min-width: 768px) {
-    #shopify-section-{{ section.id }} .testimonials-videos__grid {
-      --columns: var(--columns-desktop);
-    }
-  }
-
   #shopify-section-{{ section.id }} .testimonials-videos__grid {
     grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
     gap: var(--grid-gap);
+    --columns: var(--columns-mobile);
   }
 
   #shopify-section-{{ section.id }} .testimonial-card {
@@ -71,6 +65,12 @@
 
   #shopify-section-{{ section.id }} .testimonial-card__description :where(p) {
     margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    #shopify-section-{{ section.id }} .testimonials-videos__grid {
+      --columns: var(--columns-desktop);
+    }
   }
 </style>
 

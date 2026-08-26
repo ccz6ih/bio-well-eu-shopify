@@ -1811,6 +1811,7 @@
         "testimonial_video_nizCbq",
         "testimonial_video_4NYtFn"
       ],
+      "disabled": true,
       "name": "t:sections.testimonials-videos-carousel.name",
       "settings": {
         "heading": "What our customers say",

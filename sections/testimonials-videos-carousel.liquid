@@ -21,7 +21,7 @@
   <div class="page-width relative">
     {%- render 'section-heading', section: section -%}
 
-    <testimonials-videos-carousel class="testimonials-videos-carousel__wrapper">
+    <testimonials-videos-carousel class="testimonials-videos-carousel__wrapper block">
       <slider-element
         id="TestimonialCarousel-{{ section.id }}"
         class="testimonials-videos-carousel__slider slider"
@@ -85,7 +85,12 @@
   }
 
   #shopify-section-{{ section.id }} .testimonials-videos-carousel__track {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(
+      (var(--slider-container) / var(--slides-mobile)) -
+      (var(--card-gap) * (var(--slides-mobile) - 1) / var(--slides-mobile))
+    );
     gap: var(--card-gap);
   }
 
@@ -93,27 +98,20 @@
     scroll-snap-align: start;
   }
 
-  #shopify-section-{{ section.id }} .testimonials-videos-carousel__track > * {
-    flex: 0 0 calc(
-      (100% - (var(--card-gap) * (var(--slides-mobile) - 1))) /
-      var(--slides-mobile)
-    );
-  }
-
   @media (min-width: 768px) {
-    #shopify-section-{{ section.id }} .testimonials-videos-carousel__track > * {
-      flex: 0 0 calc(
-        (100% - (var(--card-gap) * (var(--slides-tablet) - 1))) /
-        var(--slides-tablet)
+    #shopify-section-{{ section.id }} .testimonials-videos-carousel__track {
+      grid-auto-columns: calc(
+        (var(--slider-container) / var(--slides-tablet)) -
+        (var(--card-gap) * (var(--slides-tablet) - 1) / var(--slides-tablet))
       );
     }
   }
 
   @media (min-width: 1024px) {
-    #shopify-section-{{ section.id }} .testimonials-videos-carousel__track > * {
-      flex: 0 0 calc(
-        (100% - (var(--card-gap) * (var(--slides-desktop) - 1))) /
-        var(--slides-desktop)
+    #shopify-section-{{ section.id }} .testimonials-videos-carousel__track {
+      grid-auto-columns: calc(
+        (var(--slider-container) / var(--slides-desktop)) -
+        (var(--card-gap) * (var(--slides-desktop) - 1) / var(--slides-desktop))
       );
     }
   }

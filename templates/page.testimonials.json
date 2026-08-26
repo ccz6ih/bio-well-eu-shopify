@@ -84,7 +84,8 @@
           "type": "testimonial-video",
           "settings": {
             "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>"
+            "description": "<p>Add a short quote or summary from the customer.</p>",
+            "video_url": ""
           },
           "blocks": {}
         },
@@ -92,7 +93,8 @@
           "type": "testimonial-video",
           "settings": {
             "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>"
+            "description": "<p>Add a short quote or summary from the customer.</p>",
+            "video_url": ""
           },
           "blocks": {}
         },
@@ -100,7 +102,8 @@
           "type": "testimonial-video",
           "settings": {
             "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>"
+            "description": "<p>Add a short quote or summary from the customer.</p>",
+            "video_url": ""
           },
           "blocks": {}
         },
@@ -108,7 +111,8 @@
           "type": "testimonial-video",
           "settings": {
             "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>"
+            "description": "<p>Add a short quote or summary from the customer.</p>",
+            "video_url": ""
           },
           "blocks": {}
         }
@@ -131,7 +135,7 @@
         "manual_limit": 6,
         "slides_per_view_mobile": "1",
         "slides_per_view_tablet": "2",
-        "slides_per_view_desktop": "3",
+        "slides_per_view_desktop": "2",
         "gap": 24,
         "show_arrows": true,
         "show_dots": true,

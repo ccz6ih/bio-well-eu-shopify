@@ -186,6 +186,86 @@
         "parallax_direction": "vertical"
       }
     },
+    "testimonials_tGmhpQ": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_B3fM4r": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Our clients have reported an increased sense of self-awareness and empowerment.</p>",
+            "author": "Dr. Erica Leone, PhD, RMT",
+            "author_info": "Beyond the Veil Higher Healing Centre",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_gDNBNi": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>We started using the Bio-Well device at the Rugby World Junior Championship and found an 80%+ correlation with our athletes’ condition. It is a very high correlation. In particular, we observed that players with high stress level make more mistakes during the game. The Method is very fast and the program is convenient</p>",
+            "author": "Vladislav Turin",
+            "author_info": "Russia's Junior Team Rugby Coach",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_TwzLx6": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Bio-Well enables prompt monitoring of our athletes' adaptation before and during competitions, allowing timely implementation of all necessary corrective measures.</p>",
+            "author": "Irina Gromova",
+            "author_info": "Head Coach of Russia's Skiing Paralympic Team",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_B3fM4r",
+        "testimonial_gDNBNi",
+        "testimonial_TwzLx6"
+      ],
+      "name": "t:sections.testimonials.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "rounded": false
+      }
+    },
     "testimonials_videos": {
       "type": "testimonials-videos",
       "blocks": {
@@ -312,6 +392,7 @@
     "main",
     "rich_text_yc9dD8",
     "video_with_text_KVgrRP",
+    "testimonials_tGmhpQ",
     "testimonials_videos",
     "testimonials_videos_carousel_QtWa4p"
   ]

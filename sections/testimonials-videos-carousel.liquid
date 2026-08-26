@@ -21,11 +21,12 @@
   <div class="page-width relative">
     {%- render 'section-heading', section: section -%}
 
-    <testimonials-videos-carousel class="testimonials-videos-carousel__wrapper block">
+    <testimonials-videos-carousel class="testimonials-videos-carousel__wrapper">
       <slider-element
         id="TestimonialCarousel-{{ section.id }}"
-        class="testimonials-videos-carousel__slider block"
-        data-slider-options='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "draggable": true, "freeScroll": false, "wrapAround": false }'
+        class="testimonials-videos-carousel__slider slider"
+        selector=".testimonials-videos-carousel__track > *"
+        tabindex="0"
         role="region"
         aria-roledescription="{{ 'sections.slideshow.carousel' | t | escape }}"
         aria-label="{{ section.settings.heading | default: 'Testimonials' | escape }}"
@@ -33,31 +34,31 @@
         <div class="testimonials-videos-carousel__track" role="list">
           {% content_for 'blocks' %}
         </div>
-
-        {%- if section.settings.show_arrows -%}
-          <div class="testimonials-videos-carousel__nav flex items-center justify-between gap-2">
-            <button
-              type="button"
-              is="previous-button"
-              class="testimonials-videos-carousel__arrow testimonials-videos-carousel__arrow--prev flex items-center justify-center rounded-full"
-              aria-controls="TestimonialCarousel-{{ section.id }}"
-              aria-label="{{ 'general.pagination.previous' | t | escape }}"
-            >
-              {%- render 'icon', icon: 'arrow-left-long', class: 'transform' -%}
-            </button>
-
-            <button
-              type="button"
-              is="next-button"
-              class="testimonials-videos-carousel__arrow testimonials-videos-carousel__arrow--next flex items-center justify-center rounded-full"
-              aria-controls="TestimonialCarousel-{{ section.id }}"
-              aria-label="{{ 'general.pagination.next' | t | escape }}"
-            >
-              {%- render 'icon', icon: 'arrow-right-long', class: 'transform' -%}
-            </button>
-          </div>
-        {%- endif -%}
       </slider-element>
+
+      {%- if section.settings.show_arrows -%}
+        <div class="testimonials-videos-carousel__nav flex items-center justify-between gap-2">
+          <button
+            type="button"
+            is="previous-button"
+            class="testimonials-videos-carousel__arrow testimonials-videos-carousel__arrow--prev flex items-center justify-center rounded-full"
+            aria-controls="TestimonialCarousel-{{ section.id }}"
+            aria-label="{{ 'general.pagination.previous' | t | escape }}"
+          >
+            {%- render 'icon', icon: 'arrow-left-long', class: 'transform' -%}
+          </button>
+
+          <button
+            type="button"
+            is="next-button"
+            class="testimonials-videos-carousel__arrow testimonials-videos-carousel__arrow--next flex items-center justify-center rounded-full"
+            aria-controls="TestimonialCarousel-{{ section.id }}"
+            aria-label="{{ 'general.pagination.next' | t | escape }}"
+          >
+            {%- render 'icon', icon: 'arrow-right-long', class: 'transform' -%}
+          </button>
+        </div>
+      {%- endif -%}
 
       {%- if section.settings.show_dots -%}
         <slider-dots
@@ -75,12 +76,24 @@
 </div>
 
 <style>
+  #shopify-section-{{ section.id }} .testimonials-videos-carousel__slider {
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    scroll-behavior: smooth;
+  }
+
   #shopify-section-{{ section.id }} .testimonials-videos-carousel__track {
     display: flex;
     gap: var(--card-gap);
   }
 
-  #shopify-section-{{ section.id }} .testimonials-videos-carousel__cell {
+  #shopify-section-{{ section.id }} .testimonials-videos-carousel__track > * {
+    scroll-snap-align: start;
+  }
+
+  #shopify-section-{{ section.id }} .testimonials-videos-carousel__track > * {
     flex: 0 0 calc(
       (100% - (var(--card-gap) * (var(--slides-mobile) - 1))) /
       var(--slides-mobile)
@@ -88,7 +101,7 @@
   }
 
   @media (min-width: 768px) {
-    #shopify-section-{{ section.id }} .testimonials-videos-carousel__cell {
+    #shopify-section-{{ section.id }} .testimonials-videos-carousel__track > * {
       flex: 0 0 calc(
         (100% - (var(--card-gap) * (var(--slides-tablet) - 1))) /
         var(--slides-tablet)
@@ -97,7 +110,7 @@
   }
 
   @media (min-width: 1024px) {
-    #shopify-section-{{ section.id }} .testimonials-videos-carousel__cell {
+    #shopify-section-{{ section.id }} .testimonials-videos-carousel__track > * {
       flex: 0 0 calc(
         (100% - (var(--card-gap) * (var(--slides-desktop) - 1))) /
         var(--slides-desktop)

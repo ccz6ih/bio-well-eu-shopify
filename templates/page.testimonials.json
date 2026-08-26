@@ -160,7 +160,7 @@
         "description": "",
         "enable_video_autoplay": false,
         "enable_video_looping": false,
-        "image_height": "adapt",
+        "image_height": "450px",
         "video_width": "medium",
         "layout": "video_first",
         "text_alignment": "left",

@@ -1769,6 +1769,7 @@
           "settings": {
             "title": "Measuring the effect of Scalar Systems with Bio-Well",
             "description": "<p>Jason Shurka interviews two wellness center owners. They share about their remarkable experience with Bio-Well.<br/><br/></p>",
+            "video_url": "",
             "cover_image": "shopify://shop_images/ca38fcf0-889d-4136-850b-e90aff874482-2026-04-20.jpg"
           },
           "blocks": {}
@@ -1778,6 +1779,7 @@
           "settings": {
             "title": "How Dr Joe Dispenza uses Bio-Well in his work",
             "description": "<p>Bio-Well provides uniquely helpful insights into the state of a person.</p>",
+            "video_url": "",
             "cover_image": "shopify://shop_images/bio-well-vimeo.jpg"
           },
           "blocks": {}
@@ -1787,6 +1789,7 @@
           "settings": {
             "title": "How Beverly Rubik, PhD uses Bio-Well in her lab",
             "description": "<p>Biophysicist Beverly Rubik is ​the President of the Institute for Frontier Science. In this interview, she shares about her experience with Bio-Well.</p>",
+            "video_url": "",
             "cover_image": "shopify://shop_images/Screenshot_2025-03-31_at_10.16.34_AM.png"
           },
           "blocks": {}
@@ -1796,6 +1799,7 @@
           "settings": {
             "title": "Bio Well Scan Explainer",
             "description": "<p>Sabine Priestley is an electrical engineer turned healer. She is a certified Bio-Well practitioner.<br/></p>",
+            "video_url": "",
             "cover_image": "shopify://shop_images/Screenshot_2025-03-28_at_3.32.00_PM.png"
           },
           "blocks": {}
@@ -1819,7 +1823,7 @@
         "manual_limit": 6,
         "slides_per_view_mobile": "1",
         "slides_per_view_tablet": "2",
-        "slides_per_view_desktop": "3",
+        "slides_per_view_desktop": "2",
         "gap": 24,
         "show_arrows": true,
         "show_dots": true,

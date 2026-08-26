@@ -1767,10 +1767,10 @@
         "testimonial_video_FwMACa": {
           "type": "testimonial-video",
           "settings": {
-            "title": "How Dr Joe Dispenza uses Bio-Well in his work",
-            "description": "<p>Bio-Well provides uniquely helpful insights into the state of a person.</p>",
-            "video_url": "https://youtu.be/TlW6mMRCDt0?si=xAw4aTYEuztWjQln",
-            "cover_image": "shopify://shop_images/hotel-diagonal-salle-conf-ok.jpg"
+            "title": "Measuring the effect of Scalar Systems with Bio-Well",
+            "description": "<p>Jason Shurka interviews two wellness center owners. They share about their remarkable experience with Bio-Well.</p>",
+            "video_url": "https://youtu.be/Pf1qn699QT8?si=XwMyYfzd0Op65EGD",
+            "cover_image": "shopify://shop_images/ca38fcf0-889d-4136-850b-e90aff874482-2026-04-20.jpg"
           },
           "blocks": {}
         },
@@ -1779,18 +1779,18 @@
           "settings": {
             "title": "How Dr Joe Dispenza uses Bio-Well in his work",
             "description": "<p>Bio-Well provides uniquely helpful insights into the state of a person.</p>",
-            "video_url": "https://youtu.be/TlW6mMRCDt0?si=xAw4aTYEuztWjQln",
-            "cover_image": "shopify://shop_images/hotel-diagonal-salle-conf-ok.jpg"
+            "video_url": "https://vimeo.com/898145268?fl=pl&fe=sh",
+            "cover_image": "shopify://shop_images/bio-well-vimeo.jpg"
           },
           "blocks": {}
         },
         "testimonial_video_3k43Rw": {
           "type": "testimonial-video",
           "settings": {
-            "title": "How Dr Joe Dispenza uses Bio-Well in his work",
-            "description": "<p>Bio-Well provides uniquely helpful insights into the state of a person.</p>",
-            "video_url": "https://youtu.be/TlW6mMRCDt0?si=xAw4aTYEuztWjQln",
-            "cover_image": "shopify://shop_images/hotel-diagonal-salle-conf-ok.jpg"
+            "title": "How Beverly Rubik, PhD uses Bio-Well in her lab",
+            "description": "<p>Biophysicist Beverly Rubik is ​the President of the Institute for Frontier Science. In this interview, she shares about her experience with Bio-Well.</p>",
+            "video_url": "https://youtu.be/LdTbqchwxLY?si=TJzVuj-bBBFtyFcI",
+            "cover_image": "shopify://shop_images/Screenshot_2025-03-31_at_10.16.34_AM.png"
           },
           "blocks": {}
         },
@@ -1822,7 +1822,6 @@
         "testimonial_video_XnjxdB",
         "testimonial_video_Q4pLWB"
       ],
-      "disabled": true,
       "name": "t:sections.testimonials-videos-carousel.name",
       "settings": {
         "heading": "What our customers say",

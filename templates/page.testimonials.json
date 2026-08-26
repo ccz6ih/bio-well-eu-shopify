@@ -76,10 +76,75 @@
         "divider": false,
         "rounded": false
       }
+    },
+    "testimonials_videos_carousel_QtWa4p": {
+      "type": "testimonials-videos-carousel",
+      "blocks": {
+        "testimonial_video_Bn7gUt": {
+          "type": "testimonial-video",
+          "settings": {
+            "title": "Customer story",
+            "description": "<p>Add a short quote or summary from the customer.</p>"
+          },
+          "blocks": {}
+        },
+        "testimonial_video_ypHHaH": {
+          "type": "testimonial-video",
+          "settings": {
+            "title": "Customer story",
+            "description": "<p>Add a short quote or summary from the customer.</p>"
+          },
+          "blocks": {}
+        },
+        "testimonial_video_DApKkB": {
+          "type": "testimonial-video",
+          "settings": {
+            "title": "Customer story",
+            "description": "<p>Add a short quote or summary from the customer.</p>"
+          },
+          "blocks": {}
+        },
+        "testimonial_video_9iRXpc": {
+          "type": "testimonial-video",
+          "settings": {
+            "title": "Customer story",
+            "description": "<p>Add a short quote or summary from the customer.</p>"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "testimonial_video_Bn7gUt",
+        "testimonial_video_ypHHaH",
+        "testimonial_video_DApKkB",
+        "testimonial_video_9iRXpc"
+      ],
+      "name": "t:sections.testimonials-videos-carousel.name",
+      "settings": {
+        "heading": "What our customers say",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "selection_mode": "all",
+        "manual_limit": 6,
+        "slides_per_view_mobile": "1",
+        "slides_per_view_tablet": "2",
+        "slides_per_view_desktop": "3",
+        "gap": 24,
+        "show_arrows": true,
+        "show_dots": true,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "rounded": false
+      }
     }
   },
   "order": [
     "main",
-    "testimonials_videos"
+    "testimonials_videos",
+    "testimonials_videos_carousel_QtWa4p"
   ]
 }

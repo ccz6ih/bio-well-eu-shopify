@@ -29,15 +29,30 @@
       "blocks": {
         "testimonial_1": {
           "type": "testimonial-video",
-          "settings": {}
+          "settings": {
+            "title": "Customer story",
+            "description": "<p>Add a short quote or summary from the customer.</p>",
+            "video_url": ""
+          },
+          "blocks": {}
         },
         "testimonial_2": {
           "type": "testimonial-video",
-          "settings": {}
+          "settings": {
+            "title": "Customer story",
+            "description": "<p>Add a short quote or summary from the customer.</p>",
+            "video_url": ""
+          },
+          "blocks": {}
         },
         "testimonial_3": {
           "type": "testimonial-video",
-          "settings": {}
+          "settings": {
+            "title": "Customer story",
+            "description": "<p>Add a short quote or summary from the customer.</p>",
+            "video_url": ""
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -54,7 +69,7 @@
         "subheading": "",
         "description": "",
         "columns_desktop": "3",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "gap": 24,
         "padding_top": 72,
         "padding_bottom": 72,

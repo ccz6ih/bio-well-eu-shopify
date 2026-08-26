@@ -1761,80 +1761,51 @@
         "rounded": false
       }
     },
-    "testimonials_videos_carousel_pgzEUd": {
+    "testimonials_videos_carousel_MLJEwA": {
       "type": "testimonials-videos-carousel",
       "blocks": {
-        "testimonial_video_FwMACa": {
+        "testimonial_video_6LkJfd": {
           "type": "testimonial-video",
           "settings": {
             "title": "Measuring the effect of Scalar Systems with Bio-Well",
-            "description": "<p>Jason Shurka interviews two wellness center owners. They share about their remarkable experience with Bio-Well.</p>",
-            "video_url": "https://youtu.be/Pf1qn699QT8?si=XwMyYfzd0Op65EGD",
+            "description": "<p>Jason Shurka interviews two wellness center owners. They share about their remarkable experience with Bio-Well.<br/><br/></p>",
             "cover_image": "shopify://shop_images/ca38fcf0-889d-4136-850b-e90aff874482-2026-04-20.jpg"
           },
           "blocks": {}
         },
-        "testimonial_video_MzqCq7": {
+        "testimonial_video_AGLDdh": {
           "type": "testimonial-video",
           "settings": {
             "title": "How Dr Joe Dispenza uses Bio-Well in his work",
             "description": "<p>Bio-Well provides uniquely helpful insights into the state of a person.</p>",
-            "video_url": "https://vimeo.com/898145268?fl=pl&fe=sh",
             "cover_image": "shopify://shop_images/bio-well-vimeo.jpg"
           },
           "blocks": {}
         },
-        "testimonial_video_3k43Rw": {
+        "testimonial_video_nizCbq": {
           "type": "testimonial-video",
           "settings": {
             "title": "How Beverly Rubik, PhD uses Bio-Well in her lab",
             "description": "<p>Biophysicist Beverly Rubik is ​the President of the Institute for Frontier Science. In this interview, she shares about her experience with Bio-Well.</p>",
-            "video_url": "https://youtu.be/LdTbqchwxLY?si=TJzVuj-bBBFtyFcI",
             "cover_image": "shopify://shop_images/Screenshot_2025-03-31_at_10.16.34_AM.png"
           },
           "blocks": {}
         },
-        "video_ibX3Gi": {
-          "type": "video",
-          "name": "t:blocks.video.name",
-          "settings": {
-            "source": "url",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": "",
-            "aspect_ratio": "adapt",
-            "enable_video_autoplay": true,
-            "enable_video_looping": true,
-            "source_mobile": "uploaded",
-            "description_mobile": "",
-            "aspect_ratio_mobile": "adapt",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0
-          },
-          "blocks": {}
-        },
-        "testimonial_video_XnjxdB": {
+        "testimonial_video_4NYtFn": {
           "type": "testimonial-video",
           "settings": {
             "title": "Bio Well Scan Explainer",
-            "description": "<p>Sabine Priestley is an electrical engineer turned healer. She is a certified Bio-Well practitioner.</p>",
-            "video_url": "https://youtu.be/TlW6mMRCDt0?si=xAw4aTYEuztWjQln",
+            "description": "<p>Sabine Priestley is an electrical engineer turned healer. She is a certified Bio-Well practitioner.<br/></p>",
             "cover_image": "shopify://shop_images/Screenshot_2025-03-28_at_3.32.00_PM.png"
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "testimonial_video_FwMACa",
-        "testimonial_video_MzqCq7",
-        "testimonial_video_3k43Rw",
-        "video_ibX3Gi",
-        "testimonial_video_XnjxdB"
+        "testimonial_video_6LkJfd",
+        "testimonial_video_AGLDdh",
+        "testimonial_video_nizCbq",
+        "testimonial_video_4NYtFn"
       ],
       "name": "t:sections.testimonials-videos-carousel.name",
       "settings": {
@@ -1850,8 +1821,8 @@
         "slides_per_view_tablet": "2",
         "slides_per_view_desktop": "3",
         "gap": 24,
-        "show_arrows": false,
-        "show_dots": false,
+        "show_arrows": true,
+        "show_dots": true,
         "padding_top": 72,
         "padding_bottom": 72,
         "divider": false,
@@ -1884,6 +1855,6 @@
     "logo_list_zJaQJa",
     "blog_posts_collage_GG8zU9",
     "rich_text_W3LVMk",
-    "testimonials_videos_carousel_pgzEUd"
+    "testimonials_videos_carousel_MLJEwA"
   ]
 }

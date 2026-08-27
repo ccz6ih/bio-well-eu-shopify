@@ -115,7 +115,7 @@
         "transparent_header": false,
         "iframe_url": "https://www.google.com/maps/d/u/0/embed?mid=1ALpBtaTy08ttZ2UJ3W08Y8JuVbGfAoe8&ehbc=2E312F",
         "iframe_height": "480px",
-        "padding_top": 0,
+        "padding_top": 32,
         "padding_bottom": 0,
         "divider": false,
         "full_width": false,

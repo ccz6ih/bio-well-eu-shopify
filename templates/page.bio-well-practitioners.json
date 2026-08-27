@@ -92,7 +92,6 @@
     },
     "custom_liquid_3pNbqj": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "liquid": "{%- render 'g-map-insert' -%}\n{%- render 'g-map-pract-pins' -%}\n{%- render 'g-map-init' -%}",
         "color_text": "",
@@ -110,6 +109,7 @@
     },
     "custom_iframe_GGpkQJ": {
       "type": "custom-iframe",
+      "disabled": true,
       "name": "Custom Iframe",
       "settings": {
         "transparent_header": false,

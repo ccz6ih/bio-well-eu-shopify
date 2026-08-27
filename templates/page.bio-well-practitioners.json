@@ -108,12 +108,18 @@
         "rounded": false
       }
     },
-    "iframe_map_PCPMbf": {
-      "type": "iframe-map",
-      "name": "Iframe map",
+    "custom_iframe_GGpkQJ": {
+      "type": "custom-iframe",
+      "name": "Custom Iframe",
       "settings": {
-        "map_url": "https://www.google.com/maps/d/u/0/embed?mid=1ALpBtaTy08ttZ2UJ3W08Y8JuVbGfAoe8&ehbc=2E312F",
-        "map_title": ""
+        "transparent_header": false,
+        "iframe_url": "https://www.google.com/maps/d/u/0/embed?mid=1ALpBtaTy08ttZ2UJ3W08Y8JuVbGfAoe8&ehbc=2E312F",
+        "iframe_height": "480px",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
       }
     },
     "empty-space": {
@@ -372,7 +378,7 @@
     "main",
     "rich-text",
     "custom_liquid_3pNbqj",
-    "iframe_map_PCPMbf",
+    "custom_iframe_GGpkQJ",
     "empty-space",
     "rich_text_FaNkAH",
     "contact-form",

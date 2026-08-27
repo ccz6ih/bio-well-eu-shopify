@@ -92,6 +92,7 @@
     },
     "custom_liquid_3pNbqj": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "liquid": "{%- render 'g-map-insert' -%}\n{%- render 'g-map-pract-pins' -%}\n{%- render 'g-map-init' -%}",
         "color_text": "",
@@ -105,6 +106,14 @@
         "divider": false,
         "narrow": false,
         "rounded": false
+      }
+    },
+    "iframe_map_PCPMbf": {
+      "type": "iframe-map",
+      "name": "Iframe map",
+      "settings": {
+        "map_url": "https://www.google.com/maps/d/u/0/embed?mid=1ALpBtaTy08ttZ2UJ3W08Y8JuVbGfAoe8&ehbc=2E312F",
+        "map_title": ""
       }
     },
     "empty-space": {
@@ -363,6 +372,7 @@
     "main",
     "rich-text",
     "custom_liquid_3pNbqj",
+    "iframe_map_PCPMbf",
     "empty-space",
     "rich_text_FaNkAH",
     "contact-form",

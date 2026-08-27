@@ -1,0 +1,60 @@
+<div class="iframe-map">
+  <div class="iframe-map__inner">
+    {% if section.settings.map_url != blank %}
+      <iframe
+        src="{{ section.settings.map_url }}"
+        loading="lazy"
+        allowfullscreen
+        title="{{ section.settings.map_title | escape }}">
+      </iframe>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .iframe-map {
+    width: 100%;
+  }
+
+  .iframe-map__inner {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .iframe-map iframe {
+    display: block;
+    width: 100%;
+    height: 480px;
+    border: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .iframe-map iframe {
+      height: 400px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Iframe map",
+  "settings": [
+    {
+      "type": "url",
+      "id": "map_url",
+      "label": "Map URL"
+    },
+    {
+      "type": "text",
+      "id": "map_title",
+      "label": "Map title",
+      "default": "Iframe map"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Iframe map"
+    }
+  ]
+}
+{% endschema %}

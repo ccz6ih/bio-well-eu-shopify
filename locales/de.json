@@ -246,6 +246,33 @@
     "comparison-table": {
       "highlight_differences": "Unterschiede hervorheben",
       "choose_product": "Wählen Sie ein Produkt"
+    },
+    "testimonials-videos": {
+      "blocks": {
+        "testimonial_video": {
+          "header__video": {
+            "content": "Video"
+          },
+          "video_url": {
+            "label": "Video-URL",
+            "info": "Unterstützt YouTube- und Vimeo-URLs."
+          },
+          "cover_image_info": "Wird als Vorschaubild vor dem Abspielen des Videos verwendet.",
+          "description": "Beschreibung",
+          "name": "Video-Erfahrungsbericht",
+          "title": "Titel",
+          "cover_image": "Titelbild"
+        }
+      },
+      "preset": {
+        "name": "Video-Erfahrungsberichte"
+      },
+      "settings": {
+        "header__layout": {
+          "content": "Layout"
+        }
+      },
+      "name": "Video-Erfahrungsberichte"
     }
   },
   "blogs": {

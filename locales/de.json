@@ -270,9 +270,77 @@
       "settings": {
         "header__layout": {
           "content": "Layout"
+        },
+        "columns_mobile": {
+          "options__1": {
+            "label": "1 Spalte"
+          },
+          "label": "Spalten auf Mobilgeräten",
+          "options__2": {
+            "label": "2 Spalten"
+          }
+        },
+        "columns_desktop": {
+          "options__3": {
+            "label": "3 Spalten"
+          },
+          "label": "Spalten auf dem Desktop",
+          "options__4": {
+            "label": "4 Spalten"
+          },
+          "options__2": {
+            "label": "2 Spalten"
+          }
         }
       },
       "name": "Video-Erfahrungsberichte"
+    },
+    "testimonials-videos-carousel": {
+      "settings": {
+        "slides_per_view_desktop": {
+          "label": "Folien pro Ansicht auf dem Desktop"
+        },
+        "show_dots": {
+          "label": "Punkte anzeigen"
+        },
+        "show_arrows": {
+          "label": "Pfeile anzeigen"
+        },
+        "header__selection": {
+          "content": "Auswahl"
+        },
+        "header__layout": {
+          "content": "Layout"
+        },
+        "selection_mode": {
+          "options__1": {
+            "label": "Alle Videos"
+          },
+          "label": "Auswahlmodus",
+          "info": "Wählen Sie aus den unten hinzugefügten Blöcken aus, welche Videos angezeigt werden sollen.",
+          "options__2": {
+            "label": "Die ersten N Videos"
+          }
+        },
+        "manual_limit": {
+          "label": "Anzahl der Videos"
+        },
+        "slides_per_view_tablet": {
+          "label": "Folien pro Ansicht auf dem Tablet"
+        },
+        "slides_per_view_mobile": {
+          "label": "Folien pro Ansicht auf Mobilgeräten"
+        }
+      },
+      "name": "Karussell mit Video-Kundenstimmen",
+      "preset": {
+        "name": "Karussell mit Video-Kundenstimmen"
+      },
+      "blocks": {
+        "testimonial_video": {
+          "name": "Video-Erfahrungsbericht"
+        }
+      }
     }
   },
   "blogs": {

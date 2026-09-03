@@ -92,6 +92,7 @@
     },
     "custom_liquid_3pNbqj": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "liquid": "{%- render 'g-map-insert' -%}\n{%- render 'g-map-pract-pins' -%}\n{%- render 'g-map-init' -%}",
         "color_text": "",
@@ -109,12 +110,11 @@
     },
     "custom_iframe_GGpkQJ": {
       "type": "custom-iframe",
-      "disabled": true,
       "name": "Custom Iframe",
       "settings": {
         "transparent_header": false,
         "iframe_url": "https://www.google.com/maps/d/u/0/embed?mid=1ALpBtaTy08ttZ2UJ3W08Y8JuVbGfAoe8&ehbc=2E312F",
-        "iframe_height": "480px",
+        "iframe_height": "550px",
         "padding_top": 32,
         "padding_bottom": 0,
         "divider": false,
@@ -204,14 +204,14 @@
           "type": "contact",
           "settings": {
             "heading": "General Inquiries",
-            "text": "<p>info@bio-well.com</p>"
+            "text": "<p>contact@bio-well.tech</p>"
           }
         },
         "contact-2": {
           "type": "contact",
           "settings": {
             "heading": "Support",
-            "text": "<p>US/Canada/Australia: support@bio-well.com</p><p>Europe/MENA: eu@bio-well.com</p>"
+            "text": "<p>US/Canada/Australia: contact@bio-well.tech</p><p>Europe/MENA: contact@bio-well.tech</p>"
           }
         },
         "contact-3": {

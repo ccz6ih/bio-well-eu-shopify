@@ -110,6 +110,7 @@
     },
     "custom_iframe_GGpkQJ": {
       "type": "custom-iframe",
+      "disabled": true,
       "name": "Custom Iframe",
       "settings": {
         "transparent_header": false,
@@ -134,10 +135,19 @@
     "rich_text_FaNkAH": {
       "type": "rich-text",
       "blocks": {
+        "image_RRndB3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/map-2026.jpg",
+            "image_width": "full_width",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
         "heading_GAtDnR": {
           "type": "heading",
           "settings": {
-            "heading": "Interested in becoming a Certified Bio-Well Practitioner?",
+            "heading": "Would you like to meet a Bio-Well practitioner? Fill in this form and we’ll put you in touch with professionals in your area",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -162,6 +172,7 @@
         }
       },
       "block_order": [
+        "image_RRndB3",
         "heading_GAtDnR",
         "text_jfPRqJ"
       ],
@@ -254,6 +265,19 @@
             "radio_options": "",
             "select_options": "Product, Order, Press, Other"
           }
+        },
+        "custom_field_LDnDA9": {
+          "type": "custom_field",
+          "settings": {
+            "type": "text",
+            "title": "Your Location",
+            "required": true,
+            "full_width": false,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": "Product, Order, Press, Other"
+          }
         }
       },
       "block_order": [
@@ -262,7 +286,8 @@
         "contact-3",
         "media",
         "custom_field-1",
-        "custom_field-2"
+        "custom_field-2",
+        "custom_field_LDnDA9"
       ],
       "settings": {
         "heading": "",

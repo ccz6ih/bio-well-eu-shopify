@@ -263,7 +263,7 @@
             "checked_value": "Yes",
             "unchecked_value": "No",
             "radio_options": "",
-            "select_options": "Product, Order, Press, Other"
+            "select_options": "consultation, product, other"
           }
         },
         "custom_field_LDnDA9": {

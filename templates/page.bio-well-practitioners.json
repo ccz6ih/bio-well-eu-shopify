@@ -113,7 +113,7 @@
       "name": "Custom Iframe",
       "settings": {
         "transparent_header": false,
-        "iframe_url": "https://www.google.com/maps/d/u/0/embed?mid=1ALpBtaTy08ttZ2UJ3W08Y8JuVbGfAoe8&ehbc=2E312F",
+        "iframe_url": "https://www.google.com/maps/d/u/0/edit?mid=1n8ei4NvqvDzn8k6Hjt_OC_pllOaLO14&usp=sharing",
         "iframe_height": "550px",
         "padding_top": 32,
         "padding_bottom": 0,

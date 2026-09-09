@@ -41,7 +41,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>All Practitioners Listed on the Map Below are Bio-Well Certified. To get listed on this map, <a href=\"/products/advanced-training\" title=\"Advanced Course (with certification)\">please complete our Advanced Training Course.</a></p>",
+            "text": "<p>All Practitioners Listed on the Map Below are Bio-Well Certified. To get listed on this map, please <a href=\"mailto:contact@bio-well.tech\" title=\"mailto:contact@bio-well.tech\">contact us</a></p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -234,7 +234,7 @@
           "settings": {
             "type": "text",
             "title": "Phone number",
-            "required": false,
+            "required": true,
             "full_width": false,
             "checked_value": "Yes",
             "unchecked_value": "No",

@@ -50,7 +50,7 @@
           "type": "button",
           "settings": {
             "button_label": "Book a Free Demo",
-            "button_link": "https://share-eu1.hsforms.com/1oMu3i2zdS-a3zWveDXAqZQf2gml",
+            "button_link": "shopify://pages/demo",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,
@@ -1659,7 +1659,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "#FFFFFF",
+        "color_background": "#ffffff",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",

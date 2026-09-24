@@ -9,73 +9,6 @@
  */
 {
   "sections": {
-    "rich_text_iHfmDU": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_JFeVDa": {
-          "type": "heading",
-          "settings": {
-            "heading": "&nbsp;Rejoignez Notre Communauté&nbsp;",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": false
-          }
-        },
-        "text_DdELyK": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Partagez votre expertise et vos besoins en Bio-Well</p><p>Réponse en 48h garantie<strong>Pourquoi remplir ce formulaire ?</strong>&nbsp;<br/>&nbsp; &nbsp; &nbsp; Nous développons des solutions Bio-Well adaptées à vos besoins spécifiques. En nous partageant votre professionnel, nous pourrons vous proposer des offres et formations personnalisées.</p><p>Vos données sont sécurisées et ne seront jamais partagées. <a href=\"#\">Politique de confidentialité</a></p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_JFeVDa",
-        "text_DdELyK"
-      ],
-      "name": "t:sections.rich-text.name",
-      "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 100,
-        "divider": false,
-        "narrow": true,
-        "rounded": false
-      }
-    },
     "main-page": {
       "type": "main-page-full-width",
       "settings": {
@@ -91,7 +24,6 @@
     }
   },
   "order": [
-    "rich_text_iHfmDU",
     "main-page"
   ]
 }

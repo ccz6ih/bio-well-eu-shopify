@@ -424,7 +424,7 @@
         "exclude_cart": true,
         "exclude_blog": true,
         "exclude_article": true,
-        "exclude_paths": "/products/sis-congress-ticket-online-access-science-information-spirit-2026, /products/sis-congress-ticket, /pages/30-years-of-innovation-in-bioelectrography",
+        "exclude_paths": "/products/sis-congress-ticket-online-access-science-information-spirit-2026, /products/sis-congress-ticket, /pages/30-years-of-innovation-in-bioelectrography, /a/members/",
         "video_url": "https://youtu.be/Q2vTWzNQMFQ?si=aHfWHYQEvEc4O5nD",
         "video_url_mobile": "https://youtu.be/Q2vTWzNQMFQ?si=aHfWHYQEvEc4O5nD",
         "cover_image": "shopify://shop_images/hqdefault.jpg",

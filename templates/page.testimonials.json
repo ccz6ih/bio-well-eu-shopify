@@ -187,86 +187,6 @@
         "parallax_direction": "vertical"
       }
     },
-    "video_with_text_i6zeLp": {
-      "type": "video-with-text",
-      "blocks": {
-        "heading_QDx78n": {
-          "type": "heading",
-          "settings": {
-            "heading": "Oncologist discusses Bio-Well&nbsp;",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": false
-          }
-        },
-        "text_jKFpTU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Dr. Noushin Izadifar Hart is a Board Certified Oncologist. She discusses her experience withg Bio-Well</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_yRQNj9": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Bio-Well",
-            "button_link": "shopify://products/bio-well-3-0",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_QDx78n",
-        "text_jKFpTU",
-        "button_yRQNj9"
-      ],
-      "name": "t:sections.video-with-text.name",
-      "settings": {
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "cover_image": "shopify://shop_images/417188a816d040b2bcbb032520c6d7d5.thumbnail.0000000000_e0de8243-81dc-4bd3-ba4a-1fac675da2cd.webp",
-        "description": "",
-        "enable_video_autoplay": false,
-        "enable_video_looping": false,
-        "image_height": "450px",
-        "video_width": "medium",
-        "layout": "text_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "video_url_mobile": "",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
     "testimonials_tGmhpQ": {
       "type": "testimonials",
       "blocks": {
@@ -347,6 +267,352 @@
         "rounded": false
       }
     },
+    "video_with_text_i6zeLp": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_QDx78n": {
+          "type": "heading",
+          "settings": {
+            "heading": "Oncologist discusses Bio-Well&nbsp;",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_jKFpTU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dr. Noushin Izadifar Hart is a Board Certified Oncologist. She discusses her experience withg Bio-Well</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_yRQNj9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Bio-Well",
+            "button_link": "shopify://products/bio-well-3-0",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_QDx78n",
+        "text_jKFpTU",
+        "button_yRQNj9"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/417188a816d040b2bcbb032520c6d7d5.thumbnail.0000000000_e0de8243-81dc-4bd3-ba4a-1fac675da2cd.webp",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "image_height": "450px",
+        "video_width": "medium",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "video_url_mobile": "",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "testimonials_NAXjBk": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_FAe4zt": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p><strong>Bio-Well has been my passion, and continued to lead the direction of my practice for over 5 years. &nbsp;The reliability and accuracy that it lends as an analysis tool, for both emotional and physical health, far exceeds anything I have ever experienced. &nbsp;Being able to pass along those benefits to my clients has been a beautiful gift.</strong></p>",
+            "author": "Laurie Sanfilippo",
+            "author_info": "Holistic Healer, Reiki and Bio-Well Practitioner",
+            "author_url": "https://www.purebiowellness.com/",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_FAe4zt"
+      ],
+      "name": "t:sections.testimonials.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "video_with_text_UQeJHh": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_FMTiX3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Measuring the effect of Scalar Systems with Bio-Well&nbsp;",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_MerVP4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Jason Shurka interviews two wellness center owners. They share about their remarkable experience with Bio-Well.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_ymrcNF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Bio-Well",
+            "button_link": "https://bio-well.tech/collections/bio-well",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_FMTiX3",
+        "text_MerVP4",
+        "button_ymrcNF"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/417188a816d040b2bcbb032520c6d7d5.thumbnail.0000000000_e0de8243-81dc-4bd3-ba4a-1fac675da2cd.webp",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "image_height": "450px",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "video_url_mobile": "",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_7TXnrq": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_mPg9XD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dr Lisa Piper on the impact of Bio-Well for CODE Health&nbsp;",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_6Xz9mx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dr Lisa Piper, PhD is a board-certified Doctor of Naturopathic Medicine. She shares how Bio-Well has helped measure the effects of her product line.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mPg9XD",
+        "text_6Xz9mx"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/417188a816d040b2bcbb032520c6d7d5.thumbnail.0000000000_e0de8243-81dc-4bd3-ba4a-1fac675da2cd.webp",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "image_height": "450px",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "video_url_mobile": "",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_kgf8bP": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_H8CLqc": {
+          "type": "heading",
+          "settings": {
+            "heading": "&nbsp;How Lynne McTaggart uses Bio-Well for her Intention Experiments&nbsp;",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_rfRDhD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lynne McTaggart is a best-selling author and lecturer. She is the author of six books, including The Field, The Intention Experiment and The Power of 8, and is the co-creator of the alternative medicine magazine called: What Doctors Don't Tell You.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_H8CLqc",
+        "text_rfRDhD"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/417188a816d040b2bcbb032520c6d7d5.thumbnail.0000000000_e0de8243-81dc-4bd3-ba4a-1fac675da2cd.webp",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "image_height": "450px",
+        "video_width": "medium",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "video_url_mobile": "",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
     "testimonials_videos": {
       "type": "testimonials-videos",
       "blocks": {
@@ -390,6 +656,10 @@
     "video_with_text_KVgrRP",
     "testimonials_tGmhpQ",
     "video_with_text_i6zeLp",
+    "testimonials_NAXjBk",
+    "video_with_text_UQeJHh",
+    "video_with_text_7TXnrq",
+    "video_with_text_kgf8bP",
     "testimonials_videos"
   ]
 }

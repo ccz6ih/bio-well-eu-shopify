@@ -315,8 +315,8 @@
       ],
       "name": "t:sections.video-with-text.name",
       "settings": {
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "cover_image": "shopify://shop_images/417188a816d040b2bcbb032520c6d7d5.thumbnail.0000000000_e0de8243-81dc-4bd3-ba4a-1fac675da2cd.webp",
+        "video_url": "https://www.youtube.com/watch?v=TmJ4VrBVsrA",
+        "cover_image": "shopify://shop_images/Screenshot_2025-06-26_at_4.28.41_PM.webp",
         "description": "",
         "enable_video_autoplay": false,
         "enable_video_looping": false,

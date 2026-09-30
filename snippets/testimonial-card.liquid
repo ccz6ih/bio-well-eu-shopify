@@ -5,13 +5,14 @@
     - sections/testimonials-videos.liquid        (page list, grid layout)
     - sections/testimonials-videos-carousel.liquid (home carousel)
 
-  The card wraps a deferred-loading YouTube/Vimeo video (via snippets/video.liquid)
-  with a title and description. Click-to-play is enforced, and a single video
-  plays at a time when the card lives inside a <testimonials-videos-carousel>
-  (see the matching custom elements in assets/theme.js).
+  The card wraps a deferred-loading video (Shopify-hosted media or YouTube/Vimeo
+  via snippets/video.liquid) with a title and description. Click-to-play is
+  enforced, and a single video plays at a time when the card lives inside a
+  <testimonials-videos-carousel> (see the matching custom elements in
+  assets/theme.js).
 
   @param {object} block          - Shopify block (must have settings.title, .description,
-                                   .video_url, .cover_image)
+                                   .source, .video, .video_url, .cover_image)
   @param {string} [card_class]   - Optional extra classes for the <testimonial-card>
 
   @example
@@ -20,14 +21,17 @@
 
 {%- liquid
   assign card_class = card_class | default: ''
+  assign source = block.settings.source | default: 'url'
+  assign video = block.settings.video
   assign video_url = block.settings.video_url
   assign cover_image = block.settings.cover_image
 -%}
 
 <testimonial-card class="testimonial-card block {{ card_class }}" {{ block.shopify_attributes }}>
   <div class="testimonial-card__media relative overflow-hidden">
-    {%- if video_url != blank -%}
+    {%- if video != blank or video_url != blank -%}
       {%- render 'video',
+        video: video,
         video_url: video_url,
         cover_image: cover_image,
         description: block.settings.title,

@@ -4469,12 +4469,22 @@
             "description": {
               "label": "Description"
             },
-            "header__video": {
-              "content": "Video"
+            "source": {
+              "options__1": { "label": "Media" },
+              "options__2": { "label": "External URL" },
+              "label": "Source"
             },
+            "header__video": {
+              "content": "Shopify-hosted video"
+            },
+            "header__video_url": {
+              "content": "Or embed video from URL",
+              "info": "Shows when no Shopify-hosted video is selected."
+            },
+            "video": { "label": "Video" },
             "video_url": {
-              "label": "Video URL",
-              "info": "Supports YouTube and Vimeo URLs."
+              "label": "URL",
+              "info": "Use a YouTube or Vimeo URL"
             },
             "cover_image": {
               "label": "Cover image",

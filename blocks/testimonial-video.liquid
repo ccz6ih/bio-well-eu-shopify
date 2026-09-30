@@ -29,8 +29,36 @@
       "default": "<p>Add a short quote or summary from the customer.</p>"
     },
     {
+      "type": "select",
+      "id": "source",
+      "label": "t:sections.testimonials-videos.blocks.testimonial_video.source.label",
+      "options": [
+        {
+          "value": "media",
+          "label": "t:sections.testimonials-videos.blocks.testimonial_video.source.options__1.label"
+        },
+        {
+          "value": "url",
+          "label": "t:sections.testimonials-videos.blocks.testimonial_video.source.options__2.label"
+        }
+      ],
+      "default": "url"
+    },
+    {
       "type": "header",
-      "content": "t:sections.testimonials-videos.blocks.testimonial_video.header__video.content"
+      "content": "t:sections.testimonials-videos.blocks.testimonial_video.header__video.content",
+      "visible_if": "{{ block.settings.source == 'media' }}"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "t:sections.testimonials-videos.blocks.testimonial_video.video.label",
+      "visible_if": "{{ block.settings.source == 'media' }}"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.testimonials-videos.blocks.testimonial_video.header__video_url.content",
+      "visible_if": "{{ block.settings.source == 'url' }}"
     },
     {
       "type": "video_url",
@@ -40,13 +68,15 @@
         "vimeo"
       ],
       "label": "t:sections.testimonials-videos.blocks.testimonial_video.video_url.label",
-      "info": "t:sections.testimonials-videos.blocks.testimonial_video.video_url.info"
+      "info": "t:sections.testimonials-videos.blocks.testimonial_video.video_url.info",
+      "visible_if": "{{ block.settings.source == 'url' }}"
     },
     {
       "type": "image_picker",
       "id": "cover_image",
       "label": "t:sections.testimonials-videos.blocks.testimonial_video.cover_image",
-      "info": "t:sections.testimonials-videos.blocks.testimonial_video.cover_image_info"
+      "info": "t:sections.testimonials-videos.blocks.testimonial_video.cover_image_info",
+      "visible_if": "{{ block.settings.source == 'url' }}"
     }
   ]
 }

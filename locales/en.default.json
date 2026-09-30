@@ -257,9 +257,19 @@
           "name": "Video testimonial",
           "title": "Title",
           "description": "Description",
-          "header__video": {
-            "content": "Video"
+          "source": {
+            "label": "Source",
+            "options__1": { "label": "Media" },
+            "options__2": { "label": "External URL" }
           },
+          "header__video": {
+            "content": "Media"
+          },
+          "header__video_url": {
+            "content": "External URL",
+            "info": "Supports YouTube and Vimeo URLs."
+          },
+          "video": { "label": "Video" },
           "video_url": {
             "label": "Video URL",
             "info": "Supports YouTube and Vimeo URLs."

@@ -165,6 +165,7 @@
         "layout": "video_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
+        "video_url_mobile": "",
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
         "color_text": "",
@@ -274,6 +275,7 @@
           "settings": {
             "title": "Customer story",
             "description": "<p>Add a short quote or summary from the customer.</p>",
+            "source": "url",
             "video_url": ""
           },
           "blocks": {}
@@ -283,6 +285,7 @@
           "settings": {
             "title": "Customer story",
             "description": "<p>Add a short quote or summary from the customer.</p>",
+            "source": "url",
             "video_url": ""
           },
           "blocks": {}
@@ -292,6 +295,7 @@
           "settings": {
             "title": "Customer story",
             "description": "<p>Add a short quote or summary from the customer.</p>",
+            "source": "url",
             "video_url": ""
           },
           "blocks": {}
@@ -301,6 +305,7 @@
           "settings": {
             "title": "Customer story",
             "description": "<p>Add a short quote or summary from the customer.</p>",
+            "source": "url",
             "video_url": ""
           },
           "blocks": {}
@@ -310,6 +315,7 @@
           "settings": {
             "title": "Customer story",
             "description": "<p>Add a short quote or summary from the customer.</p>",
+            "source": "url",
             "video_url": ""
           },
           "blocks": {}
@@ -319,6 +325,8 @@
           "settings": {
             "title": "Customer story",
             "description": "<p>Add a short quote or summary from the customer.</p>",
+            "source": "media",
+            "video": "shopify://files/videos/Bio-Well TEMOIGNAGES Grec.mp4",
             "video_url": ""
           },
           "blocks": {}

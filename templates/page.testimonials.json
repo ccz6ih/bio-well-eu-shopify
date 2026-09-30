@@ -187,6 +187,86 @@
         "parallax_direction": "vertical"
       }
     },
+    "video_with_text_i6zeLp": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_QDx78n": {
+          "type": "heading",
+          "settings": {
+            "heading": "Oncologist discusses Bio-Well&nbsp;",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_jKFpTU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dr. Noushin Izadifar Hart is a Board Certified Oncologist. She discusses her experience withg Bio-Well</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_yRQNj9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Bio-Well",
+            "button_link": "shopify://products/bio-well-3-0",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_QDx78n",
+        "text_jKFpTU",
+        "button_yRQNj9"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/417188a816d040b2bcbb032520c6d7d5.thumbnail.0000000000_e0de8243-81dc-4bd3-ba4a-1fac675da2cd.webp",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "image_height": "450px",
+        "video_width": "medium",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "video_url_mobile": "",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
     "testimonials_tGmhpQ": {
       "type": "testimonials",
       "blocks": {
@@ -275,71 +355,17 @@
           "settings": {
             "title": "Oncologist discusses Bio-Well",
             "description": "<p>Dr. Noushin Izadifar Hart is a Board Certified Oncologist. She discusses her experience withg Bio-Well</p>",
-            "source": "url",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
-          },
-          "blocks": {}
-        },
-        "testimonial_2": {
-          "type": "testimonial-video",
-          "settings": {
-            "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>",
-            "source": "url",
-            "video_url": ""
-          },
-          "blocks": {}
-        },
-        "testimonial_3": {
-          "type": "testimonial-video",
-          "settings": {
-            "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>",
-            "source": "url",
-            "video_url": ""
-          },
-          "blocks": {}
-        },
-        "testimonial_video_Tk6dk8": {
-          "type": "testimonial-video",
-          "settings": {
-            "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>",
-            "source": "url",
-            "video_url": ""
-          },
-          "blocks": {}
-        },
-        "testimonial_video_g7zPpf": {
-          "type": "testimonial-video",
-          "settings": {
-            "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>",
-            "source": "url",
-            "video_url": ""
-          },
-          "blocks": {}
-        },
-        "testimonial_video_V8f9V7": {
-          "type": "testimonial-video",
-          "settings": {
-            "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>",
             "source": "media",
-            "video": "shopify://files/videos/Bio-Well TEMOIGNAGES Grec.mp4",
+            "video": "shopify://files/videos/Bio-Well TEMOIGNAGES ENGLISH.mp4",
             "video_url": ""
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "testimonial_1",
-        "testimonial_2",
-        "testimonial_3",
-        "testimonial_video_Tk6dk8",
-        "testimonial_video_g7zPpf",
-        "testimonial_video_V8f9V7"
+        "testimonial_1"
       ],
+      "disabled": true,
       "name": "Video testimonials",
       "settings": {
         "heading": "What people are saying",
@@ -363,6 +389,7 @@
     "rich_text_yc9dD8",
     "video_with_text_KVgrRP",
     "testimonials_tGmhpQ",
+    "video_with_text_i6zeLp",
     "testimonials_videos"
   ]
 }

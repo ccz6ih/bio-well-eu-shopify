@@ -273,10 +273,10 @@
         "testimonial_1": {
           "type": "testimonial-video",
           "settings": {
-            "title": "Customer story",
-            "description": "<p>Add a short quote or summary from the customer.</p>",
+            "title": "Oncologist discusses Bio-Well",
+            "description": "<p>Dr. Noushin Izadifar Hart is a Board Certified Oncologist. She discusses her experience withg Bio-Well</p>",
             "source": "url",
-            "video_url": ""
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
           },
           "blocks": {}
         },

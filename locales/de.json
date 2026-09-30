@@ -250,9 +250,19 @@
     "testimonials-videos": {
       "blocks": {
         "testimonial_video": {
+          "source": {
+            "label": "Quelle",
+            "options__1": { "label": "Medium" },
+            "options__2": { "label": "Externe URL" }
+          },
           "header__video": {
             "content": "Video"
           },
+          "header__video_url": {
+            "content": "Externe URL",
+            "info": "Unterstützt YouTube- und Vimeo-URLs."
+          },
+          "video": { "label": "Video" },
           "video_url": {
             "label": "Video-URL",
             "info": "Unterstützt YouTube- und Vimeo-URLs."

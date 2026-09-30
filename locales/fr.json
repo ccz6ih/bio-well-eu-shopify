@@ -257,9 +257,19 @@
           "name": "Témoignage vidéo",
           "title": "Titre",
           "description": "Description",
+          "source": {
+            "label": "Source",
+            "options__1": { "label": "Média" },
+            "options__2": { "label": "URL externe" }
+          },
           "header__video": {
             "content": "Vidéo"
           },
+          "header__video_url": {
+            "content": "URL externe",
+            "info": "Prend en charge les URL YouTube et Vimeo."
+          },
+          "video": { "label": "Vidéo" },
           "video_url": {
             "label": "URL de la vidéo",
             "info": "Prend en charge les URL YouTube et Vimeo."

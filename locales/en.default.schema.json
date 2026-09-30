@@ -4462,34 +4462,32 @@
       "blocks": {
         "testimonial_video": {
           "name": "Video testimonial",
-          "settings": {
-            "title": {
-              "label": "Title"
-            },
-            "description": {
-              "label": "Description"
-            },
-            "source": {
-              "options__1": { "label": "Media" },
-              "options__2": { "label": "External URL" },
-              "label": "Source"
-            },
-            "header__video": {
-              "content": "Shopify-hosted video"
-            },
-            "header__video_url": {
-              "content": "Or embed video from URL",
-              "info": "Shows when no Shopify-hosted video is selected."
-            },
-            "video": { "label": "Video" },
-            "video_url": {
-              "label": "URL",
-              "info": "Use a YouTube or Vimeo URL"
-            },
-            "cover_image": {
-              "label": "Cover image",
-              "info": "Used as the poster shown before the video plays."
-            }
+          "title": {
+            "label": "Title"
+          },
+          "description": {
+            "label": "Description"
+          },
+          "source": {
+            "options__1": { "label": "Media" },
+            "options__2": { "label": "External URL" },
+            "label": "Source"
+          },
+          "header__video": {
+            "content": "Shopify-hosted video"
+          },
+          "header__video_url": {
+            "content": "Or embed video from URL",
+            "info": "Shows when no Shopify-hosted video is selected."
+          },
+          "video": { "label": "Video" },
+          "video_url": {
+            "label": "URL",
+            "info": "Use a YouTube or Vimeo URL"
+          },
+          "cover_image": {
+            "label": "Cover image",
+            "info": "Used as the poster shown before the video plays."
           }
         }
       }

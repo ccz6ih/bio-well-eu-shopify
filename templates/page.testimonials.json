@@ -74,6 +74,7 @@
         "text_wMHPqV",
         "text_pYHeDk"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "left",
@@ -153,6 +154,7 @@
         "text_kVMFwg",
         "button_XKPWLw"
       ],
+      "disabled": true,
       "name": "t:sections.video-with-text.name",
       "settings": {
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -238,6 +240,7 @@
         "testimonial_gDNBNi",
         "testimonial_TwzLx6"
       ],
+      "disabled": true,
       "name": "t:sections.testimonials.name",
       "settings": {
         "heading": "",
@@ -313,6 +316,7 @@
         "text_jKFpTU",
         "button_yRQNj9"
       ],
+      "disabled": true,
       "name": "t:sections.video-with-text.name",
       "settings": {
         "video_url": "https://www.youtube.com/watch?v=TmJ4VrBVsrA",
@@ -368,6 +372,7 @@
       "block_order": [
         "testimonial_FAe4zt"
       ],
+      "disabled": true,
       "name": "t:sections.testimonials.name",
       "settings": {
         "heading": "",
@@ -443,6 +448,7 @@
         "text_MerVP4",
         "button_ymrcNF"
       ],
+      "disabled": true,
       "name": "t:sections.video-with-text.name",
       "settings": {
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -511,6 +517,7 @@
         "heading_mPg9XD",
         "text_6Xz9mx"
       ],
+      "disabled": true,
       "name": "t:sections.video-with-text.name",
       "settings": {
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -579,6 +586,7 @@
         "heading_H8CLqc",
         "text_rfRDhD"
       ],
+      "disabled": true,
       "name": "t:sections.video-with-text.name",
       "settings": {
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",

@@ -1806,7 +1806,7 @@
             "video": "shopify://files/videos/Bio-Well TEMOIGNAGES ENGLISH.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": "",
-            "aspect_ratio": "landscape",
+            "aspect_ratio": "wide",
             "enable_video_autoplay": false,
             "enable_video_looping": false,
             "source_mobile": "uploaded",

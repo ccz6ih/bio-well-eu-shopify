@@ -1807,8 +1807,8 @@
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": "",
             "aspect_ratio": "landscape",
-            "enable_video_autoplay": true,
-            "enable_video_looping": true,
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
             "source_mobile": "uploaded",
             "description_mobile": "",
             "aspect_ratio_mobile": "adapt",
@@ -1819,7 +1819,7 @@
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 26
+            "border_radius": 25
           },
           "blocks": {}
         }

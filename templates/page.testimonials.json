@@ -656,6 +656,108 @@
         "divider": false,
         "rounded": false
       }
+    },
+    "custom_section_BnE8yz": {
+      "type": "custom-section",
+      "blocks": {
+        "heading_MyPQFQ": {
+          "type": "heading",
+          "name": "t:blocks.heading.name",
+          "settings": {
+            "heading": "&nbsp;What our customers say&nbsp;",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "width": "fill",
+            "custom_width": 100,
+            "alignment": "center",
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "alignment_mobile": "left",
+            "effects": "none",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          },
+          "blocks": {}
+        },
+        "spacer_RgLMfL": {
+          "type": "spacer",
+          "name": "t:blocks.spacer.name",
+          "settings": {
+            "size": "pixel",
+            "percent_size": 100,
+            "pixel_size": 32,
+            "custom_mobile_size": false,
+            "size_mobile": "percent",
+            "percent_size_mobile": 100,
+            "pixel_size_mobile": 120
+          },
+          "blocks": {}
+        },
+        "video_NByKEc": {
+          "type": "video",
+          "name": "t:blocks.video.name",
+          "settings": {
+            "source": "uploaded",
+            "video": "shopify://files/videos/Bio-Well TEMOIGNAGES ENGLISH.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "aspect_ratio": "wide",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "source_mobile": "uploaded",
+            "description_mobile": "",
+            "aspect_ratio_mobile": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 25
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading_MyPQFQ",
+        "spacer_RgLMfL",
+        "video_NByKEc"
+      ],
+      "name": "t:sections.custom-section.name",
+      "settings": {
+        "content_direction": "col",
+        "vertical_on_mobile": true,
+        "content_wrap": false,
+        "horizontal_alignment": "start",
+        "vertical_alignment": "center",
+        "horizontal_alignment_flex_direction_column": "start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page",
+        "section_height": "auto",
+        "section_height_custom": 50,
+        "section_height_mobile": "auto",
+        "section_height_custom_mobile": 50,
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -668,6 +770,7 @@
     "video_with_text_UQeJHh",
     "video_with_text_7TXnrq",
     "video_with_text_kgf8bP",
-    "testimonials_videos"
+    "testimonials_videos",
+    "custom_section_BnE8yz"
   ]
 }

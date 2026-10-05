@@ -1810,6 +1810,8 @@
             "enable_video_autoplay": false,
             "enable_video_looping": false,
             "source_mobile": "uploaded",
+            "video_mobile": "shopify://files/videos/Bio-Well  ANGLAIS.mp4",
+            "video_url_mobile": "",
             "description_mobile": "",
             "aspect_ratio_mobile": "adapt",
             "width": "fill",

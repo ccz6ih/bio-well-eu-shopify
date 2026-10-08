@@ -417,7 +417,7 @@
       ],
       "name": "Popup on load",
       "settings": {
-        "mode": "enabled",
+        "mode": "disable",
         "exclude_index": false,
         "exclude_product": false,
         "exclude_collection": false,

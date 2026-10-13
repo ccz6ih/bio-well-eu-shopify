@@ -260,6 +260,37 @@
       "settings": {
         "header__selection": {
           "content": "Selezione"
+        },
+        "slides_per_view_desktop": {
+          "label": "Diapositive per schermata su desktop"
+        },
+        "show_arrows": {
+          "label": "Mostra le frecce"
+        },
+        "selection_mode": {
+          "info": "Scegli quali video visualizzare tra i blocchi aggiunti qui sotto.",
+          "options__1": {
+            "label": "Tutti i video"
+          },
+          "label": "Modalità di selezione",
+          "options__2": {
+            "label": "I primi N video"
+          }
+        },
+        "manual_limit": {
+          "label": "Numero di video"
+        },
+        "slides_per_view_mobile": {
+          "label": "Diapositive per schermata sui dispositivi mobili"
+        },
+        "slides_per_view_tablet": {
+          "label": "Diapositive per schermata sul tablet"
+        },
+        "show_dots": {
+          "label": "Mostra i puntini"
+        },
+        "header__layout": {
+          "content": "Layout"
         }
       }
     },

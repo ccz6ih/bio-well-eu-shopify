@@ -246,6 +246,86 @@
     "comparison-table": {
       "highlight_differences": "Evidenziare differenze",
       "choose_product": "Scegli un prodotto"
+    },
+    "testimonials-videos-carousel": {
+      "blocks": {
+        "testimonial_video": {
+          "name": "Testimonianza video"
+        }
+      },
+      "preset": {
+        "name": "Carosello di testimonianze video"
+      },
+      "name": "Carosello di testimonianze video",
+      "settings": {
+        "header__selection": {
+          "content": "Selezione"
+        }
+      }
+    },
+    "testimonials-videos": {
+      "preset": {
+        "name": "Testimonianze video"
+      },
+      "blocks": {
+        "testimonial_video": {
+          "header__video": {
+            "content": "Media"
+          },
+          "header__video_url": {
+            "content": "URL esterno",
+            "info": "Supporta gli URL di YouTube e Vimeo."
+          },
+          "video_url": {
+            "info": "Supporta gli URL di YouTube e Vimeo.",
+            "label": "URL del video"
+          },
+          "description": "Descrizione",
+          "title": "Titolo",
+          "source": {
+            "label": "Fonte",
+            "options__1": {
+              "label": "Media"
+            },
+            "options__2": {
+              "label": "URL esterno"
+            }
+          },
+          "video": {
+            "label": "Video"
+          },
+          "cover_image_info": "Viene utilizzato come immagine di anteprima visualizzata prima della riproduzione del video.",
+          "name": "Testimonianza video",
+          "cover_image": "Immagine di copertina"
+        }
+      },
+      "settings": {
+        "columns_desktop": {
+          "options__3": {
+            "label": "3 colonne"
+          },
+          "label": "Colonne sul desktop",
+          "options__4": {
+            "label": "4 colonne"
+          },
+          "options__2": {
+            "label": "2 colonne"
+          }
+        },
+        "header__layout": {
+          "content": "Layout"
+        },
+        "columns_mobile": {
+          "label": "Rubriche sui dispositivi mobili",
+          "options__1": {
+            "label": "1 colonna"
+          },
+          "options__2": {
+            "label": "2 colonne"
+          }
+        }
+      },
+      "name": "Testimonianze video"
     }
   },
   "blogs": {

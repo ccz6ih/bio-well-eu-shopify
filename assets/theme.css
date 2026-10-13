@@ -5815,7 +5815,7 @@ ol {
 
 .localization .dropdown__nav {
   margin-inline-end: 5px;
-  max-height: 250px;
+  /*max-height: 290px;*/
   max-width: 280px;
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;

@@ -67,7 +67,7 @@
       ],
       "settings": {
         "invert_newsletter_others": false,
-        "enable_newsletter": true,
+        "enable_newsletter": false,
         "newsletter_heading": "Subscribe to receive the latest updates.",
         "newsletter_heading_size": "md:title-sm",
         "newsletter_text": "",

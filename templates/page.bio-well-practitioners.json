@@ -289,6 +289,7 @@
         "custom_field-2",
         "custom_field_LDnDA9"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "title-md",
@@ -397,6 +398,24 @@
         "full_width": false,
         "rounded": false
       }
+    },
+    "custom_liquid_hfNnQa": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.name",
+      "settings": {
+        "liquid": "{%- comment -%}\n  Bio-Well practitioners page (2026-10-19): HubSpot form \"Trouver un praticien\" in the page language\n  (Italian -> English), replacing the Shopify contact form (hidden). Inter font injected in the form.\n{%- endcomment -%}\n{%- liquid\n  assign langue = request.locale.iso_code | split: '-' | first\n  case langue\n    when 'fr'\n      assign bw_form = 'a09aadc0-c4f7-47ed-b551-d02068887568'\n    when 'es'\n      assign bw_form = 'efa0b67f-76d4-4c32-ba02-1034e5657267'\n    when 'de'\n      assign bw_form = 'c6b1c2f0-02e7-4115-8acb-4d4f99f441b7'\n    when 'pt'\n      assign bw_form = '0357090d-e76a-4f31-937e-de1e322fc1e0'\n    when 'nl'\n      assign bw_form = '3cc7594f-1989-4bc1-9736-a73ac9effb72'\n    when 'el'\n      assign bw_form = '128f1e61-b99b-453e-868a-050e158c82cd'\n    when 'fi'\n      assign bw_form = '98cb4a0b-d20b-4d48-8e45-bfabcd2c6d1d'\n    when 'sv'\n      assign bw_form = 'c4d35763-6a15-41e6-822e-6237bd032c5c'\n    else\n      assign bw_form = '1611a9fd-5dbd-47df-8148-df623bc35ec2'\n  endcase\n-%}\n<div style=\"max-width:720px;margin:0 auto;padding:0 16px 48px;\">\n  <div id=\"bw-form-praticien\" data-form=\"{{ bw_form }}\"></div>\n</div>\n<script src=\"//js-eu1.hsforms.net/forms/embed/v2.js\" charset=\"utf-8\"></script>\n<script>\n(function () {\n  var cible = document.getElementById('bw-form-praticien');\n  function creer() {\n    if (!window.hbspt) return setTimeout(creer, 200);\n    if (cible.getAttribute('data-cree')) return;\n    cible.setAttribute('data-cree', '1');\n    hbspt.forms.create({ region: 'eu1', portalId: '25309101', formId: cible.getAttribute('data-form'), target: '#bw-form-praticien' });\n  }\n  creer();\n  function police() {\n    var f = cible.querySelector('iframe.hs-form-iframe');\n    var d = f && f.contentDocument;\n    if (!d || !d.head || d.getElementById('bw-police')) return;\n    var l = d.createElement('link');\n    l.id = 'bw-police'; l.rel = 'stylesheet';\n    l.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap';\n    d.head.appendChild(l);\n    var s = d.createElement('style');\n    s.textContent = 'body, input, select, textarea, button, label { font-family: Inter, sans-serif !important; } input, select, textarea { font-size: 16px !important; }';\n    d.head.appendChild(s);\n  }\n  window.addEventListener('message', function (e) { if (e.data && e.data.type === 'hsFormCallback') police(); });\n  var n = 0, t = setInterval(function () { police(); if (++n > 30) clearInterval(t); }, 500);\n})();\n</script>",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -407,6 +426,7 @@
     "empty-space",
     "rich_text_FaNkAH",
     "contact-form",
-    "logo_list_9RdpYt"
+    "logo_list_9RdpYt",
+    "custom_liquid_hfNnQa"
   ]
 }

@@ -9,6 +9,12 @@
  */
 {
   "general": {
+    "404": {
+      "title": "Không tìm thấy trang",
+      "subtext_html": "Có vẻ như trang bạn đang tìm kiếm không còn tồn tại.<br>Hãy thử quay lại trang trước hoặc các trang bên dưới.",
+      "back_to_home": "Đi đến trang chủ",
+      "continue_shopping": "Tiếp tục mua sắm"
+    },
     "accessibility": {
       "skip_to_content": "Chuyển đến nội dung",
       "close": "Đóng",
@@ -32,12 +38,6 @@
       "go_to_item": "Đi tới mục {{ index }}",
       "drag": "Kéo",
       "back_to_top": "Về đầu trang"
-    },
-    "404": {
-      "title": "Không tìm thấy trang",
-      "subtext_html": "Có vẻ như trang bạn đang tìm kiếm không còn tồn tại.<br>Hãy thử quay lại trang trước hoặc các trang bên dưới.",
-      "back_to_home": "Đi đến trang chủ",
-      "continue_shopping": "Tiếp tục mua sắm"
     },
     "meta": {
       "tags": "Được gắn thẻ \"{{ tags }}\"",
@@ -246,6 +246,189 @@
     "comparison-table": {
       "highlight_differences": "Làm nổi bật sự khác biệt",
       "choose_product": "Chọn sản phẩm"
+    },
+    "download-software": {
+      "name": "Tải phần mềm Bio-Well",
+      "settings": {
+        "header__heading": {
+          "content": "Phần đầu trang"
+        },
+        "heading": {
+          "default": "Tải phần mềm Bio-Well"
+        },
+        "subheading": {
+          "default": "Tải phần mềm Bio-Well trên máy tính để bàn:"
+        },
+        "arm_notice": {
+          "label": "Lưu ý ARM",
+          "default": "ARM không được hỗ trợ"
+        },
+        "header_desktop": {
+          "content": "Tải xuống máy tính"
+        },
+        "desktop_heading": {
+          "default": "Tải phần mềm Bio-Well trên máy tính để bàn"
+        },
+        "header_mac": {
+          "content": "Mac"
+        },
+        "platform_title": {
+          "label": "Tiêu đề nền tảng"
+        },
+        "version_label": {
+          "label": "Nhãn phiên bản"
+        },
+        "mac_version": {
+          "default": "Mac OS X 10.13 & Mới hơn"
+        },
+        "official_url": {
+          "label": "URL tải xuống chính thức"
+        },
+        "official_label": {
+          "label": "Nhãn liên kết chính thức"
+        },
+        "mac_app_store_label": {
+          "default": "Tải xuống trong App Store"
+        },
+        "legacy_url": {
+          "label": "URL tải xuống kế thừa"
+        },
+        "legacy_label": {
+          "label": "Nhãn liên kết kế thừa"
+        },
+        "mac_legacy_label": {
+          "default": "Mac OS X 10.11 & 10.12"
+        },
+        "mirror_1": {
+          "label": "Mirror #1 URL"
+        },
+        "mirror_2": {
+          "label": "Mirror #2 URL"
+        },
+        "mirrors_label": {
+          "label": "Nhãn mirror",
+          "default": "Mirror"
+        },
+        "notice": {
+          "label": "Lưu ý tương thích"
+        },
+        "mac_notice": {
+          "default": "Lưu ý rằng iPad không được hỗ trợ."
+        },
+        "download_label": {
+          "label": "Nhãn nút tải xuống"
+        },
+        "mac_download_label": {
+          "default": "TẢI MAC OS"
+        },
+        "header_windows": {
+          "content": "Windows"
+        },
+        "windows_version": {
+          "default": "Windows Vista và Mới hơn"
+        },
+        "windows_notice": {
+          "default": "Lưu ý rằng máy tính bảng Windows 8 được hỗ trợ, nhưng có thể không cung cấp đủ dòng điện qua cổng USB."
+        },
+        "windows_download_label": {
+          "default": "TẢI WINDOWS"
+        },
+        "header_linux": {
+          "content": "Linux"
+        },
+        "linux_version": {
+          "default": "Ubuntu 20.04 và Mới hơn"
+        },
+        "linux_notice": {
+          "default": "Lưu ý rằng Bio-Well có thể không tương thích với phiên bản Linux và trình điều khiển của bạn."
+        },
+        "linux_download_label": {
+          "default": "TẢI LINUX"
+        },
+        "header_mobile": {
+          "content": "Tải ứng dụng di động"
+        },
+        "mobile_heading": {
+          "default": "Tải ứng dụng Bio-Well trên thiết bị di động"
+        },
+        "iphone_url": {
+          "label": "URL iPhone App Store"
+        },
+        "iphone_label": {
+          "label": "Nhãn nút iPhone App Store",
+          "default": "Tải xuống trên App Store"
+        },
+        "android_url": {
+          "label": "URL Android Google Play"
+        },
+        "android_label": {
+          "label": "Nhãn nút Android Google Play",
+          "default": "Tải xuống trên Google Play Store"
+        },
+        "header_subscription": {
+          "content": "Đăng ký"
+        },
+        "subscription_heading": {
+          "default": "Bắt đầu đăng ký Bio-Well của bạn"
+        },
+        "subscription_subheading": {
+          "default": "Dễ dàng:"
+        },
+        "subscription_step_1": {
+          "label": "Bước 1",
+          "default": "Tạo tài khoản Bio-Well của bạn tại manage.bio-well.com"
+        },
+        "subscription_step_2": {
+          "label": "Bước 2",
+          "default": "Chọn một gói (hàng ngày, hàng tháng hoặc hàng năm)"
+        },
+        "subscription_step_3": {
+          "label": "Bước 3",
+          "default": "Nhập thông tin thanh toán"
+        },
+        "subscription_step_4": {
+          "label": "Bước 4",
+          "default": "Khi hoàn tất, chỉ cần mở phần mềm Bio-Well trên thiết bị của bạn, đăng nhập và bắt đầu quét!"
+        },
+        "cta_label": {
+          "label": "Nhãn nút CTA"
+        },
+        "subscription_cta_label": {
+          "default": "Create my Account"
+        },
+        "cta_url": {
+          "label": "URL nút CTA"
+        },
+        "header_demo": {
+          "content": "Bản thử miễn phí"
+        },
+        "demo_heading": {
+          "default": "Bản thử miễn phí"
+        },
+        "demo_text": {
+          "default": "Tò mò về Bio-Well? Hai lựa chọn cho bạn: xem bản ghi demo hoặc đặt lịch một buổi demo video trực tiếp ngay hôm nay và xem cách công nghệ tiên tiến của chúng tôi có thể biến đổi nghề nghiệp của bạn!"
+        },
+        "demo_watch_label": {
+          "label": "Nhãn nút xem demo video",
+          "default": "Xem bản thử miễn phí"
+        },
+        "demo_watch_url": {
+          "label": "URL xem demo video"
+        },
+        "demo_book_label": {
+          "label": "Nhãn nút đặt lịch demo",
+          "default": "Đặt lịch bản thử miễn phí"
+        },
+        "demo_book_url": {
+          "label": "URL đặt lịch demo"
+        },
+        "demo_background": {
+          "label": "Hiển thị nền demo"
+        },
+        "header_global": {
+          "content": "Toàn cầu"
+        }
+      }
     }
   },
   "blogs": {

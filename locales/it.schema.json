@@ -6,8 +6,7 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */
-{
+ */{
   "categories": {
     "banners": "Banner",
     "basic": "Base",
@@ -155,7 +154,7 @@
             "label": "Stretto"
           },
           "options__2": {
-            "label":"Pagina"
+            "label": "Pagina"
           },
           "options__3": {
             "label": "Largo"
@@ -1604,9 +1603,7 @@
       },
       "blocks": {
         "product": {
-          "settings": {
-
-          }
+          "settings": {}
         },
         "headings": {
           "name": "Colonna intestazioni",
@@ -1936,6 +1933,15 @@
             "month": {
               "label": "Mese",
               "options": {
+                "10": {
+                  "label": "Ottobre"
+                },
+                "11": {
+                  "label": "Novembre"
+                },
+                "12": {
+                  "label": "Dicembre"
+                },
                 "01": {
                   "label": "Gennaio"
                 },
@@ -1962,15 +1968,6 @@
                 },
                 "09": {
                   "label": "Settembre"
-                },
-                "10": {
-                  "label": "Ottobre"
-                },
-                "11": {
-                  "label": "Novembre"
-                },
-                "12": {
-                  "label": "Dicembre"
                 }
               }
             },
@@ -1980,36 +1977,6 @@
             "hour": {
               "label": "Ora",
               "options": {
-                "00": {
-                  "label": "00:00"
-                },
-                "01": {
-                  "label": "01:00"
-                },
-                "02": {
-                  "label": "02:00"
-                },
-                "03": {
-                  "label": "03:00"
-                },
-                "04": {
-                  "label": "04:00"
-                },
-                "05": {
-                  "label": "05:00"
-                },
-                "06": {
-                  "label": "06:00"
-                },
-                "07": {
-                  "label": "07:00"
-                },
-                "08": {
-                  "label": "08:00"
-                },
-                "09": {
-                  "label": "09:00"
-                },
                 "10": {
                   "label": "10:00"
                 },
@@ -2051,6 +2018,36 @@
                 },
                 "23": {
                   "label": "23:00"
+                },
+                "00": {
+                  "label": "00:00"
+                },
+                "01": {
+                  "label": "01:00"
+                },
+                "02": {
+                  "label": "02:00"
+                },
+                "03": {
+                  "label": "03:00"
+                },
+                "04": {
+                  "label": "04:00"
+                },
+                "05": {
+                  "label": "05:00"
+                },
+                "06": {
+                  "label": "06:00"
+                },
+                "07": {
+                  "label": "07:00"
+                },
+                "08": {
+                  "label": "08:00"
+                },
+                "09": {
+                  "label": "09:00"
                 }
               }
             },
@@ -3169,8 +3166,7 @@
         },
         "promotion-video": {
           "name": "Videopromozione",
-          "settings": {
-          }
+          "settings": {}
         }
       }
     },
@@ -3585,7 +3581,7 @@
                 "label": "Finestra"
               },
               "options__2": {
-                "label":"Pagina"
+                "label": "Pagina"
               },
               "label": "Tipo di aiuto"
             },
@@ -4561,6 +4557,189 @@
     },
     "video-with-text-overlay": {
       "name": "Video con testo sovrapposto"
+    },
+    "download-software": {
+      "name": "Download del software Bio-Well",
+      "settings": {
+        "header__heading": {
+          "content": "Intestazione pagina"
+        },
+        "heading": {
+          "default": "Scarica il software Bio-Well"
+        },
+        "subheading": {
+          "default": "Scarica il software Bio-Well sul desktop:"
+        },
+        "arm_notice": {
+          "label": "Avviso ARM",
+          "default": "ARM non è supportato"
+        },
+        "header_desktop": {
+          "content": "Download desktop"
+        },
+        "desktop_heading": {
+          "default": "Scarica il software Bio-Well sul desktop"
+        },
+        "header_mac": {
+          "content": "Mac"
+        },
+        "platform_title": {
+          "label": "Titolo piattaforma"
+        },
+        "version_label": {
+          "label": "Etichetta versione"
+        },
+        "mac_version": {
+          "default": "Mac OS X 10.13 & Più recente"
+        },
+        "official_url": {
+          "label": "URL download ufficiale"
+        },
+        "official_label": {
+          "label": "Etichetta link ufficiale"
+        },
+        "mac_app_store_label": {
+          "default": "Scarica sull'App Store"
+        },
+        "legacy_url": {
+          "label": "URL download legacy"
+        },
+        "legacy_label": {
+          "label": "Etichetta link legacy"
+        },
+        "mac_legacy_label": {
+          "default": "Mac OS X 10.11 & 10.12"
+        },
+        "mirror_1": {
+          "label": "Mirror #1 URL"
+        },
+        "mirror_2": {
+          "label": "Mirror #2 URL"
+        },
+        "mirrors_label": {
+          "label": "Etichetta specchi",
+          "default": "Specchio"
+        },
+        "notice": {
+          "label": "Nota di compatibilità"
+        },
+        "mac_notice": {
+          "default": "Si prega di notare che gli iPad non sono supportati."
+        },
+        "download_label": {
+          "label": "Etichetta bottone download"
+        },
+        "mac_download_label": {
+          "default": "SCARICA MAC OS"
+        },
+        "header_windows": {
+          "content": "Windows"
+        },
+        "windows_version": {
+          "default": "Windows Vista e Più recente"
+        },
+        "windows_notice": {
+          "default": "Si prega di notare che i tablet con Windows 8 sono supportati, ma potrebbero non fornire sufficiente corrente elettrica attraverso le loro porte USB."
+        },
+        "windows_download_label": {
+          "default": "SCARICA WINDOWS"
+        },
+        "header_linux": {
+          "content": "Linux"
+        },
+        "linux_version": {
+          "default": "Ubuntu 20.04 e Più recente"
+        },
+        "linux_notice": {
+          "default": "Si prega di notare che Bio-Well potrebbe non essere compatibile con la vostra versione di Linux e driver."
+        },
+        "linux_download_label": {
+          "default": "SCARICA LINUX"
+        },
+        "header_mobile": {
+          "content": "Download app mobili"
+        },
+        "mobile_heading": {
+          "default": "Scarica l'app Bio-Well sul mobile"
+        },
+        "iphone_url": {
+          "label": "URL iPhone App Store"
+        },
+        "iphone_label": {
+          "label": "Etichetta bottone iPhone App Store",
+          "default": "Scarica sull'App Store"
+        },
+        "android_url": {
+          "label": "URL Android Google Play"
+        },
+        "android_label": {
+          "label": "Etichetta bottone Android Google Play",
+          "default": "Scarica su Google Play Store"
+        },
+        "header_subscription": {
+          "content": "Abbonamento"
+        },
+        "subscription_heading": {
+          "default": "Inizia il tuo abbonamento Bio-Well"
+        },
+        "subscription_subheading": {
+          "default": "Semplice:"
+        },
+        "subscription_step_1": {
+          "label": "Passo 1",
+          "default": "Crea il tuo account Bio-Well su manage.bio-well.com"
+        },
+        "subscription_step_2": {
+          "label": "Passo 2",
+          "default": "Scegli un piano (quotidiano, mensile o annuale)"
+        },
+        "subscription_step_3": {
+          "label": "Passo 3",
+          "default": "Inserisci le informazioni di pagamento"
+        },
+        "subscription_step_4": {
+          "label": "Passo 4",
+          "default": "Una volta completato, semplicemente apri il software Bio-Well sul tuo dispositivo, accedi e inizia a scansionare!"
+        },
+        "cta_label": {
+          "label": "Etichetta bottone CTA"
+        },
+        "subscription_cta_label": {
+          "default": "Create my Account"
+        },
+        "cta_url": {
+          "label": "URL bottone CTA"
+        },
+        "header_demo": {
+          "content": "Dimostrazione gratuita"
+        },
+        "demo_heading": {
+          "default": "Dimostrazione gratuita"
+        },
+        "demo_text": {
+          "default": "Curioso su Bio-Well? Due opzioni per te: guarda la demo pre-registrata o prenota una demo video dal vivo oggi e vedi come la nostra tecnologia all'avanguardia può trasformare la tua pratica!"
+        },
+        "demo_watch_label": {
+          "label": "Etichetta bottone demo video",
+          "default": "Guarda la demo gratuita"
+        },
+        "demo_watch_url": {
+          "label": "URL demo video"
+        },
+        "demo_book_label": {
+          "label": "Etichetta bottone prenotazione demo",
+          "default": "Prenota una demo gratuita"
+        },
+        "demo_book_url": {
+          "label": "URL prenotazione demo"
+        },
+        "demo_background": {
+          "label": "Mostra sfondo dimostrazione"
+        },
+        "header_global": {
+          "content": "Globale"
+        }
+      }
     }
   },
   "settings_schema": {

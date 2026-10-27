@@ -6,8 +6,7 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */
-{
+ */{
   "categories": {
     "banners": "Banner",
     "basic": "Basic",
@@ -1931,6 +1930,15 @@
             "month": {
               "label": "Monat",
               "options": {
+                "10": {
+                  "label": "Oktober"
+                },
+                "11": {
+                  "label": "November"
+                },
+                "12": {
+                  "label": "Dezember"
+                },
                 "01": {
                   "label": "Januar"
                 },
@@ -1957,15 +1965,6 @@
                 },
                 "09": {
                   "label": "September"
-                },
-                "10": {
-                  "label": "Oktober"
-                },
-                "11": {
-                  "label": "November"
-                },
-                "12": {
-                  "label": "Dezember"
                 }
               }
             },
@@ -1975,36 +1974,6 @@
             "hour": {
               "label": "Stunde",
               "options": {
-                "00": {
-                  "label": "00:00"
-                },
-                "01": {
-                  "label": "01:00"
-                },
-                "02": {
-                  "label": "02:00"
-                },
-                "03": {
-                  "label": "03:00"
-                },
-                "04": {
-                  "label": "04:00"
-                },
-                "05": {
-                  "label": "05:00"
-                },
-                "06": {
-                  "label": "06:00"
-                },
-                "07": {
-                  "label": "07:00"
-                },
-                "08": {
-                  "label": "08:00"
-                },
-                "09": {
-                  "label": "09:00"
-                },
                 "10": {
                   "label": "10:00"
                 },
@@ -2046,6 +2015,36 @@
                 },
                 "23": {
                   "label": "23:00"
+                },
+                "00": {
+                  "label": "00:00"
+                },
+                "01": {
+                  "label": "01:00"
+                },
+                "02": {
+                  "label": "02:00"
+                },
+                "03": {
+                  "label": "03:00"
+                },
+                "04": {
+                  "label": "04:00"
+                },
+                "05": {
+                  "label": "05:00"
+                },
+                "06": {
+                  "label": "06:00"
+                },
+                "07": {
+                  "label": "07:00"
+                },
+                "08": {
+                  "label": "08:00"
+                },
+                "09": {
+                  "label": "09:00"
                 }
               }
             },
@@ -3164,8 +3163,7 @@
         },
         "promotion-video": {
           "name": "Werbevideo",
-          "settings": {
-          }
+          "settings": {}
         }
       }
     },
@@ -3755,7 +3753,8 @@
               "content": "Halten Sie die Schaltfläche Zum Warenkorb hinzufügen sichtbar, während Kunden stöbern und scrollen."
             }
           }
-        },"badges": {
+        },
+        "badges": {
           "name": "Abzeichen",
           "settings": {
             "paragraph": {
@@ -4555,6 +4554,189 @@
     },
     "video-with-text-overlay": {
       "name": "Video mit Textüberlagerung"
+    },
+    "download-software": {
+      "name": "Bio-Well-Software-Downloads",
+      "settings": {
+        "header__heading": {
+          "content": "Seitenüberschrift"
+        },
+        "heading": {
+          "default": "Laden Sie die Bio-Well-Software herunter"
+        },
+        "subheading": {
+          "default": "Laden Sie die Bio-Well-Software auf dem Desktop herunter:"
+        },
+        "arm_notice": {
+          "label": "ARM-Hinweis",
+          "default": "ARM wird nicht unterstützt"
+        },
+        "header_desktop": {
+          "content": "Desktop-Downloads"
+        },
+        "desktop_heading": {
+          "default": "Laden Sie die Bio-Well-Software auf dem Desktop herunter"
+        },
+        "header_mac": {
+          "content": "Mac"
+        },
+        "platform_title": {
+          "label": "Plattform-Titel"
+        },
+        "version_label": {
+          "label": "Versions-Beschriftung"
+        },
+        "mac_version": {
+          "default": "Mac OS X 10.13 & Neuer"
+        },
+        "official_url": {
+          "label": "Offizielle Download-URL"
+        },
+        "official_label": {
+          "label": "Offizielle Link-Beschriftung"
+        },
+        "mac_app_store_label": {
+          "default": "In den App Store laden"
+        },
+        "legacy_url": {
+          "label": "Legacy-Download-URL"
+        },
+        "legacy_label": {
+          "label": "Legacy-Link-Beschriftung"
+        },
+        "mac_legacy_label": {
+          "default": "Mac OS X 10.11 & 10.12"
+        },
+        "mirror_1": {
+          "label": "Spiegel #1 URL"
+        },
+        "mirror_2": {
+          "label": "Spiegel #2 URL"
+        },
+        "mirrors_label": {
+          "label": "Spiegel-Beschriftung",
+          "default": "Spiegel"
+        },
+        "notice": {
+          "label": "Kompatibilitätshinweis"
+        },
+        "mac_notice": {
+          "default": "Bitte beachten Sie, dass iPads nicht unterstützt werden."
+        },
+        "download_label": {
+          "label": "Download-Schaltflächen-Beschriftung"
+        },
+        "mac_download_label": {
+          "default": "MAC OS HERUNTERLADEN"
+        },
+        "header_windows": {
+          "content": "Windows"
+        },
+        "windows_version": {
+          "default": "Windows Vista und neuer"
+        },
+        "windows_notice": {
+          "default": "Bitte beachten Sie, dass Tablets mit Windows 8 unterstützt werden, aber möglicherweise nicht genug Strom über ihre USB-Ports liefern."
+        },
+        "windows_download_label": {
+          "default": "WINDOWS HERUNTERLADEN"
+        },
+        "header_linux": {
+          "content": "Linux"
+        },
+        "linux_version": {
+          "default": "Ubuntu 20.04 und neuer"
+        },
+        "linux_notice": {
+          "default": "Bitte beachten Sie, dass Bio-Well möglicherweise nicht mit Ihrer Linux-Version und Treibern kompatibel ist."
+        },
+        "linux_download_label": {
+          "default": "LINUX HERUNTERLADEN"
+        },
+        "header_mobile": {
+          "content": "Mobile App-Downloads"
+        },
+        "mobile_heading": {
+          "default": "Laden Sie die Bio-Well-App auf dem Smartphone herunter"
+        },
+        "iphone_url": {
+          "label": "iPhone App Store URL"
+        },
+        "iphone_label": {
+          "label": "iPhone App Store Schaltflächen-Beschriftung",
+          "default": "In den App Store laden"
+        },
+        "android_url": {
+          "label": "Android Google Play URL"
+        },
+        "android_label": {
+          "label": "Android Google Play Schaltflächen-Beschriftung",
+          "default": "Bei Google Play Store laden"
+        },
+        "header_subscription": {
+          "content": "Abonnement"
+        },
+        "subscription_heading": {
+          "default": "Starten Sie Ihr Bio-Well-Abonnement"
+        },
+        "subscription_subheading": {
+          "default": "Einfach:"
+        },
+        "subscription_step_1": {
+          "label": "Schritt 1",
+          "default": "Erstellen Sie Ihr Bio-Well-Konto auf manage.bio-well.com"
+        },
+        "subscription_step_2": {
+          "label": "Schritt 2",
+          "default": "Wählen Sie einen Plan (täglich, monatlich oder jährlich)"
+        },
+        "subscription_step_3": {
+          "label": "Schritt 3",
+          "default": "Geben Sie Zahlungsinformationen ein"
+        },
+        "subscription_step_4": {
+          "label": "Schritt 4",
+          "default": "Nach Abschluss öffnen Sie einfach die Bio-Well-Software auf Ihrem Gerät, melden Sie sich an und beginnen Sie zu scannen!"
+        },
+        "cta_label": {
+          "label": "CTA-Schaltflächen-Beschriftung"
+        },
+        "subscription_cta_label": {
+          "default": "Create my Account"
+        },
+        "cta_url": {
+          "label": "CTA-URL"
+        },
+        "header_demo": {
+          "content": "Kostenlose Demo"
+        },
+        "demo_heading": {
+          "default": "Kostenlose Demo"
+        },
+        "demo_text": {
+          "default": "Neugierig auf Bio-Well? Zwei Optionen für Sie: Sehen Sie sich die aufgezeichnete Demo an oder buchen Sie noch heute eine Live-Video-Demo und sehen Sie, wie unsere fortschrittliche Technologie Ihre Praxis transformieren kann!"
+        },
+        "demo_watch_label": {
+          "label": "Demo-Video-Schaltflächen-Beschriftung",
+          "default": "Kostenlose Demo ansehen"
+        },
+        "demo_watch_url": {
+          "label": "Demo-Video-URL"
+        },
+        "demo_book_label": {
+          "label": "Demo-Buchungs-Schaltflächen-Beschriftung",
+          "default": "Kostenlose Demo buchen"
+        },
+        "demo_book_url": {
+          "label": "Demo-Buchungs-URL"
+        },
+        "demo_background": {
+          "label": "Demo-Hintergrund anzeigen"
+        },
+        "header_global": {
+          "content": "Global"
+        }
+      }
     }
   },
   "settings_schema": {

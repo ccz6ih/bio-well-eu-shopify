@@ -6,8 +6,7 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */
-{
+ */{
   "categories": {
     "banners": "Bannières",
     "basic": "Basic",
@@ -203,7 +202,7 @@
             "label": "Couverture"
           },
           "options__2": {
-            "label":"Contenir"
+            "label": "Contenir"
           },
           "label": "Position de la vidéo"
         },
@@ -242,7 +241,7 @@
         },
         "gradient_direction": {
           "options__1": {
-            "label":"Haut"
+            "label": "Haut"
           },
           "options__2": {
             "label": "Bas"
@@ -432,7 +431,7 @@
             "label": "Payage"
           },
           "options__5": {
-            "label":"Grand"
+            "label": "Grand"
           },
           "label": "Format d’image"
         },
@@ -861,7 +860,7 @@
             "label": "Payage"
           },
           "options__5": {
-            "label":"Grand"
+            "label": "Grand"
           },
           "options__6": {
             "label": "Arrondi"
@@ -1931,6 +1930,15 @@
             "month": {
               "label": "Mois",
               "options": {
+                "10": {
+                  "label": "Octobre"
+                },
+                "11": {
+                  "label": "Novembre"
+                },
+                "12": {
+                  "label": "Décembre"
+                },
                 "01": {
                   "label": "Janvier"
                 },
@@ -1957,15 +1965,6 @@
                 },
                 "09": {
                   "label": "Septembre"
-                },
-                "10": {
-                  "label": "Octobre"
-                },
-                "11": {
-                  "label": "Novembre"
-                },
-                "12": {
-                  "label": "Décembre"
                 }
               }
             },
@@ -1975,36 +1974,6 @@
             "hour": {
               "label": "Heure",
               "options": {
-                "00": {
-                  "label": "00:00"
-                },
-                "01": {
-                  "label": "01:00"
-                },
-                "02": {
-                  "label": "02:00"
-                },
-                "03": {
-                  "label": "03:00"
-                },
-                "04": {
-                  "label": "04:00"
-                },
-                "05": {
-                  "label": "05:00"
-                },
-                "06": {
-                  "label": "06:00"
-                },
-                "07": {
-                  "label": "07:00"
-                },
-                "08": {
-                  "label": "08:00"
-                },
-                "09": {
-                  "label": "09:00"
-                },
                 "10": {
                   "label": "10:00"
                 },
@@ -2046,6 +2015,36 @@
                 },
                 "23": {
                   "label": "23:00"
+                },
+                "00": {
+                  "label": "00:00"
+                },
+                "01": {
+                  "label": "01:00"
+                },
+                "02": {
+                  "label": "02:00"
+                },
+                "03": {
+                  "label": "03:00"
+                },
+                "04": {
+                  "label": "04:00"
+                },
+                "05": {
+                  "label": "05:00"
+                },
+                "06": {
+                  "label": "06:00"
+                },
+                "07": {
+                  "label": "07:00"
+                },
+                "08": {
+                  "label": "08:00"
+                },
+                "09": {
+                  "label": "09:00"
                 }
               }
             },
@@ -3164,8 +3163,7 @@
         },
         "promotion-video": {
           "name": "Vidéo promotionnelle",
-          "settings": {
-          }
+          "settings": {}
         }
       }
     },
@@ -4449,14 +4447,24 @@
         },
         "columns_desktop": {
           "label": "Colonnes sur ordinateur",
-          "options__2": { "label": "2 colonnes" },
-          "options__3": { "label": "3 colonnes" },
-          "options__4": { "label": "4 colonnes" }
+          "options__2": {
+            "label": "2 colonnes"
+          },
+          "options__3": {
+            "label": "3 colonnes"
+          },
+          "options__4": {
+            "label": "4 colonnes"
+          }
         },
         "columns_mobile": {
           "label": "Colonnes sur mobile",
-          "options__1": { "label": "1 colonne" },
-          "options__2": { "label": "2 colonnes" }
+          "options__1": {
+            "label": "1 colonne"
+          },
+          "options__2": {
+            "label": "2 colonnes"
+          }
         }
       },
       "blocks": {
@@ -4465,8 +4473,12 @@
           "title": "Titre",
           "description": "Description",
           "source": {
-            "options__1": { "label": "Média" },
-            "options__2": { "label": "URL externe" },
+            "options__1": {
+              "label": "Média"
+            },
+            "options__2": {
+              "label": "URL externe"
+            },
             "label": "Source"
           },
           "header__video": {
@@ -4476,7 +4488,9 @@
             "content": "Lire la vidéo à partir d'une URL",
             "info": "Prend en charge les URL YouTube et Vimeo."
           },
-          "video": { "label": "Vidéo" },
+          "video": {
+            "label": "Vidéo"
+          },
           "video_url": {
             "label": "URL de la vidéo",
             "info": "Prend en charge les URL YouTube et Vimeo."
@@ -4498,17 +4512,29 @@
         "selection_mode": {
           "label": "Mode de sélection",
           "info": "Choisissez quelles vidéos afficher parmi les blocs ajoutés ci-dessous.",
-          "options__1": { "label": "Toutes les vidéos" },
-          "options__2": { "label": "N premières vidéos" }
+          "options__1": {
+            "label": "Toutes les vidéos"
+          },
+          "options__2": {
+            "label": "N premières vidéos"
+          }
         },
         "manual_limit": {
           "label": "Nombre de vidéos"
         },
         "slides_per_view": {
-          "options__1": { "label": "1" },
-          "options__2": { "label": "2" },
-          "options__3": { "label": "3" },
-          "options__4": { "label": "4" }
+          "options__1": {
+            "label": "1"
+          },
+          "options__2": {
+            "label": "2"
+          },
+          "options__3": {
+            "label": "3"
+          },
+          "options__4": {
+            "label": "4"
+          }
         },
         "slides_per_view_mobile": {
           "label": "Vues par slide sur mobile"
@@ -4647,6 +4673,191 @@
     },
     "video-with-text-overlay": {
       "name": "Vidéo avec superposition de texte"
+    },
+    "download-software": {
+      "name": "Téléchargements du logiciel Bio-Well",
+      "settings": {
+        "header__heading": {
+          "content": "En-tête de page"
+        },
+        "heading": {
+          "label": "Titre",
+          "default": "Télécharger le logiciel Bio-Well"
+        },
+        "subheading": {
+          "label": "Sous-titre / introduction",
+          "default": "Téléchargez le logiciel Bio-Well sur ordinateur de bureau :"
+        },
+        "arm_notice": {
+          "label": "Avis ARM",
+          "default": "ARM n'est pas pris en charge"
+        },
+        "header_desktop": {
+          "content": "Téléchargements pour ordinateur de bureau"
+        },
+        "desktop_heading": {
+          "default": "Télécharger le logiciel Bio-Well sur ordinateur de bureau"
+        },
+        "header_mac": {
+          "content": "Mac"
+        },
+        "platform_title": {
+          "label": "Titre de la plateforme"
+        },
+        "version_label": {
+          "label": "Étiquette de version"
+        },
+        "mac_version": {
+          "default": "Mac OS X 10.13 et plus récent"
+        },
+        "official_url": {
+          "label": "URL de téléchargement officiel"
+        },
+        "official_label": {
+          "label": "Étiquette de lien officiel"
+        },
+        "mac_app_store_label": {
+          "default": "Télécharger sur l'App Store"
+        },
+        "legacy_url": {
+          "label": "URL de téléchargement hérité"
+        },
+        "legacy_label": {
+          "label": "Étiquette de lien hérité"
+        },
+        "mac_legacy_label": {
+          "default": "Mac OS X 10.11 & 10.12"
+        },
+        "mirror_1": {
+          "label": "Miroir #1 URL"
+        },
+        "mirror_2": {
+          "label": "Miroir #2 URL"
+        },
+        "mirrors_label": {
+          "label": "Étiquette des miroirs",
+          "default": "Miroir"
+        },
+        "notice": {
+          "label": "Avis de compatibilité"
+        },
+        "mac_notice": {
+          "default": "Veuillez noter que les iPads ne sont pas pris en charge."
+        },
+        "download_label": {
+          "label": "Étiquette du bouton de téléchargement"
+        },
+        "mac_download_label": {
+          "default": "TÉLÉCHARGER MAC OS"
+        },
+        "header_windows": {
+          "content": "Windows"
+        },
+        "windows_version": {
+          "default": "Windows Vista et plus récent"
+        },
+        "windows_notice": {
+          "default": "Veuillez noter que les tablettes Windows 8 sont prises en charge, mais peuvent ne pas fournir suffisamment de courant électrique via leurs ports USB."
+        },
+        "windows_download_label": {
+          "default": "TÉLÉCHARGER WINDOWS"
+        },
+        "header_linux": {
+          "content": "Linux"
+        },
+        "linux_version": {
+          "default": "Ubuntu 20.04 et plus récent"
+        },
+        "linux_notice": {
+          "default": "Veuillez noter que Bio-Well peut être incompatible avec votre version de Linux et ses pilotes."
+        },
+        "linux_download_label": {
+          "default": "TÉLÉCHARGER LINUX"
+        },
+        "header_mobile": {
+          "content": "Téléchargements d'applications mobiles"
+        },
+        "mobile_heading": {
+          "default": "Télécharger l'application Bio-Well sur mobile"
+        },
+        "iphone_url": {
+          "label": "URL de l'App Store iPhone"
+        },
+        "iphone_label": {
+          "label": "Étiquette du bouton App Store iPhone",
+          "default": "Télécharger sur l'App Store"
+        },
+        "android_url": {
+          "label": "URL de Google Play Android"
+        },
+        "android_label": {
+          "label": "Étiquette du bouton Google Play Android",
+          "default": "Télécharger sur Google Play Store"
+        },
+        "header_subscription": {
+          "content": "Abonnement"
+        },
+        "subscription_heading": {
+          "default": "Commencez votre abonnement Bio-Well"
+        },
+        "subscription_subheading": {
+          "default": "Facile :"
+        },
+        "subscription_step_1": {
+          "label": "Étape 1",
+          "default": "Créez votre compte Bio-Well sur manage.bio-well.com"
+        },
+        "subscription_step_2": {
+          "label": "Étape 2",
+          "default": "Choisissez un plan (quotidien, mensuel ou annuel)"
+        },
+        "subscription_step_3": {
+          "label": "Étape 3",
+          "default": "Saisissez les informations de paiement"
+        },
+        "subscription_step_4": {
+          "label": "Étape 4",
+          "default": "Une fois terminé, ouvrez simplement le logiciel Bio-Well sur votre appareil, connectez-vous et commencez à scanner !"
+        },
+        "cta_label": {
+          "label": "Étiquette du bouton CTA"
+        },
+        "subscription_cta_label": {
+          "default": "Créer mon compte"
+        },
+        "cta_url": {
+          "label": "URL du bouton CTA"
+        },
+        "header_demo": {
+          "content": "Démo gratuite"
+        },
+        "demo_heading": {
+          "default": "Démo gratuite"
+        },
+        "demo_text": {
+          "default": "Curieux de découvrir Bio-Well ? Deux options s'offrent à vous : regardez la démo préenregistrée ou réservez une démo vidéo en direct dès aujourd'hui et voyez comment notre technologie de pointe peut transformer votre pratique !"
+        },
+        "demo_watch_label": {
+          "label": "Étiquette du bouton démo vidéo",
+          "default": "Regarder la démo gratuite"
+        },
+        "demo_watch_url": {
+          "label": "URL de la démo vidéo"
+        },
+        "demo_book_label": {
+          "label": "Étiquette du bouton réservation démo",
+          "default": "Réserver une démo gratuite"
+        },
+        "demo_book_url": {
+          "label": "URL de la réservation de démo"
+        },
+        "demo_background": {
+          "label": "Afficher l'arrière-plan de la démo"
+        },
+        "header_global": {
+          "content": "Global"
+        }
+      }
     }
   },
   "settings_schema": {
@@ -5084,7 +5295,7 @@
             "label": "Payage"
           },
           "options__5": {
-            "label":"Grand"
+            "label": "Grand"
           }
         },
         "image_fill": {

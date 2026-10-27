@@ -58,7 +58,7 @@
         "iphone_url": "https://apps.apple.com/us/app/bio-well/id1508864740",
         "iphone_label": "Download on the App Store",
         "android_url": "https://play.google.com/store/apps/details?id=org.biowell.com&pli=1",
-        "android_label": "t:sections.download-software.settings.android_label.default",
+        "android_label": "Download on the Google Play Store",
         "subscription_heading": "t:sections.download-software.settings.subscription_heading.default",
         "subscription_subheading": "t:sections.download-software.settings.subscription_subheading.default",
         "subscription_step_1": "t:sections.download-software.settings.subscription_step_1.default",

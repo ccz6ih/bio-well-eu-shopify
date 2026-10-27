@@ -182,6 +182,73 @@
     }
   },
   "sections": {
+    "global": {
+      "settings": {
+        "header__heading": {
+          "content": "Titre"
+        },
+        "header__section": {
+          "content": "Section"
+        },
+        "heading": {
+          "label": "Titre"
+        },
+        "heading_size": {
+          "label": "Taille du titre",
+          "options": {
+            "1": { "label": "Petit" },
+            "2": { "label": "Moyen" },
+            "3": { "label": "Grand" },
+            "4": { "label": "Très grand" }
+          }
+        },
+        "subheading": {
+          "label": "Sous-titre"
+        },
+        "text_size": {
+          "label": "Taille du texte",
+          "options": {
+            "1": { "label": "Petit" },
+            "2": { "label": "Moyen" },
+            "3": { "label": "Grand" },
+            "4": { "label": "Très grand" }
+          }
+        },
+        "heading_tag": {
+          "label": "Balise de titre",
+          "info": "Sélectionnez la balise de titre pour le titre.",
+          "options": {
+            "1": { "label": "h1" },
+            "2": { "label": "h2" },
+            "3": { "label": "h3" },
+            "4": { "label": "h4" },
+            "5": { "label": "h5" },
+            "6": { "label": "h6" },
+            "7": { "label": "div" },
+            "8": { "label": "span" },
+            "9": { "label": "p" }
+          }
+        },
+        "description": {
+          "label": "Description"
+        },
+        "padding_top": {
+          "label": "Marge supérieure"
+        },
+        "padding_bottom": {
+          "label": "Marge inférieure"
+        },
+        "divider": {
+          "label": "Afficher le séparateur"
+        },
+        "narrow": {
+          "label": "Étroit"
+        },
+        "rounded": {
+          "label": "Arrondi"
+        }
+      }
+    },
     "announcements": {
       "carousel": "Carrousel",
       "announcement": "Annonce",
@@ -341,6 +408,191 @@
         },
         "show_dots": {
           "label": "Afficher les points"
+        }
+      }
+    },
+    "download-software": {
+      "name": "Téléchargements du logiciel Bio-Well",
+      "settings": {
+        "header__heading": {
+          "content": "En-tête de page"
+        },
+        "heading": {
+          "label": "Titre",
+          "default": "Télécharger le logiciel Bio-Well"
+        },
+        "subheading": {
+          "label": "Sous-titre / introduction",
+          "default": "Téléchargez le logiciel Bio-Well sur ordinateur de bureau :"
+        },
+        "arm_notice": {
+          "label": "Avis ARM",
+          "default": "ARM n'est pas pris en charge"
+        },
+        "header_desktop": {
+          "content": "Téléchargements pour ordinateur de bureau"
+        },
+        "desktop_heading": {
+          "default": "Télécharger le logiciel Bio-Well sur ordinateur de bureau"
+        },
+        "header_mac": {
+          "content": "Mac"
+        },
+        "platform_title": {
+          "label": "Titre de la plateforme"
+        },
+        "version_label": {
+          "label": "Étiquette de version"
+        },
+        "mac_version": {
+          "default": "Mac OS X 10.13 et plus récent"
+        },
+        "official_url": {
+          "label": "URL de téléchargement officiel"
+        },
+        "official_label": {
+          "label": "Étiquette de lien officiel"
+        },
+        "mac_app_store_label": {
+          "default": "Télécharger sur l'App Store"
+        },
+        "legacy_url": {
+          "label": "URL de téléchargement hérité"
+        },
+        "legacy_label": {
+          "label": "Étiquette de lien hérité"
+        },
+        "mac_legacy_label": {
+          "default": "Mac OS X 10.11 & 10.12"
+        },
+        "mirror_1": {
+          "label": "Miroir #1 URL"
+        },
+        "mirror_2": {
+          "label": "Miroir #2 URL"
+        },
+        "mirrors_label": {
+          "label": "Étiquette des miroirs",
+          "default": "Miroir"
+        },
+        "notice": {
+          "label": "Avis de compatibilité"
+        },
+        "mac_notice": {
+          "default": "Veuillez noter que les iPads ne sont pas pris en charge."
+        },
+        "download_label": {
+          "label": "Étiquette du bouton de téléchargement"
+        },
+        "mac_download_label": {
+          "default": "TÉLÉCHARGER MAC OS"
+        },
+        "header_windows": {
+          "content": "Windows"
+        },
+        "windows_version": {
+          "default": "Windows Vista et plus récent"
+        },
+        "windows_notice": {
+          "default": "Veuillez noter que les tablettes Windows 8 sont prises en charge, mais peuvent ne pas fournir suffisamment de courant électrique via leurs ports USB."
+        },
+        "windows_download_label": {
+          "default": "TÉLÉCHARGER WINDOWS"
+        },
+        "header_linux": {
+          "content": "Linux"
+        },
+        "linux_version": {
+          "default": "Ubuntu 20.04 et plus récent"
+        },
+        "linux_notice": {
+          "default": "Veuillez noter que Bio-Well peut être incompatible avec votre version de Linux et ses pilotes."
+        },
+        "linux_download_label": {
+          "default": "TÉLÉCHARGER LINUX"
+        },
+        "header_mobile": {
+          "content": "Téléchargements d'applications mobiles"
+        },
+        "mobile_heading": {
+          "default": "Télécharger l'application Bio-Well sur mobile"
+        },
+        "iphone_url": {
+          "label": "URL de l'App Store iPhone"
+        },
+        "iphone_label": {
+          "label": "Étiquette du bouton App Store iPhone",
+          "default": "Télécharger sur l'App Store"
+        },
+        "android_url": {
+          "label": "URL de Google Play Android"
+        },
+        "android_label": {
+          "label": "Étiquette du bouton Google Play Android",
+          "default": "Télécharger sur Google Play Store"
+        },
+        "header_subscription": {
+          "content": "Abonnement"
+        },
+        "subscription_heading": {
+          "default": "Commencez votre abonnement Bio-Well"
+        },
+        "subscription_subheading": {
+          "default": "Facile :"
+        },
+        "subscription_step_1": {
+          "label": "Étape 1",
+          "default": "Créez votre compte Bio-Well sur manage.bio-well.com"
+        },
+        "subscription_step_2": {
+          "label": "Étape 2",
+          "default": "Choisissez un plan (quotidien, mensuel ou annuel)"
+        },
+        "subscription_step_3": {
+          "label": "Étape 3",
+          "default": "Saisissez les informations de paiement"
+        },
+        "subscription_step_4": {
+          "label": "Étape 4",
+          "default": "Une fois terminé, ouvrez simplement le logiciel Bio-Well sur votre appareil, connectez-vous et commencez à scanner !"
+        },
+        "cta_label": {
+          "label": "Étiquette du bouton CTA"
+        },
+        "subscription_cta_label": {
+          "default": "Créer mon compte"
+        },
+        "cta_url": {
+          "label": "URL du bouton CTA"
+        },
+        "header_demo": {
+          "content": "Démo gratuite"
+        },
+        "demo_heading": {
+          "default": "Démo gratuite"
+        },
+        "demo_text": {
+          "default": "Curieux de découvrir Bio-Well ? Deux options s'offrent à vous : regardez la démo préenregistrée ou réservez une démo vidéo en direct dès aujourd'hui et voyez comment notre technologie de pointe peut transformer votre pratique !"
+        },
+        "demo_watch_label": {
+          "label": "Étiquette du bouton démo vidéo",
+          "default": "Regarder la démo gratuite"
+        },
+        "demo_watch_url": {
+          "label": "URL de la démo vidéo"
+        },
+        "demo_book_label": {
+          "label": "Étiquette du bouton réservation démo",
+          "default": "Réserver une démo gratuite"
+        },
+        "demo_book_url": {
+          "label": "URL de la réservation de démo"
+        },
+        "demo_background": {
+          "label": "Afficher l'arrière-plan de la démo"
+        },
+        "header_global": {
+          "content": "Global"
         }
       }
     }

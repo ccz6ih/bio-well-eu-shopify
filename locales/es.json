@@ -182,6 +182,73 @@
     }
   },
   "sections": {
+    "global": {
+      "settings": {
+        "header__heading": {
+          "content": "Encabezado"
+        },
+        "header__section": {
+          "content": "Sección"
+        },
+        "heading": {
+          "label": "Título"
+        },
+        "heading_size": {
+          "label": "Tamaño del título",
+          "options": {
+            "1": { "label": "Pequeño" },
+            "2": { "label": "Mediano" },
+            "3": { "label": "Grande" },
+            "4": { "label": "Extra grande" }
+          }
+        },
+        "subheading": {
+          "label": "Subtítulo"
+        },
+        "text_size": {
+          "label": "Tamaño del texto",
+          "options": {
+            "1": { "label": "Pequeño" },
+            "2": { "label": "Mediano" },
+            "3": { "label": "Grande" },
+            "4": { "label": "Extra grande" }
+          }
+        },
+        "heading_tag": {
+          "label": "Etiqueta de título",
+          "info": "Seleccione la etiqueta de título para el título.",
+          "options": {
+            "1": { "label": "h1" },
+            "2": { "label": "h2" },
+            "3": { "label": "h3" },
+            "4": { "label": "h4" },
+            "5": { "label": "h5" },
+            "6": { "label": "h6" },
+            "7": { "label": "div" },
+            "8": { "label": "span" },
+            "9": { "label": "p" }
+          }
+        },
+        "description": {
+          "label": "Descripción"
+        },
+        "padding_top": {
+          "label": "Márgenes superiores"
+        },
+        "padding_bottom": {
+          "label": "Márgenes inferiores"
+        },
+        "divider": {
+          "label": "Mostrar divisor"
+        },
+        "narrow": {
+          "label": "Estrecho"
+        },
+        "rounded": {
+          "label": "Redondeado"
+        }
+      }
+    },
     "announcements": {
       "carousel": "Carrusel",
       "announcement": "Anuncio",
@@ -246,6 +313,191 @@
     "comparison-table": {
       "highlight_differences": "Resaltar diferencias",
       "choose_product": "Elige un producto"
+    },
+    "download-software": {
+      "name": "Descargas de software Bio-Well",
+      "settings": {
+        "header__heading": {
+          "content": "Encabezado de página"
+        },
+        "heading": {
+          "label": "Título",
+          "default": "Descargar el software Bio-Well"
+        },
+        "subheading": {
+          "label": "Subtítulo / introducción",
+          "default": "Descargue el software Bio-Well en escritorio:"
+        },
+        "arm_notice": {
+          "label": "Aviso ARM",
+          "default": "ARM no es compatible"
+        },
+        "header_desktop": {
+          "content": "Descargas para escritorio"
+        },
+        "desktop_heading": {
+          "default": "Descargar el software Bio-Well en escritorio"
+        },
+        "header_mac": {
+          "content": "Mac"
+        },
+        "platform_title": {
+          "label": "Título de plataforma"
+        },
+        "version_label": {
+          "label": "Etiqueta de versión"
+        },
+        "mac_version": {
+          "default": "Mac OS X 10.13 y posterior"
+        },
+        "official_url": {
+          "label": "URL de descarga oficial"
+        },
+        "official_label": {
+          "label": "Etiqueta de enlace oficial"
+        },
+        "mac_app_store_label": {
+          "default": "Descargar en App Store"
+        },
+        "legacy_url": {
+          "label": "URL de descarga heredada"
+        },
+        "legacy_label": {
+          "label": "Etiqueta de enlace heredado"
+        },
+        "mac_legacy_label": {
+          "default": "Mac OS X 10.11 & 10.12"
+        },
+        "mirror_1": {
+          "label": "URL de espejo #1"
+        },
+        "mirror_2": {
+          "label": "URL de espejo #2"
+        },
+        "mirrors_label": {
+          "label": "Etiqueta de espejos",
+          "default": "Espejo"
+        },
+        "notice": {
+          "label": "Aviso de compatibilidad"
+        },
+        "mac_notice": {
+          "default": "Tenga en cuenta que los iPads no son compatibles."
+        },
+        "download_label": {
+          "label": "Etiqueta del botón de descarga"
+        },
+        "mac_download_label": {
+          "default": "DESCARGAR MAC OS"
+        },
+        "header_windows": {
+          "content": "Windows"
+        },
+        "windows_version": {
+          "default": "Windows Vista y posterior"
+        },
+        "windows_notice": {
+          "default": "Tenga en cuenta que las tabletas con Windows 8 son compatibles, pero pueden no tener suficiente corriente eléctrica en sus puertos USB."
+        },
+        "windows_download_label": {
+          "default": "DESCARGAR WINDOWS"
+        },
+        "header_linux": {
+          "content": "Linux"
+        },
+        "linux_version": {
+          "default": "Ubuntu 20.04 y posterior"
+        },
+        "linux_notice": {
+          "default": "Tenga en cuenta que Bio-Well puede ser incompatible con su versión de Linux y sus controladores."
+        },
+        "linux_download_label": {
+          "default": "DESCARGAR LINUX"
+        },
+        "header_mobile": {
+          "content": "Descargas de aplicaciones móviles"
+        },
+        "mobile_heading": {
+          "default": "Descargar la aplicación Bio-Well en móvil"
+        },
+        "iphone_url": {
+          "label": "URL de App Store iPhone"
+        },
+        "iphone_label": {
+          "label": "Etiqueta del botón de App Store iPhone",
+          "default": "Descargar en App Store"
+        },
+        "android_url": {
+          "label": "URL de Google Play Android"
+        },
+        "android_label": {
+          "label": "Etiqueta del botón de Google Play Android",
+          "default": "Descargar en Google Play Store"
+        },
+        "header_subscription": {
+          "content": "Suscripción"
+        },
+        "subscription_heading": {
+          "default": "Comience su suscripción Bio-Well"
+        },
+        "subscription_subheading": {
+          "default": "Fácil:"
+        },
+        "subscription_step_1": {
+          "label": "Paso 1",
+          "default": "Cree su cuenta Bio-Well en manage.bio-well.com"
+        },
+        "subscription_step_2": {
+          "label": "Paso 2",
+          "default": "Elija un plan (diario, mensual o anual)"
+        },
+        "subscription_step_3": {
+          "label": "Paso 3",
+          "default": "Ingrese la información de pago"
+        },
+        "subscription_step_4": {
+          "label": "Paso 4",
+          "default": "Una vez completado, simplemente abra el software Bio-Well en su dispositivo, inicie sesión y comience a escanear."
+        },
+        "cta_label": {
+          "label": "Etiqueta del botón CTA"
+        },
+        "subscription_cta_label": {
+          "default": "Crear mi cuenta"
+        },
+        "cta_url": {
+          "label": "URL del botón CTA"
+        },
+        "header_demo": {
+          "content": "Demostración gratuita"
+        },
+        "demo_heading": {
+          "default": "Demostración gratuita"
+        },
+        "demo_text": {
+          "default": "¿Curioso sobre Bio-Well? Tenemos dos opciones para usted: mire la demostración pregrabada o reserve una demostración en vivo hoy y vea cómo nuestra tecnología de vanguardia puede transformar su práctica."
+        },
+        "demo_watch_label": {
+          "label": "Etiqueta del botón de demostración",
+          "default": "Ver la demostración gratuita"
+        },
+        "demo_watch_url": {
+          "label": "URL de la demostración en video"
+        },
+        "demo_book_label": {
+          "label": "Etiqueta del botón de reserva de demostración",
+          "default": "Reservar una demostración gratuita"
+        },
+        "demo_book_url": {
+          "label": "URL de reserva de demostración"
+        },
+        "demo_background": {
+          "label": "Mostrar fondo de demostración"
+        },
+        "header_global": {
+          "content": "Global"
+        }
+      }
     }
   },
   "blogs": {

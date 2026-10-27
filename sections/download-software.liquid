@@ -1,0 +1,808 @@
+{%- doc -%}
+  Downloads the Bio-Well Software page content.
+
+  Renders:
+  A. Page heading with ARM notice
+  B. Desktop download cards (Mac, Windows, Linux)
+  C. Mobile app download links
+  D. Subscription instructions
+  E. Free demo section
+{%- enddoc -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  #shopify-section-{{ section.id }} .download-page__heading {
+    font-size: clamp(var(--sp-8), 3.368vw, var(--sp-16));
+    font-weight: var(--font-bold);
+    margin-block-end: var(--sp-8);
+  }
+
+  #shopify-section-{{ section.id }} .download-page__subheading {
+    font-size: var(--text-lg);
+    color: rgb(var(--color-foreground));
+    margin-block-end: clamp(var(--sp-5), 1.111vw, var(--sp-7));
+  }
+
+  #shopify-section-{{ section.id }} .download-page__arm-notice {
+    margin-block-end: clamp(var(--sp-5), 1.111vw, var(--sp-7));
+    display: flex;
+    gap: var(--sp-3);
+    font-size: var(--text-sm);
+    color: rgb(var(--color-foreground));
+  }
+
+  #shopify-section-{{ section.id }} .download-page__section-title {
+    font-size: clamp(var(--sp-7), 2.526vw, var(--sp-10));
+    font-weight: var(--font-bold);
+    margin-block-end: var(--sp-6);
+  }
+
+  #shopify-section-{{ section.id }} .platform-grid {
+    display: grid;
+    gap: clamp(var(--sp-4), 1.111vw, var(--sp-7));
+    margin-block-end: clamp(var(--sp-8), 2.778vw, var(--sp-14));
+  }
+
+  @media (min-width: 768px) {
+    #shopify-section-{{ section.id }} .platform-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Download card styles */
+  #shopify-section-{{ section.id }} .download-card {
+    border: 1px solid rgb(var(--color-border));
+    border-radius: var(--border-radius);
+    padding: clamp(var(--sp-5), 1.667vw, var(--sp-7));
+    background: rgb(var(--color-background));
+    transition: box-shadow 0.2s ease;
+  }
+
+  #shopify-section-{{ section.id }} .download-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  #shopify-section-{{ section.id }} .download-card__header {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    margin-block-end: var(--sp-4);
+  }
+
+  #shopify-section-{{ section.id }} .download-card__title {
+    font-size: clamp(var(--sp-6), 1.389vw, var(--sp-7));
+    font-weight: var(--font-bold);
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .download-card__version {
+    font-size: var(--text-sm);
+    color: rgb(var(--color-foreground) / 0.6);
+    margin-block-end: var(--sp-4);
+  }
+
+  #shopify-section-{{ section.id }} .download-card__link-row {
+    margin-block-end: var(--sp-3);
+  }
+
+  #shopify-section-{{ section.id }} .download-card__link {
+    font-size: var(--text-sm);
+    color: rgb(var(--color-foreground));
+    text-decoration: underline;
+  }
+
+  #shopify-section-{{ section.id }} .download-card__link:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  #shopify-section-{{ section.id }} .download-card__mirrors {
+    font-size: var(--text-sm);
+    margin-block-end: var(--sp-4);
+  }
+
+  #shopify-section-{{ section.id }} .download-card__mirror-separator {
+    margin-inline: var(--sp-2);
+  }
+
+  #shopify-section-{{ section.id }} .download-card__notice {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp-3);
+    font-size: var(--text-sm);
+    color: rgb(var(--color-foreground));
+    margin-block: clamp(var(--sp-4), 1.111vw, var(--sp-5));
+  }
+
+  #shopify-section-{{ section.id }} .download-card__button {
+    margin-block-start: clamp(var(--sp-5), 1.111vw, var(--sp-7));
+  }
+
+  #shopify-section-{{ section.id }} .download-platform-icon {
+    flex-shrink: 0;
+    width: clamp(var(--sp-8), 3.333vw, var(--sp-10));
+    height: clamp(var(--sp-8), 3.333vw, var(--sp-10));
+  }
+
+  /* Mobile downloads */
+  #shopify-section-{{ section.id }} .mobile-downloads {
+    border-top: 1px solid rgb(var(--color-border));
+    padding-block-start: clamp(var(--sp-8), 2.778vw, var(--sp-14));
+    margin-block-end: clamp(var(--sp-8), 2.778vw, var(--sp-14));
+  }
+
+  #shopify-section-{{ section.id }} .mobile-download {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-3);
+    border: 1px solid rgb(var(--color-border));
+    border-radius: var(--border-radius);
+    padding: clamp(var(--sp-4), 1.111vw, var(--sp-5)) clamp(var(--sp-5), 2.222vw, var(--sp-7));
+    background: rgb(var(--color-background));
+    transition: background-color 0.2s ease;
+    flex: 1;
+  }
+
+  #shopify-section-{{ section.id }} .mobile-download:hover {
+    background: rgb(var(--color-foreground) / 0.03);
+  }
+
+  #shopify-section-{{ section.id }} .mobile-download__icon {
+    flex-shrink: 0;
+  }
+
+  #shopify-section-{{ section.id }} .mobile-download__label {
+    font-weight: var(--font-medium);
+  }
+
+  #shopify-section-{{ section.id }} .mobile-downloads__list {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(var(--sp-4), 1.111vw, var(--sp-5));
+  }
+
+  @media (min-width: 640px) {
+    #shopify-section-{{ section.id }} .mobile-downloads__list {
+      flex-direction: row;
+    }
+  }
+
+  #shopify-section-{{ section.id }} .store-badge {
+    width: clamp(var(--sp-14), 8.333vw, var(--sp-20));
+  }
+
+  /* Subscription */
+  #shopify-section-{{ section.id }} .subscription {
+    border-top: 1px solid rgb(var(--color-border));
+    padding-block-start: clamp(var(--sp-8), 2.778vw, var(--sp-14));
+    padding-block-end: clamp(var(--sp-8), 2.778vw, var(--sp-14));
+  }
+
+  #shopify-section-{{ section.id }} .subscription-steps {
+    list-style: none;
+    margin: 0 0 clamp(var(--sp-6), 1.667vw, var(--sp-8));
+    padding: 0;
+  }
+
+  #shopify-section-{{ section.id }} .subscription-step {
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(var(--sp-3), 0.833vw, var(--sp-5));
+    margin-block-end: var(--sp-4);
+  }
+
+  #shopify-section-{{ section.id }} .subscription-step:last-child {
+    margin-block-end: 0;
+  }
+
+  #shopify-section-{{ section.id }} .subscription-step__number {
+    flex-shrink: 0;
+    width: clamp(var(--sp-7), 1.944vw, var(--sp-8));
+    height: clamp(var(--sp-7), 1.944vw, var(--sp-8));
+    border-radius: var(--rounded-full);
+    background: rgb(var(--color-foreground) / 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-bold);
+    font-size: var(--text-sm);
+  }
+
+  #shopify-section-{{ section.id }} .subscription-step__text {
+    font-size: var(--text-sm);
+    color: rgb(var(--color-foreground));
+  }
+
+  #shopify-section-{{ section.id }} .subscription-cta {
+    margin-block-start: clamp(var(--sp-5), 1.111vw, var(--sp-7));
+  }
+
+  /* Free demo */
+  #shopify-section-{{ section.id }} .demo-section {
+    text-align: center;
+    border-radius: var(--border-radius);
+    padding: clamp(var(--sp-7), 2.222vw, var(--sp-10)) clamp(var(--sp-5), 1.944vw, var(--sp-8));
+  }
+
+  #shopify-section-{{ section.id }} .demo-section--bg {
+    background: rgb(var(--color-foreground) / 0.02);
+  }
+
+  #shopify-section-{{ section.id }} .demo-section__title {
+    font-size: clamp(var(--sp-7), 2.526vw, var(--sp-9));
+    font-weight: var(--font-bold);
+    margin-block-end: var(--sp-5);
+  }
+
+  #shopify-section-{{ section.id }} .demo-section__text {
+    color: rgb(var(--color-foreground));
+    font-size: var(--text-sm);
+    margin-block-end: clamp(var(--sp-6), 1.667vw, var(--sp-8));
+    max-width: 45rem;
+    margin-inline: auto;
+  }
+
+  #shopify-section-{{ section.id }} .demo-section__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    justify-content: center;
+  }
+
+  @media (min-width: 640px) {
+    #shopify-section-{{ section.id }} .demo-section__buttons {
+      flex-direction: row;
+    }
+  }
+</style>
+
+<div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
+  <div class="page-width{% if section.settings.narrow %} page-width--narrow{% endif %} relative">
+
+    {%- comment %} A. Page heading {%- endcomment -%}
+    {% if section.settings.heading != blank or section.settings.subheading != blank %}
+      <div class="download-page__intro">
+        {% if section.settings.heading != blank %}
+          <h1 class="download-page__heading">{{ section.settings.heading | escape }}</h1>
+        {% endif %}
+        {% if section.settings.subheading != blank %}
+          <p class="download-page__subheading">{{ section.settings.subheading | escape }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {%- comment %} ARM notice {%- endcomment -%}
+    {% if section.settings.arm_notice != blank %}
+      <div class="download-page__arm-notice">
+        {% render 'icon', icon: 'alert-circle', size: 'sm' %}
+        <span>{{ section.settings.arm_notice | escape }}</span>
+      </div>
+    {% endif %}
+
+    {%- comment %} B. Desktop software downloads {%- endcomment -%}
+    {% if section.settings.desktop_heading != blank %}
+      <h2 class="download-page__section-title">{{ section.settings.desktop_heading | escape }}</h2>
+    {% endif %}
+
+    <div class="platform-grid">
+      {%- comment %} Mac card {%- endcomment -%}
+      {% render 'download-card',
+        platform: 'mac',
+        platform_title: section.settings.mac_platform_title,
+        version_label: section.settings.mac_version,
+        official_url: section.settings.mac_app_store_url,
+        official_label: section.settings.mac_app_store_label,
+        legacy_url: section.settings.mac_legacy_url,
+        legacy_label: section.settings.mac_legacy_label,
+        mirror_1_url: section.settings.mac_mirror_1_url,
+        mirror_2_url: section.settings.mac_mirror_2_url,
+        mirrors_label: section.settings.mirrors_label,
+        notice: section.settings.mac_notice,
+        download_url: section.settings.mac_app_store_url,
+        download_label: section.settings.mac_download_label
+      %}
+
+      {%- comment %} Windows card {%- endcomment -%}
+      {% render 'download-card',
+        platform: 'windows',
+        platform_title: section.settings.windows_platform_title,
+        version_label: section.settings.windows_version,
+        download_url: section.settings.windows_download_url,
+        mirror_1_url: section.settings.windows_mirror_1_url,
+        mirror_2_url: section.settings.windows_mirror_2_url,
+        mirrors_label: section.settings.mirrors_label,
+        notice: section.settings.windows_notice,
+        download_label: section.settings.windows_download_label
+      %}
+
+      {%- comment %} Linux card {%- endcomment -%}
+      {% render 'download-card',
+        platform: 'linux',
+        platform_title: section.settings.linux_platform_title,
+        version_label: section.settings.linux_version,
+        download_url: section.settings.linux_download_url,
+        mirror_1_url: section.settings.linux_mirror_1_url,
+        mirror_2_url: section.settings.linux_mirror_2_url,
+        mirrors_label: section.settings.mirrors_label,
+        notice: section.settings.linux_notice,
+        download_label: section.settings.linux_download_label
+      %}
+    </div>
+
+    {%- comment %} C. Mobile app downloads {%- endcomment -%}
+    {% if section.settings.mobile_heading != blank %}
+      <div class="mobile-downloads">
+        <h2 class="download-page__section-title">{{ section.settings.mobile_heading | escape }}</h2>
+        <div class="mobile-downloads__list">
+          {%- if section.settings.iphone_url != blank -%}
+            <a href="{{ section.settings.iphone_url }}" class="mobile-download" target="_blank" rel="noopener noreferrer">
+              <span class="mobile-download__icon">
+                {% render 'download-icon-apple-store' %}
+              </span>
+              <span class="mobile-download__label">{{ section.settings.iphone_label | escape }}</span>
+            </a>
+          {%- endif -%}
+          {%- if section.settings.android_url != blank -%}
+            <a href="{{ section.settings.android_url }}" class="mobile-download" target="_blank" rel="noopener noreferrer">
+              <span class="mobile-download__icon">
+                {% render 'download-icon-google-play' %}
+              </span>
+              <span class="mobile-download__label">{{ section.settings.android_label | escape }}</span>
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+    {% endif %}
+
+    {%- comment %} D. Subscription instructions {%- endcomment -%}
+    {% if section.settings.subscription_heading != blank %}
+      <div class="subscription">
+        <h2 class="download-page__section-title">{{ section.settings.subscription_heading | escape }}</h2>
+        {% if section.settings.subscription_subheading != blank %}
+          <p class="subscription__subheading">{{ section.settings.subscription_subheading | escape }}</p>
+        {% endif %}
+        <ol class="subscription-steps">
+          <li class="subscription-step">
+            <span class="subscription-step__number">1</span>
+            <span class="subscription-step__text">{{ section.settings.subscription_step_1 | escape }}</span>
+          </li>
+          <li class="subscription-step">
+            <span class="subscription-step__number">2</span>
+            <span class="subscription-step__text">{{ section.settings.subscription_step_2 | escape }}</span>
+          </li>
+          <li class="subscription-step">
+            <span class="subscription-step__number">3</span>
+            <span class="subscription-step__text">{{ section.settings.subscription_step_3 | escape }}</span>
+          </li>
+          <li class="subscription-step">
+            <span class="subscription-step__number">4</span>
+            <span class="subscription-step__text">{{ section.settings.subscription_step_4 | escape }}</span>
+          </li>
+        </ol>
+        {% if section.settings.subscription_cta_label != blank and section.settings.subscription_cta_url != blank %}
+          <div class="subscription-cta">
+            {% render 'button',
+              label: section.settings.subscription_cta_label,
+              link: section.settings.subscription_cta_url,
+              style: 'primary',
+              external: true,
+              show_icon: true
+            %}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {%- comment %} E. Free demo {%- endcomment -%}
+    {% if section.settings.demo_heading != blank %}
+      <div class="demo-section{% if section.settings.demo_background %} demo-section--bg{% endif %}">
+        <h2 class="demo-section__title">{{ section.settings.demo_heading | escape }}</h2>
+        {% if section.settings.demo_text != blank %}
+          <p class="demo-section__text">{{ section.settings.demo_text | escape }}</p>
+        {% endif %}
+        <div class="demo-section__buttons">
+          {%- if section.settings.demo_watch_label != blank and section.settings.demo_watch_url != blank -%}
+            {% render 'button',
+              label: section.settings.demo_watch_label,
+              link: section.settings.demo_watch_url,
+              style: 'secondary',
+              show_icon: true
+            %}
+          {%- endif -%}
+          {%- if section.settings.demo_book_label != blank and section.settings.demo_book_url != blank -%}
+            {% render 'button',
+              label: section.settings.demo_book_label,
+              link: section.settings.demo_book_url,
+              style: 'primary',
+              show_icon: true
+            %}
+          {%- endif -%}
+        </div>
+      </div>
+    {% endif %}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.download-software.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__heading.content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:sections.global.settings.heading.label",
+      "default": "t:sections.download-software.settings.heading.default"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "t:sections.global.settings.subheading.label",
+      "default": "t:sections.download-software.settings.subheading.default"
+    },
+    {
+      "type": "textarea",
+      "id": "arm_notice",
+      "label": "t:sections.download-software.settings.arm_notice.label",
+      "default": "t:sections.download-software.settings.arm_notice.default"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.download-software.settings.header_desktop.content"
+    },
+    {
+      "type": "text",
+      "id": "desktop_heading",
+      "label": "t:sections.global.settings.heading.label",
+      "default": "t:sections.download-software.settings.desktop_heading.default"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.download-software.settings.header_mac.content"
+    },
+    {
+      "type": "text",
+      "id": "mac_platform_title",
+      "label": "t:sections.download-software.settings.platform_title.label",
+      "default": "Mac"
+    },
+    {
+      "type": "text",
+      "id": "mac_version",
+      "label": "t:sections.download-software.settings.version_label.label",
+      "default": "t:sections.download-software.settings.mac_version.default"
+    },
+    {
+      "type": "text",
+      "id": "mac_app_store_url",
+      "label": "t:sections.download-software.settings.official_url.label",
+      "default": "https://apps.apple.com/us/app/bio-well-desktop/id1630098164?mt=12"
+    },
+    {
+      "type": "text",
+      "id": "mac_app_store_label",
+      "label": "t:sections.download-software.settings.official_label.label",
+      "default": "t:sections.download-software.settings.mac_app_store_label.default"
+    },
+    {
+      "type": "text",
+      "id": "mac_legacy_url",
+      "label": "t:sections.download-software.settings.legacy_url.label",
+      "default": "https://manage.bio-well.com/download/bio-well.dmg"
+    },
+    {
+      "type": "text",
+      "id": "mac_legacy_label",
+      "label": "t:sections.download-software.settings.legacy_label.label",
+      "default": "t:sections.download-software.settings.mac_legacy_label.default"
+    },
+    {
+      "type": "text",
+      "id": "mac_mirror_1_url",
+      "label": "t:sections.download-software.settings.mirror_1.label",
+      "default": "https://bwacc.space/download/bio-well.dmg"
+    },
+    {
+      "type": "text",
+      "id": "mac_mirror_2_url",
+      "label": "t:sections.download-software.settings.mirror_2.label",
+      "default": "https://bwacc.ru/download/bio-well.dmg"
+    },
+    {
+      "type": "textarea",
+      "id": "mac_notice",
+      "label": "t:sections.download-software.settings.notice.label",
+      "default": "t:sections.download-software.settings.mac_notice.default"
+    },
+    {
+      "type": "text",
+      "id": "mac_download_label",
+      "label": "t:sections.download-software.settings.download_label.label",
+      "default": "t:sections.download-software.settings.mac_download_label.default"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.download-software.settings.header_windows.content"
+    },
+    {
+      "type": "text",
+      "id": "windows_platform_title",
+      "label": "t:sections.download-software.settings.platform_title.label",
+      "default": "Windows"
+    },
+    {
+      "type": "text",
+      "id": "windows_version",
+      "label": "t:sections.download-software.settings.version_label.label",
+      "default": "t:sections.download-software.settings.windows_version.default"
+    },
+    {
+      "type": "text",
+      "id": "windows_download_url",
+      "label": "t:sections.download-software.settings.official_url.label",
+      "default": "https://manage.bio-well.com/download/bio-well-install.exe"
+    },
+    {
+      "type": "text",
+      "id": "windows_mirror_1_url",
+      "label": "t:sections.download-software.settings.mirror_1.label",
+      "default": "http://bwacc.space/download/bio-well-install.exe"
+    },
+    {
+      "type": "text",
+      "id": "windows_mirror_2_url",
+      "label": "t:sections.download-software.settings.mirror_2.label",
+      "default": "https://bwacc.ru/download/bio-well-install.exe"
+    },
+    {
+      "type": "textarea",
+      "id": "windows_notice",
+      "label": "t:sections.download-software.settings.notice.label",
+      "default": "t:sections.download-software.settings.windows_notice.default"
+    },
+    {
+      "type": "text",
+      "id": "windows_download_label",
+      "label": "t:sections.download-software.settings.download_label.label",
+      "default": "t:sections.download-software.settings.windows_download_label.default"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.download-software.settings.header_linux.content"
+    },
+    {
+      "type": "text",
+      "id": "linux_platform_title",
+      "label": "t:sections.download-software.settings.platform_title.label",
+      "default": "Linux"
+    },
+    {
+      "type": "text",
+      "id": "linux_version",
+      "label": "t:sections.download-software.settings.version_label.label",
+      "default": "t:sections.download-software.settings.linux_version.default"
+    },
+    {
+      "type": "text",
+      "id": "linux_download_url",
+      "label": "t:sections.download-software.settings.official_url.label",
+      "default": "https://manage.bio-well.com/download/bio-well.deb"
+    },
+    {
+      "type": "text",
+      "id": "linux_mirror_1_url",
+      "label": "t:sections.download-software.settings.mirror_1.label",
+      "default": "https://bwacc.space/download/bio-well.deb"
+    },
+    {
+      "type": "text",
+      "id": "linux_mirror_2_url",
+      "label": "t:sections.download-software.settings.mirror_2.label",
+      "default": "https://bwacc.ru/download/bio-well.deb"
+    },
+    {
+      "type": "textarea",
+      "id": "linux_notice",
+      "label": "t:sections.download-software.settings.notice.label",
+      "default": "t:sections.download-software.settings.linux_notice.default"
+    },
+    {
+      "type": "text",
+      "id": "linux_download_label",
+      "label": "t:sections.download-software.settings.download_label.label",
+      "default": "t:sections.download-software.settings.linux_download_label.default"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.download-software.settings.header_mobile.content"
+    },
+    {
+      "type": "text",
+      "id": "mobile_heading",
+      "label": "t:sections.global.settings.heading.label",
+      "default": "t:sections.download-software.settings.mobile_heading.default"
+    },
+    {
+      "type": "text",
+      "id": "iphone_url",
+      "label": "t:sections.download-software.settings.iphone_url.label",
+      "default": "https://apps.apple.com/us/app/bio-well/id1508864740"
+    },
+    {
+      "type": "text",
+      "id": "iphone_label",
+      "label": "t:sections.download-software.settings.iphone_label.label",
+      "default": "t:sections.download-software.settings.iphone_label.default"
+    },
+    {
+      "type": "text",
+      "id": "android_url",
+      "label": "t:sections.download-software.settings.android_url.label",
+      "default": "https://play.google.com/store/apps/details?id=org.biowell.com&pli=1"
+    },
+    {
+      "type": "text",
+      "id": "android_label",
+      "label": "t:sections.download-software.settings.android_label.label",
+      "default": "t:sections.download-software.settings.android_label.default"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.download-software.settings.header_subscription.content"
+    },
+    {
+      "type": "text",
+      "id": "subscription_heading",
+      "label": "t:sections.global.settings.heading.label",
+      "default": "t:sections.download-software.settings.subscription_heading.default"
+    },
+    {
+      "type": "textarea",
+      "id": "subscription_subheading",
+      "label": "t:sections.global.settings.subheading.label",
+      "default": "t:sections.download-software.settings.subscription_subheading.default"
+    },
+    {
+      "type": "textarea",
+      "id": "subscription_step_1",
+      "label": "t:sections.download-software.settings.subscription_step_1.label",
+      "default": "t:sections.download-software.settings.subscription_step_1.default"
+    },
+    {
+      "type": "textarea",
+      "id": "subscription_step_2",
+      "label": "t:sections.download-software.settings.subscription_step_2.label",
+      "default": "t:sections.download-software.settings.subscription_step_2.default"
+    },
+    {
+      "type": "textarea",
+      "id": "subscription_step_3",
+      "label": "t:sections.download-software.settings.subscription_step_3.label",
+      "default": "t:sections.download-software.settings.subscription_step_3.default"
+    },
+    {
+      "type": "textarea",
+      "id": "subscription_step_4",
+      "label": "t:sections.download-software.settings.subscription_step_4.label",
+      "default": "t:sections.download-software.settings.subscription_step_4.default"
+    },
+    {
+      "type": "text",
+      "id": "subscription_cta_label",
+      "label": "t:sections.download-software.settings.cta_label.label",
+      "default": "t:sections.download-software.settings.subscription_cta_label.default"
+    },
+    {
+      "type": "text",
+      "id": "subscription_cta_url",
+      "label": "t:sections.download-software.settings.cta_url.label",
+      "default": "https://manage.bio-well.com/accounts/biowell/register.html"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.download-software.settings.header_demo.content"
+    },
+    {
+      "type": "text",
+      "id": "demo_heading",
+      "label": "t:sections.global.settings.heading.label",
+      "default": "t:sections.download-software.settings.demo_heading.default"
+    },
+    {
+      "type": "textarea",
+      "id": "demo_text",
+      "label": "t:sections.global.settings.description.label",
+      "default": "t:sections.download-software.settings.demo_text.default"
+    },
+    {
+      "type": "text",
+      "id": "demo_watch_label",
+      "label": "t:sections.download-software.settings.demo_watch_label.label",
+      "default": "t:sections.download-software.settings.demo_watch_label.default"
+    },
+    {
+      "type": "text",
+      "id": "demo_watch_url",
+      "label": "t:sections.download-software.settings.demo_watch_url.label",
+      "default": "/en-intl/pages/demo"
+    },
+    {
+      "type": "text",
+      "id": "demo_book_label",
+      "label": "t:sections.download-software.settings.demo_book_label.label",
+      "default": "t:sections.download-software.settings.demo_book_label.default"
+    },
+    {
+      "type": "text",
+      "id": "demo_book_url",
+      "label": "t:sections.download-software.settings.demo_book_url.label",
+      "default": "/en-intl/pages/demo"
+    },
+    {
+      "type": "checkbox",
+      "id": "demo_background",
+      "label": "t:sections.download-software.settings.demo_background.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.download-software.settings.header_global.content"
+    },
+    {
+      "type": "text",
+      "id": "mirrors_label",
+      "label": "t:sections.download-software.settings.mirrors_label.label",
+      "default": "t:sections.download-software.settings.mirrors_label.default"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__section.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_top.label",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_bottom.label",
+      "default": 120
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:sections.global.settings.divider.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow",
+      "label": "t:sections.global.settings.narrow.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "rounded",
+      "label": "t:sections.global.settings.rounded.label",
+      "default": false
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,89 @@
+{%- doc -%}
+  Renders a platform download card for Bio-Well software.
+
+  Used for the Mac, Windows and Linux desktop download cards.
+
+  @param {string} platform - Internal id: 'mac', 'windows', 'linux'
+  @param {string} platform_title - Display title for the platform (e.g. "Mac")
+  @param {string} version_label - Version requirement text (e.g. "Mac OS X 10.13 & More Recent")
+  @param {string} download_url - URL for the primary download button
+  @param {string} download_label - Label for the primary download button
+  @param {string} [official_url] - URL for the official store / primary link
+  @param {string} [official_label] - Label text for the official link (e.g. "Download in the App Store")
+  @param {string} [legacy_url] - URL for the legacy version download
+  @param {string} [legacy_label] - Label text for the legacy link
+  @param {string} [mirror_1_url] - Mirror #1 download URL
+  @param {string} [mirror_2_url] - Mirror #2 download URL
+  @param {string} [mirrors_label] - Label prefix for mirrors (e.g. "Mirror")
+  @param {string} [notice] - Compatibility notice text
+{%- enddoc -%}
+
+{%- assign mirrors_count = 0 -%}
+{%- if mirror_1_url != blank -%}
+  {%- assign mirrors_count = mirrors_count | plus: 1 -%}
+{%- endif -%}
+{%- if mirror_2_url != blank -%}
+  {%- assign mirrors_count = mirrors_count | plus: 1 -%}
+{%- endif -%}
+
+<div class="download-card" data-platform="{{ platform }}">
+  <div class="download-card__header">
+    {%- if platform == 'mac' -%}
+      {%- render 'download-icon-mac' -%}
+    {%- elsif platform == 'windows' -%}
+      {%- render 'download-icon-windows' -%}
+    {%- elsif platform == 'linux' -%}
+      {%- render 'download-icon-linux' -%}
+    {%- endif -%}
+    <h3 class="download-card__title">{{ platform_title | escape }}</h3>
+  </div>
+
+  {%- if version_label != blank -%}
+    <p class="download-card__version">{{ version_label | escape }}</p>
+  {%- endif -%}
+
+  {%- if official_url != blank and official_label != blank -%}
+    <p class="download-card__link-row">
+      <a href="{{ official_url }}" class="download-card__link" target="_blank" rel="noopener noreferrer">{{ official_label | escape }}</a>
+    </p>
+  {%- endif -%}
+
+  {%- if legacy_url != blank and legacy_label != blank -%}
+    <p class="download-card__link-row">
+      <a href="{{ legacy_url }}" class="download-card__link" target="_blank" rel="noopener noreferrer">{{ legacy_label | escape }}</a>
+    </p>
+  {%- endif -%}
+
+  {%- if mirrors_count > 0 -%}
+    <p class="download-card__mirrors">
+      {%- if mirror_1_url != blank -%}
+        {%- if mirrors_label != blank -%}{{ mirrors_label | escape }} {% endif -%}<a href="{{ mirror_1_url }}" class="download-card__link" target="_blank" rel="noopener noreferrer">#1</a>
+      {%- endif -%}
+      {%- if mirror_1_url != blank and mirror_2_url != blank -%}
+        <span class="download-card__mirror-separator">,</span>
+      {%- endif -%}
+      {%- if mirror_2_url != blank -%}
+        {%- if mirrors_label != blank -%}{{ mirrors_label | escape }} {% endif -%}<a href="{{ mirror_2_url }}" class="download-card__link" target="_blank" rel="noopener noreferrer">#2</a>
+      {%- endif -%}
+    </p>
+  {%- endif -%}
+
+  {%- if notice != blank -%}
+    <div class="download-card__notice">
+      {%- render 'icon', icon: 'alert-circle', size: 'sm' -%}
+      <span>{{ notice | escape }}</span>
+    </div>
+  {%- endif -%}
+
+  {%- if download_url != blank and download_label != blank -%}
+    <div class="download-card__button">
+      {%- render 'button',
+        label: download_label,
+        link: download_url,
+        style: 'primary',
+        external: true,
+        show_icon: true
+      -%}
+    </div>
+  {%- endif -%}
+</div>

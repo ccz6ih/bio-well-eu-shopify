@@ -74,7 +74,7 @@
         "demo_book_label": "t:sections.download-software.settings.demo_book_label.default",
         "demo_book_url": "/en-intl/pages/demo",
         "demo_background": true,
-        "mirrors_label": "t:sections.download-software.settings.mirrors_label.default",
+        "mirrors_label": "Mirror",
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": true,
